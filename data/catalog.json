@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "source": "https://www.zhongguo.dev/directory",
   "refreshed_on": "2026-11-21",
   "entries": [
@@ -14,7 +14,9 @@
       "topics": [
         "backend-cloud-distributed",
         "devops-observability-platform"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "开源 Linux 服务器管理面板与自托管工具。"
     },
     {
       "type": "project",
@@ -26,7 +28,9 @@
       "documentation": "https://github.com/alibaba/arthas#readme",
       "topics": [
         "developer-tools-code-intelligence"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Arthas 是阿里巴巴维护的 Java 线上诊断工具，可在不重新编译应用的情况下进行运行时检查、方法追踪、性能分析和故障排查。"
     },
     {
       "type": "project",
@@ -38,7 +42,9 @@
       "documentation": "https://github.com/alibaba/canal#readme",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Canal 是阿里巴巴开源的变更数据捕获组件，可订阅 MySQL binlog 并向下游消费者分发数据库变更。"
     },
     {
       "type": "company",
@@ -52,7 +58,9 @@
         "ai-engineering-agents-infrastructure",
         "ai-models-open-ecosystems",
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": "阿里云",
+      "description_zh": "阿里巴巴集团旗下与 Qwen 和 ModelScope 相关的云计算与人工智能业务。"
     },
     {
       "type": "project",
@@ -64,7 +72,9 @@
       "documentation": "https://github.com/alibaba/DataX#readme",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "DataX 是阿里巴巴发布的异构数据源同步框架，提供连接器和批量数据传输工具。"
     },
     {
       "type": "project",
@@ -76,7 +86,9 @@
       "documentation": "https://www.alibabacloud.com/help/en/ecs/user-guide/deploy-alibaba-dragonwell-jdk",
       "topics": [
         "languages-compilers-runtimes"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "阿里巴巴 Dragonwell 是由阿里巴巴开发的基于 OpenJDK 的 Java 发行版，面向大规模 Java 工作负载，提供标准版与扩展版。"
     },
     {
       "type": "company",
@@ -88,7 +100,9 @@
       "documentation": null,
       "topics": [
         "ai-engineering-agents-infrastructure"
-      ]
+      ],
+      "name_zh": "阿里巴巴集团",
+      "description_zh": "涵盖商业、云服务与开发者工程项目的科技集团。"
     },
     {
       "type": "project",
@@ -98,7 +112,9 @@
       "website": "https://lowcode-engine.cn/",
       "repository": "https://github.com/alibaba/lowcode-engine",
       "documentation": "https://github.com/alibaba/lowcode-engine/blob/main/README.md",
-      "topics": []
+      "topics": [],
+      "name_zh": null,
+      "description_zh": "阿里巴巴开源的低代码编辑器框架，提供组件物料协议与扩展接口。"
     },
     {
       "type": "project",
@@ -108,7 +124,9 @@
       "website": "https://github.com/alibaba/open-code-review",
       "repository": "https://github.com/alibaba/open-code-review",
       "documentation": "https://github.com/alibaba/open-code-review/blob/main/README.md",
-      "topics": []
+      "topics": [],
+      "name_zh": null,
+      "description_zh": "阿里巴巴开源的混合式代码审查命令行工具，将确定性规则与大模型审查建议结合。"
     },
     {
       "type": "project",
@@ -120,7 +138,9 @@
       "documentation": "https://github.com/alibaba/p3c/wiki",
       "topics": [
         "developer-tools-code-intelligence"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "阿里巴巴 P3C 将《阿里巴巴 Java 开发手册》的规范实现为静态代码检查规则及 Java IDE 工具。"
     },
     {
       "type": "project",
@@ -132,7 +152,9 @@
       "documentation": "https://angelml.ai/",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Angel 是分布式机器学习与参数服务器平台，支持图计算和大规模模型训练。"
     },
     {
       "type": "project",
@@ -144,7 +166,9 @@
       "documentation": "https://ant.design/docs/react/introduce/",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向 Web 应用的 React UI 组件库与设计系统。"
     },
     {
       "type": "company",
@@ -157,7 +181,9 @@
       "topics": [
         "databases-search-data",
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": "蚂蚁集团",
+      "description_zh": "与 OceanBase 和 Ant Design 相关的科技公司。"
     },
     {
       "type": "project",
@@ -169,7 +195,9 @@
       "documentation": "https://apisix.apache.org/docs/",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "用于路由、流量管理、认证与可观测性的开源 API 与 AI 网关。"
     },
     {
       "type": "project",
@@ -179,7 +207,9 @@
       "website": "https://cloudberry.apache.org/",
       "repository": "https://github.com/apache/cloudberry",
       "documentation": "https://cloudberry.apache.org/docs/",
-      "topics": []
+      "topics": [],
+      "name_zh": null,
+      "description_zh": "Apache 孵化器社区治理的大规模并行 PostgreSQL 分析型数据库，具有中国项目起源背景。"
     },
     {
       "type": "project",
@@ -191,7 +221,9 @@
       "documentation": "https://dolphinscheduler.apache.org/",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Apache DolphinScheduler 是面向数据流水线的分布式工作流调度平台，支持图形化 DAG 编排与任务调度。"
     },
     {
       "type": "project",
@@ -203,7 +235,9 @@
       "documentation": "https://doris.apache.org/docs/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向分析与搜索工作负载的开源实时分析数据库。"
     },
     {
       "type": "project",
@@ -215,7 +249,9 @@
       "documentation": "https://dubbo.apache.org/en/overview/home/",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "具备服务发现与治理能力的开源 RPC 与微服务框架。"
     },
     {
       "type": "project",
@@ -227,7 +263,9 @@
       "documentation": "https://inlong.apache.org/",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Apache InLong 是面向大规模数据采集与传输的数据集成框架，支持在异构系统之间处理数据流。"
     },
     {
       "type": "project",
@@ -239,7 +277,9 @@
       "documentation": "https://iotdb.apache.org/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Apache IoTDB 是面向工业与物联网场景的时序数据库，起源于清华大学的研究工作。"
     },
     {
       "type": "project",
@@ -251,7 +291,9 @@
       "documentation": "https://kylin.apache.org/docs/",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Apache Kylin 是由 eBay 工程团队（包括中国开发者）发起的 OLAP 分析引擎。"
     },
     {
       "type": "project",
@@ -263,7 +305,9 @@
       "documentation": "https://linkis.apache.org/docs/latest/",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Apache Linkis 是连接与治理大数据计算引擎及上层应用服务的分布式计算中间件。"
     },
     {
       "type": "project",
@@ -275,7 +319,9 @@
       "documentation": "https://rocketmq.apache.org/docs/",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向分布式系统的开源消息与事件流平台。"
     },
     {
       "type": "project",
@@ -287,7 +333,9 @@
       "documentation": "https://seata.apache.org/docs/user/quickstart/",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向微服务架构的开源分布式事务解决方案。"
     },
     {
       "type": "project",
@@ -299,7 +347,9 @@
       "documentation": "https://seatunnel.apache.org/docs/",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Apache SeaTunnel 是面向大规模数据采集、同步与转换的分布式数据集成框架。"
     },
     {
       "type": "project",
@@ -311,7 +361,9 @@
       "documentation": "https://skywalking.apache.org/docs/",
       "topics": [
         "devops-observability-platform"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向分布式、云原生与人工智能系统的开源可观测性平台。"
     },
     {
       "type": "project",
@@ -323,7 +375,9 @@
       "documentation": "https://streampark.apache.org/docs/get-started/introduction/",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Apache StreamPark 是面向 Flink 与 Spark 流处理应用的开发框架与运行管理平台。"
     },
     {
       "type": "project",
@@ -335,7 +389,9 @@
       "documentation": "https://apollo.baidu.com/docs/apollo/latest/",
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "提供软件、仿真与车辆开发工具的开放自动驾驶平台。"
     },
     {
       "type": "ai_model",
@@ -347,7 +403,9 @@
       "documentation": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "百川 2（Baichuan 2）是中国人工智能企业百川智能于 2023 年发布的 7B 与 13B 语言模型系列，具有重要的历史意义。"
     },
     {
       "type": "company",
@@ -360,7 +418,9 @@
       "topics": [
         "data-analytics-machine-learning",
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": "百度",
+      "description_zh": "与 PaddlePaddle 和 Apollo 相关的科技公司。"
     },
     {
       "type": "product",
@@ -372,7 +432,9 @@
       "documentation": null,
       "topics": [
         "developer-tools-code-intelligence"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "百度智能云的商业 AI 编码助手，通过 IDE 插件提供代码建议、生成、解释和测试辅助。"
     },
     {
       "type": "company",
@@ -385,7 +447,9 @@
       "topics": [
         "ai-models-open-ecosystems",
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": "字节跳动",
+      "description_zh": "开发 Seed 模型系列，并通过 Web Infra 团队支持 Rspack 的科技公司。"
     },
     {
       "type": "project",
@@ -397,7 +461,9 @@
       "documentation": "https://github.com/cangjielanguage/cangjie_compiler#readme",
       "topics": [
         "languages-compilers-runtimes"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "仓颉（Cangjie）是与华为鸿蒙开发环境相关的编程语言与编译器生态。"
     },
     {
       "type": "product",
@@ -409,7 +475,9 @@
       "documentation": null,
       "topics": [
         "security-identity-privacy"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "xray 是长亭科技发布的闭源 Web 安全评估与漏洞扫描工具。"
     },
     {
       "type": "project",
@@ -421,7 +489,9 @@
       "documentation": "https://chaos-mesh.org/docs/",
       "topics": [
         "devops-observability-platform"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Chaos Mesh 是面向 Kubernetes 的混沌工程平台，通过受控故障注入测试分布式服务的韧性。"
     },
     {
       "type": "project",
@@ -431,7 +501,9 @@
       "website": "https://www.deepin.org/",
       "repository": "https://github.com/deepin-community/kernel",
       "documentation": "https://wiki.deepin.org/",
-      "topics": []
+      "topics": [],
+      "name_zh": null,
+      "description_zh": "面向桌面环境、内核和硬件适配的 Linux 发行版。"
     },
     {
       "type": "ai_model",
@@ -443,7 +515,9 @@
       "documentation": "https://api-docs.deepseek.com/",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向推理与通用 AI 任务的模型系列。"
     },
     {
       "type": "company",
@@ -455,7 +529,9 @@
       "documentation": null,
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": "深度求索",
+      "description_zh": "开发 DeepSeek 模型系列的公司。"
     },
     {
       "type": "product",
@@ -467,7 +543,9 @@
       "documentation": null,
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "大疆 Mobile SDK V5 提供 Android 接口，供开发者构建可与受支持的大疆飞行器通信和交互的应用。"
     },
     {
       "type": "product",
@@ -479,7 +557,9 @@
       "documentation": null,
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "大疆较早推出的机载开发 SDK，用于将板载计算系统接入兼容的行业级飞行器。"
     },
     {
       "type": "project",
@@ -492,7 +572,9 @@
       "topics": [
         "ai-engineering-agents-infrastructure",
         "devops-observability-platform"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "用于容器镜像及其他大型制品分发的开源点对点系统。"
     },
     {
       "type": "project",
@@ -504,7 +586,9 @@
       "documentation": "https://opendrivelab.com/DriveLM/",
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "DriveLM 是利用图结构视觉问答研究自动驾驶感知、预测与规划的视觉语言研究项目。"
     },
     {
       "type": "project",
@@ -516,7 +600,9 @@
       "documentation": "https://docs.espressif.com/projects/esp-idf/en/stable/",
       "topics": [
         "chips-hardware-embedded"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "ESP-IDF 是乐鑫科技面向 ESP32 微控制器的官方开发框架，提供 SDK 组件、构建工具与嵌入式开发文档。"
     },
     {
       "type": "project",
@@ -528,7 +614,9 @@
       "documentation": "https://doc.fastgpt.cn/",
       "topics": [
         "ai-engineering-agents-infrastructure"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "FastGPT 是面向知识库与智能体应用的平台，提供检索、工作流编排及 API 集成。"
     },
     {
       "type": "project",
@@ -540,7 +628,9 @@
       "documentation": "https://fate.fedai.org/",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "FATE 是联邦学习框架，可在不集中各方原始训练数据的情况下开展跨组织协作建模。"
     },
     {
       "type": "ai_model",
@@ -552,7 +642,9 @@
       "documentation": "https://docs.z.ai/",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "由智谱维护，面向语言、推理、编程与多模态任务的模型系列。"
     },
     {
       "type": "project",
@@ -564,7 +656,9 @@
       "documentation": "https://go-zero.dev/docs/",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "go-zero 是用于构建高可用 Web 与 RPC 微服务的 Go 框架，提供 API 定义、代码生成及稳定性治理能力。"
     },
     {
       "type": "project",
@@ -576,7 +670,9 @@
       "documentation": "https://github.com/graspnet/graspnet-baseline#readme",
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "GraspNet-1Billion Baseline 是上海交通大学发布的机器人抓取检测研究基线实现，用于 GraspNet-1Billion 基准评测。"
     },
     {
       "type": "project",
@@ -588,7 +684,9 @@
       "documentation": "https://docs.greptime.com/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "GreptimeDB 是面向时序与可观测性场景的列式数据库，支持指标、日志和链路追踪数据。"
     },
     {
       "type": "project",
@@ -600,7 +698,9 @@
       "documentation": "https://www.cloudwego.io/docs/hertz/overview/",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Hertz 是字节跳动 CloudWeGo 生态中的 Go HTTP 框架，提供路由、中间件和服务端组件。"
     },
     {
       "type": "company",
@@ -612,7 +712,9 @@
       "documentation": null,
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": "华为",
+      "description_zh": "与 MindSpore 相关，并是 openGauss 起源方的科技公司。"
     },
     {
       "type": "product",
@@ -624,7 +726,9 @@
       "documentation": null,
       "topics": [
         "developer-tools-code-intelligence"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "华为云的商业 AI 辅助开发环境，支持编程、代码库理解和智能体驱动的开发流程。"
     },
     {
       "type": "ai_model",
@@ -636,7 +740,9 @@
       "documentation": "https://cloud.tencent.com/document/product/1729",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "通过腾讯云开发者服务提供的腾讯混元模型系列。"
     },
     {
       "type": "project",
@@ -648,7 +754,9 @@
       "documentation": "https://infiniflow.org/docs/dev/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Infinity 是面向人工智能应用的原生数据库与搜索引擎，支持向量、全文及混合检索。"
     },
     {
       "type": "ai_model",
@@ -660,7 +768,9 @@
       "documentation": "https://internlm.readthedocs.io/",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "InternLM（书生·浦语）是由上海人工智能实验室开发的多语言模型系列，包括 InternLM、InternLM2、InternLM2.5 与 InternLM3。"
     },
     {
       "type": "project",
@@ -672,7 +782,9 @@
       "documentation": "https://internrobotics.github.io/user_guide/internnav/index.html",
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "InternNav 是具身导航研究平台，提供机器人导航模型训练与评测所需的代码和资源。"
     },
     {
       "type": "project",
@@ -684,7 +796,9 @@
       "documentation": "https://karmada.io/docs/",
       "topics": [
         "devops-observability-platform"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Karmada 可跨多个 Kubernetes 集群与云环境编排应用，无须修改应用本身。"
     },
     {
       "type": "project",
@@ -696,7 +810,9 @@
       "documentation": "https://www.kcl-lang.io/docs/user_docs/getting-started/intro",
       "topics": [
         "languages-compilers-runtimes"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "KCL 是面向云原生系统的声明式配置与策略语言，支持约束、模式定义与可复用的配置逻辑。"
     },
     {
       "type": "ai_model",
@@ -708,7 +824,9 @@
       "documentation": "https://www.kimi.com/en/help/kimi-api/api-overview",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "由月之暗面开发，并通过 Kimi 产品与开发者 API 提供的模型系列。"
     },
     {
       "type": "project",
@@ -720,7 +838,9 @@
       "documentation": "https://www.cloudwego.io/docs/kitex/overview/",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Kitex 是字节跳动 CloudWeGo 中间件生态中的 Go RPC 框架，用于微服务通信与服务开发。"
     },
     {
       "type": "project",
@@ -732,7 +852,9 @@
       "documentation": "https://go-kratos.dev/docs/intro/design/",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Kratos 是用于构建云原生微服务的 Go 框架，提供 HTTP/gRPC、服务抽象、中间件及代码生成工具。"
     },
     {
       "type": "project",
@@ -744,7 +866,9 @@
       "documentation": "https://kubesphere.io/docs/",
       "topics": [
         "devops-observability-platform"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "KubeSphere 是面向 Kubernetes 集群、应用及企业平台运维的云原生管理平台。"
     },
     {
       "type": "project",
@@ -756,7 +880,9 @@
       "documentation": "https://github.com/chatchat-space/Langchain-Chatchat/blob/master/README_en.md",
       "topics": [
         "ai-engineering-agents-infrastructure"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Langchain-Chatchat 是源于中文开发者社区的 RAG 与智能体应用框架，2023 年以 Langchain-ChatGLM 项目起步。"
     },
     {
       "type": "project",
@@ -768,7 +894,9 @@
       "documentation": "https://lmdeploy.readthedocs.io/en/latest/",
       "topics": [
         "ai-engineering-agents-infrastructure"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "LMDeploy 是用于大语言模型压缩、部署和推理服务的工具链，与 InternLM 及上海人工智能实验室生态关联。"
     },
     {
       "type": "ai_model",
@@ -778,7 +906,9 @@
       "website": "https://longcat.ai/",
       "repository": null,
       "documentation": "https://longcat.ai/blog/longcat-2.5/",
-      "topics": []
+      "topics": [],
+      "name_zh": null,
+      "description_zh": "美团开发的语言与多模态模型系列，面向开发者及智能体任务。"
     },
     {
       "type": "project",
@@ -790,7 +920,9 @@
       "documentation": "https://github.com/alibaba/loongcollector#readme",
       "topics": [
         "devops-observability-platform"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "LoongCollector 是源于阿里巴巴的可观测性数据采集器，支持日志、指标与分布式追踪数据的采集。"
     },
     {
       "type": "project",
@@ -800,7 +932,9 @@
       "website": "https://github.com/Tencent/LoopForge",
       "repository": "https://github.com/Tencent/LoopForge",
       "documentation": "https://github.com/Tencent/LoopForge/blob/main/docs/deployment.md",
-      "topics": []
+      "topics": [],
+      "name_zh": null,
+      "description_zh": "腾讯开源的自托管编码智能体工作区与可审核 SOP 自动化平台。"
     },
     {
       "type": "project",
@@ -812,7 +946,9 @@
       "documentation": "https://lynxjs.org/",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Lynx 是源于字节跳动工程团队的跨平台 UI 框架，将 Web 风格开发方式与原生界面渲染结合。"
     },
     {
       "type": "project",
@@ -824,7 +960,9 @@
       "documentation": "https://github.com/sipeed/MaixPy#readme",
       "topics": [
         "chips-hardware-embedded"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "MaixPy 是矽速科技面向嵌入式 AI 硬件的 Python 开发环境，提供摄像头、传感器与端侧推理开发能力。"
     },
     {
       "type": "company",
@@ -834,7 +972,9 @@
       "website": "https://www.meituan.com/",
       "repository": null,
       "documentation": null,
-      "topics": []
+      "topics": [],
+      "name_zh": "美团",
+      "description_zh": "科技零售公司，其技术团队公开分享软件基础设施、搜索与推荐领域的工程实践。"
     },
     {
       "type": "project",
@@ -847,7 +987,9 @@
       "topics": [
         "ai-engineering-agents-infrastructure",
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向人工智能应用与向量检索的开源向量数据库。"
     },
     {
       "type": "project",
@@ -860,7 +1002,9 @@
       "topics": [
         "ai-engineering-agents-infrastructure",
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "用于模型开发、训练与部署的人工智能框架。"
     },
     {
       "type": "ai_model",
@@ -872,7 +1016,9 @@
       "documentation": "https://github.com/OpenBMB/MiniCPM",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "MiniCPM 是由面壁智能与中国高校研究团队共同开发的小参数语言及多模态模型系列，面向高效与端侧应用。"
     },
     {
       "type": "ai_model",
@@ -884,7 +1030,9 @@
       "documentation": "https://www.minimax.io/blog/minimax-m3",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "MiniMax M 是由中国创立的 MiniMax 开发的语言及多模态基础模型系列，覆盖推理、编程和智能体任务。"
     },
     {
       "type": "project",
@@ -896,7 +1044,9 @@
       "documentation": "https://mmdetection3d.readthedocs.io/en/latest/",
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "MMDetection3D 是 OpenMMLab 的三维目标检测工具库，支持利用相机与点云数据开展研究和开发。"
     },
     {
       "type": "project",
@@ -909,7 +1059,9 @@
       "topics": [
         "ai-engineering-agents-infrastructure",
         "chips-hardware-embedded"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "阿里巴巴集团的轻量级端侧机器学习推理框架。"
     },
     {
       "type": "project",
@@ -922,7 +1074,9 @@
       "topics": [
         "ai-engineering-agents-infrastructure",
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "用于发现、训练、评估与部署人工智能模型的模型即服务库与平台。"
     },
     {
       "type": "project",
@@ -934,7 +1088,9 @@
       "documentation": "https://modernjs.dev/",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Modern.js 是字节跳动 Web Infra 工程生态中的 React 应用框架与工具链。"
     },
     {
       "type": "project",
@@ -946,7 +1102,9 @@
       "documentation": "https://docs.moonbitlang.com/",
       "topics": [
         "languages-compilers-runtimes"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "MoonBit 是针对 WebAssembly 等目标优化的通用编程语言及编译器工具链。"
     },
     {
       "type": "company",
@@ -958,7 +1116,9 @@
       "documentation": null,
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": "月之暗面",
+      "description_zh": "开发 Kimi 的人工智能公司。"
     },
     {
       "type": "project",
@@ -970,7 +1130,9 @@
       "documentation": "https://nacos.io/en/docs/latest/overview/",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "用于服务发现、配置管理与服务治理的开源平台。"
     },
     {
       "type": "project",
@@ -982,7 +1144,9 @@
       "documentation": "https://github.com/sipeed/NanoKVM#readme",
       "topics": [
         "chips-hardware-embedded"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "NanoKVM 是矽速科技开发的小型 KVM-over-IP 软硬件项目，可远程管理兼容的计算机。"
     },
     {
       "type": "project",
@@ -994,7 +1158,9 @@
       "documentation": "https://docs.nebula-graph.io/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向大规模关联数据的开源分布式图数据库。"
     },
     {
       "type": "project",
@@ -1004,7 +1170,9 @@
       "website": "https://www.nocobase.com/",
       "repository": "https://github.com/nocobase/nocobase",
       "documentation": "https://docs.nocobase.com/",
-      "topics": []
+      "topics": [],
+      "name_zh": null,
+      "description_zh": "可扩展的 AI 辅助无代码平台，用于业务数据、工作流及内部应用。"
     },
     {
       "type": "project",
@@ -1016,7 +1184,9 @@
       "documentation": "https://en.oceanbase.com/docs/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向可扩展事务与分析工作负载的分布式关系型数据库。"
     },
     {
       "type": "project",
@@ -1028,7 +1198,9 @@
       "documentation": "https://github.com/open-compass/opencompass#readme",
       "topics": [
         "ai-engineering-agents-infrastructure"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "OpenCompass 是面向语言模型与多模态 AI 的评测框架，可组织基准测试、数据集与可复现的评测流程。"
     },
     {
       "type": "project",
@@ -1040,7 +1212,9 @@
       "documentation": "https://docs.opengauss.org/en/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "提供开发与管理工具的开源关系型数据库。"
     },
     {
       "type": "project",
@@ -1052,7 +1226,9 @@
       "documentation": "https://docs.openharmony.cn/",
       "topics": [
         "chips-hardware-embedded"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "OpenHarmony 是由开放原子开源基金会治理的开放操作系统平台，源码和文档分布于多个仓库。"
     },
     {
       "type": "project",
@@ -1064,7 +1240,9 @@
       "documentation": "https://openkruise.io/docs/",
       "topics": [
         "devops-observability-platform"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "OpenKruise 通过扩展 Kubernetes 工作负载控制器支持应用部署、发布和生命周期管理。"
     },
     {
       "type": "project",
@@ -1076,7 +1254,9 @@
       "documentation": "https://github.com/4paradigm/OpenMLDB#readme",
       "topics": [
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "OpenMLDB 是第四范式开发的机器学习数据库，面向生产机器学习系统的在线与离线特征计算。"
     },
     {
       "type": "project",
@@ -1088,7 +1268,9 @@
       "documentation": "https://github.com/baidu/openrasp#readme",
       "topics": [
         "security-identity-privacy"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "OpenRASP 是源自百度的运行时应用自我保护框架，用于检测和阻断部分 Web 应用攻击。"
     },
     {
       "type": "project",
@@ -1100,7 +1282,9 @@
       "documentation": "https://github.com/OpenDriveLab/OpenScene#readme",
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "OpenScene 是 OpenDriveLab 研究网络发布的自动驾驶三维占据预测基准与研究实现。"
     },
     {
       "type": "project",
@@ -1113,7 +1297,9 @@
       "topics": [
         "ai-engineering-agents-infrastructure",
         "data-analytics-machine-learning"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "用于模型开发与部署的开源深度学习框架。"
     },
     {
       "type": "company",
@@ -1125,7 +1311,9 @@
       "documentation": null,
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": "PingCAP",
+      "description_zh": "开发 TiDB 的公司。"
     },
     {
       "type": "ai_model",
@@ -1137,7 +1325,9 @@
       "documentation": "https://qwen.readthedocs.io/en/latest/",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "覆盖语言、多模态、编程与推理任务的通用模型系列。"
     },
     {
       "type": "project",
@@ -1149,7 +1339,9 @@
       "documentation": "https://ragflow.io/docs/",
       "topics": [
         "ai-engineering-agents-infrastructure"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "RAGFlow 是结合文档摄取、知识检索与智能体工作流的检索增强生成平台。"
     },
     {
       "type": "project",
@@ -1161,7 +1353,9 @@
       "documentation": "https://rsbuild.rs/guide/start/",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "基于 Rspack 的 Web 应用构建工具，提供开发服务器与框架插件。"
     },
     {
       "type": "project",
@@ -1173,7 +1367,9 @@
       "documentation": "https://rspack.dev/guide/start/introduction",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "以 Rust 构建并面向 webpack 兼容性的 Web 打包工具。"
     },
     {
       "type": "project",
@@ -1185,7 +1381,9 @@
       "documentation": "https://www.rt-thread.io/",
       "topics": [
         "chips-hardware-embedded"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "RT-Thread 是实时操作系统和嵌入式软件生态，提供低资源占用的内核配置，并支持物联网设备开发。"
     },
     {
       "type": "project",
@@ -1197,7 +1395,9 @@
       "documentation": "https://github.com/chaitin/SafeLine#readme",
       "topics": [
         "security-identity-privacy"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "SafeLine（雷池）是长亭科技开发的自托管 Web 应用防火墙，通过反向代理保护 Web 服务免受常见攻击。"
     },
     {
       "type": "ai_model",
@@ -1209,7 +1409,9 @@
       "documentation": "https://seed.bytedance.com/en/seed_model_portfolio",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "字节跳动的基础模型系列，覆盖语言、多模态、编程等人工智能任务。"
     },
     {
       "type": "project",
@@ -1221,7 +1423,9 @@
       "documentation": "https://semi.design/en-US/start/introduction",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Semi Design 是由抖音前端社区维护的 React 组件库与设计体系，提供界面组件和设计指南。"
     },
     {
       "type": "project",
@@ -1233,7 +1437,9 @@
       "documentation": "https://github.com/alibaba/Sentinel#readme",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Sentinel 是源于阿里巴巴的分布式 Java 应用稳定性组件，提供流量控制、熔断降级及运行保护能力。"
     },
     {
       "type": "project",
@@ -1245,7 +1451,9 @@
       "documentation": "https://docs.starrocks.io/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向实时分析与数据湖分析的开源分析型数据库。"
     },
     {
       "type": "project",
@@ -1257,7 +1465,9 @@
       "documentation": "https://taro-docs.jd.com/",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Taro 是源自京东小程序生态的跨端应用框架，支持使用 React 或 Vue 构建面向多个小程序与 Web 平台的应用。"
     },
     {
       "type": "project",
@@ -1269,7 +1479,9 @@
       "documentation": "https://tarscloud.org/document/documentation?path=README.md",
       "topics": [
         "backend-cloud-distributed"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Tars 是最初由腾讯研发的分布式 RPC 框架与服务管理平台。"
     },
     {
       "type": "project",
@@ -1281,7 +1493,9 @@
       "documentation": "https://docs.tdengine.com/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "TDengine 是涛思数据开发的时序数据库，用于存储和查询工业与物联网遥测数据；其仓库采用 AGPL-3.0 许可证。"
     },
     {
       "type": "project",
@@ -1293,7 +1507,9 @@
       "documentation": "https://tdesign.tencent.com/",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "TDesign 是腾讯的设计体系和 UI 组件库，覆盖 React、Vue、移动端及小程序应用。"
     },
     {
       "type": "company",
@@ -1305,7 +1521,9 @@
       "documentation": null,
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": "腾讯",
+      "description_zh": "开发混元模型系列的科技公司。"
     },
     {
       "type": "product",
@@ -1317,7 +1535,9 @@
       "documentation": null,
       "topics": [
         "developer-tools-code-intelligence"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "腾讯云的商业 AI 编程助手，提供 IDE、插件与 CLI 工具，支持代码生成、补全、调试和智能体辅助开发。"
     },
     {
       "type": "project",
@@ -1329,7 +1549,9 @@
       "documentation": "https://docs.pingcap.com/tidb/stable/",
       "topics": [
         "databases-search-data"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "面向事务与分析工作负载的开源分布式 SQL 数据库。"
     },
     {
       "type": "project",
@@ -1341,7 +1563,9 @@
       "documentation": "https://github.com/Tencent/tmagic-editor#readme",
       "topics": [
         "developer-tools-code-intelligence"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "TMagicEditor 是腾讯推出的可视化低代码页面编辑器，提供组件和集成工具，帮助开发者构建应用界面。"
     },
     {
       "type": "project",
@@ -1353,7 +1577,9 @@
       "documentation": "https://umijs.org/docs/introduce/introduce",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "支持路由与插件扩展的 React 应用框架。"
     },
     {
       "type": "project",
@@ -1365,7 +1591,9 @@
       "documentation": "https://uniapp.dcloud.net.cn/",
       "topics": [
         "web-frontend-applications"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "uni-app 是 DCloud 基于 Vue 的跨平台框架，可用于构建移动应用、Web 应用和小程序。"
     },
     {
       "type": "project",
@@ -1377,7 +1605,9 @@
       "documentation": "https://github.com/OpenDriveLab/UniAD#readme",
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "UniAD 是联合建模感知、预测与规划的自动驾驶研究框架。"
     },
     {
       "type": "project",
@@ -1389,7 +1619,9 @@
       "documentation": "https://support.unitree.com/home/zh/developer",
       "topics": [
         "robotics-autonomous-embodied"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Unitree SDK2 提供通信接口与示例代码，供开发者将应用与受支持的宇树机器人平台集成。"
     },
     {
       "type": "project",
@@ -1401,7 +1633,9 @@
       "documentation": "https://xiangshan.cc/en/",
       "topics": [
         "chips-hardware-embedded"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "香山（XiangShan）是中国学术界与产业界联合开发的高性能开源 RISC-V 处理器核心，并公开硬件设计源码。"
     },
     {
       "type": "project",
@@ -1413,7 +1647,9 @@
       "documentation": "https://inference.readthedocs.io/en/stable/",
       "topics": [
         "ai-engineering-agents-infrastructure"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Xinference 是模型推理服务工具链，可通过 API 在本地或集群环境中部署语言、音频、嵌入及多模态模型。"
     },
     {
       "type": "project",
@@ -1425,7 +1661,9 @@
       "documentation": "https://yaklang.io/",
       "topics": [
         "security-identity-privacy"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Yaklang 是面向网络安全测试、脚本编写和自动化的编程语言与工具生态。"
     },
     {
       "type": "ai_model",
@@ -1437,7 +1675,9 @@
       "documentation": "https://platform.01.ai/docs",
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": null,
+      "description_zh": "Yi 是零一万物发布的语言模型系列，在中国开放权重大模型发展过程中具有历史影响力。"
     },
     {
       "type": "company",
@@ -1449,7 +1689,9 @@
       "documentation": null,
       "topics": [
         "ai-models-open-ecosystems"
-      ]
+      ],
+      "name_zh": "智谱",
+      "description_zh": "维护 GLM 模型系列的人工智能公司。"
     }
   ]
 }
