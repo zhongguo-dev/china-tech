@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "source": "https://www.zhongguo.dev/topics",
+  "areas": [
+    {
+      "area": "Development & Programming",
+      "topics": [
+        {
+          "title": "Programming Languages, Compilers & Runtimes",
+          "slug": "languages-compilers-runtimes"
+        },
+        {
+          "title": "Developer Tools & Code Intelligence",
+          "slug": "developer-tools-code-intelligence"
+        },
+        {
+          "title": "Web, Frontend & Application Development",
+          "slug": "web-frontend-applications"
+        }
+      ]
+    },
+    {
+      "area": "Infrastructure & Engineering",
+      "topics": [
+        {
+          "title": "Backend, Cloud & Distributed Systems",
+          "slug": "backend-cloud-distributed"
+        },
+        {
+          "title": "Databases, Search & Data Systems",
+          "slug": "databases-search-data"
+        },
+        {
+          "title": "DevOps, Observability & Platform Engineering",
+          "slug": "devops-observability-platform"
+        },
+        {
+          "title": "Security, Identity & Privacy",
+          "slug": "security-identity-privacy"
+        }
+      ]
+    },
+    {
+      "area": "Artificial Intelligence & Data",
+      "topics": [
+        {
+          "title": "AI Models & Open Model Ecosystems",
+          "slug": "ai-models-open-ecosystems"
+        },
+        {
+          "title": "AI Engineering, Agents & Infrastructure",
+          "slug": "ai-engineering-agents-infrastructure"
+        },
+        {
+          "title": "Data Engineering, Analytics & Machine Learning",
+          "slug": "data-analytics-machine-learning"
+        }
+      ]
+    },
+    {
+      "area": "Hardware & Emerging Technologies",
+      "topics": [
+        {
+          "title": "Chips, Hardware & Embedded Systems",
+          "slug": "chips-hardware-embedded"
+        },
+        {
+          "title": "Robotics, Autonomous Systems & Embodied AI",
+          "slug": "robotics-autonomous-embodied"
+        }
+      ]
+    }
+  ]
+}

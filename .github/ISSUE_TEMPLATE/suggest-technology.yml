@@ -1,0 +1,65 @@
+name: Suggest a technology
+description: Propose a project, tool, AI model, platform, company, or other developer-relevant entry.
+title: "Suggestion: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing. This issue will be public. Do not include personal contact details or confidential material. Please search the Directory and existing issues before posting.
+  - type: input
+    id: name
+    attributes:
+      label: Official name
+      placeholder: Project or organization name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official link
+      description: Official website, documentation, repository, or model page
+      placeholder: https://example.com/
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Developer relevance
+      description: What does it do? Why would developers find it useful?
+    validations:
+      required: true
+  - type: textarea
+    id: connection
+    attributes:
+      label: Connection to China's developer ecosystem
+      description: Explain and support the relevant origin or development connection.
+    validations:
+      required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Suggested technical topic
+      description: Optional editorial suggestion; the final classification may differ.
+      options:
+        - Not sure
+        - Programming Languages, Compilers & Runtimes
+        - Developer Tools & Code Intelligence
+        - Web, Frontend & Application Development
+        - Backend, Cloud & Distributed Systems
+        - Databases, Search & Data Systems
+        - DevOps, Observability & Platform Engineering
+        - Security, Identity & Privacy
+        - AI Models & Open Model Ecosystems
+        - AI Engineering, Agents & Infrastructure
+        - Data Engineering, Analytics & Machine Learning
+        - Chips, Hardware & Embedded Systems
+        - Robotics, Autonomous Systems & Embodied AI
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting sources
+      description: Share official references or other evidence that helps verify the suggestion.
+    validations:
+      required: false

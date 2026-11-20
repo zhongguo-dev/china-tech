@@ -1,0 +1,42 @@
+name: Correction or removal
+description: Report inaccurate information, duplicates, outdated links, or a reason to remove an entry.
+title: "Correction: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This report will be public. Include verifiable references but no confidential information or personal contact details.
+  - type: input
+    id: entry
+    attributes:
+      label: Affected entry URL
+      description: Link to the Zhongguo.dev profile or the catalog entry.
+      placeholder: https://www.zhongguo.dev/projects/example
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: What needs attention?
+      options:
+        - Factual correction
+        - Broken or outdated link
+        - Duplicate entry
+        - Removal request
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation
+      description: Describe the issue and your proposed correction.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting evidence
+      description: Cite original documentation, official statements, or other relevant sources.
+    validations:
+      required: true
