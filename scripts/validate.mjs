@@ -15,6 +15,11 @@ const required = [
   "catalog/products.md",
   "scripts/generate-catalog.mjs",
   "scripts/generate-radar.mjs",
+  "scripts/sync-published-radar.mjs",
+  "scripts/publish-radar-discussions.mjs",
+  "RADAR_PUBLICATION.md",
+  ".github/workflows/sync-published-radar.yml",
+  ".github/workflows/announce-published-radar.yml",
   "data/radar.json",
   "RADAR.md",
   "radar/2026-W43.md",
@@ -87,6 +92,7 @@ if (occurrences(begin) !== 1 || occurrences(end) !== 1 || readme.indexOf(begin) 
   errors.push("README catalog markers must appear once and in order");
 }
 if (!readme.includes("https://www.zhongguo.dev/directory")) errors.push("Missing Directory link");
+if (!readme.includes("RADAR_PUBLICATION.md")) errors.push("Missing Radar publishing guide link");
 if (!readme.includes("RADAR.md") || !readme.includes("<!-- BEGIN GENERATED RADAR -->") || !readme.includes("<!-- END GENERATED RADAR -->")) errors.push("Radar archive navigation or markers missing");
 if (!contents.get("LICENSE")?.startsWith("MIT License")) errors.push("MIT license missing or malformed");
 

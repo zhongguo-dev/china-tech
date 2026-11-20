@@ -1,0 +1,72 @@
+name: Synchronize published Radar archive
+
+on:
+  schedule:
+    - cron: "17 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: radar-published-archive
+  cancel-in-progress: false
+
+jobs:
+  synchronize:
+    name: Check for newly published Radar editions
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22.16.0"
+      - name: Read published editions and regenerate archive
+        run: |
+          node scripts/sync-published-radar.mjs
+          node scripts/generate-radar.mjs
+          node scripts/generate-radar.mjs --check
+          node scripts/validate.mjs
+      - name: Open or update the archive pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain -- README.md RADAR.md radar data/radar.json)" ]]; then
+            echo "The published Radar archive is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin automation/radar-published:refs/remotes/origin/automation/radar-published || true
+          git checkout -B automation/radar-published
+          git add README.md RADAR.md radar data/radar.json
+          git commit -m "docs(radar): synchronize published editions"
+          git push --force-with-lease origin HEAD:refs/heads/automation/radar-published
+
+          number="$(gh pr list --head automation/radar-published --base main --state open --json number --jq '.[0].number')"
+          if [[ -z "$number" ]]; then
+            gh pr create --base main --head automation/radar-published \
+              --title "Update China Dev Radar archive with published editions" \
+              --body "## Summary
+
+          Synchronizes the public China Dev Radar archive with editions already published on Zhongguo.dev.
+
+          - Updates the structured archive snapshot and generated Markdown pages.
+          - Preserves original release dates and linked primary sources.
+          - Leaves previously archived editions unchanged.
+
+          ## Review
+
+          Verify the published canonical edition links and required validation checks before merging.
+
+          Public announcements are published only after the updated archive is merged."
+          else
+            echo "Updated existing Radar archive pull request #$number."
+          fi
