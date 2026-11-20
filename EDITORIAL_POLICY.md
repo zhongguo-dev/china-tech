@@ -1,5 +1,7 @@
 # Editorial and inclusion policy
 
+**English** | [简体中文](EDITORIAL_POLICY.zh-CN.md)
+
 ## Purpose
 
 China Tech is a public, curated reference for technologies and organizations relevant to software developers and researchers who want to understand China's developer ecosystem. It complements the [Zhongguo.dev Directory](https://www.zhongguo.dev/directory) and follows its technical taxonomy.

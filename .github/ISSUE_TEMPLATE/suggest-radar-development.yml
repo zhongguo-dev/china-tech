@@ -1,88 +1,89 @@
-name: Suggest a Radar development
-description: Share a recent release, technical change, or engineering announcement for possible China Dev Radar coverage.
+name: "Suggest a Radar development / 推荐 Radar 技术进展"
+description: "Share a recent release, technical change, or engineering announcement for possible China Dev Radar coverage. / 推荐值得 China Dev Radar 关注的技术发布与工程进展。"
 title: "Radar suggestion: "
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for sharing a lead for China Dev Radar. This GitHub issue is public: do not include credentials, personal data, private correspondence, or non-public information. A suggestion is a research lead, not a verified source or a promise of publication. Please link to the original announcement when available.
+        感谢推荐技术进展。本 Issue 为公开内容，勿提交密钥、个人数据、私人通信或尚未公开的信息。推荐仅作为待核实线索，不代表事实认证或收录承诺，请尽量提供原始公告链接。
   - type: input
     id: development
     attributes:
-      label: Development or release
-      description: Name the specific change, release, announcement, or engineering development.
+      label: "Development or release / 技术进展或版本发布"
+      description: "Name the specific change, release, announcement, or engineering development. / 说明具体技术变化、版本、公告或工程进展。"
       placeholder: Project X version 2.0 releases...
     validations:
       required: true
   - type: input
     id: project
     attributes:
-      label: Project, technology, or organization
+      label: "Project, technology, or organization / 项目、技术或组织"
       placeholder: Official project name
     validations:
       required: true
   - type: input
     id: original-source
     attributes:
-      label: Original source URL
-      description: Prefer the original release notes, documentation, repository, paper, or publisher announcement.
+      label: "Original source URL / 原始来源链接"
+      description: "Prefer the original release notes, documentation, repository, paper, or publisher announcement. / 优先提供原始发布说明、文档、代码仓库、论文或官方公告。"
       placeholder: https://example.org/releases/latest
     validations:
       required: true
   - type: input
     id: original-date
     attributes:
-      label: Original publication or release date
-      description: Use YYYY-MM-DD when verified. If unknown, state that explicitly; editors will independently check it.
+      label: "Original publication or release date / 原始发布日期或版本发布日期"
+      description: "Use YYYY-MM-DD when verified. If unknown, state that explicitly; editors will independently check it. / 经核实后填写 YYYY-MM-DD；若未知请明确说明，编辑将独立核查。"
       placeholder: YYYY-MM-DD
     validations:
       required: false
   - type: textarea
     id: what-changed
     attributes:
-      label: What changed?
-      description: Summarize the concrete technical difference from the previous release or state.
+      label: "What changed? / 发生了哪些变化？"
+      description: "Summarize the concrete technical difference from the previous release or state. / 说明与此前版本或实现相比，具体发生了哪些技术变化。"
     validations:
       required: true
   - type: textarea
     id: developer-relevance
     attributes:
-      label: Why should developers care?
-      description: Explain a practical consequence for development, operations, research, or adoption.
+      label: "Why should developers care? / 为什么值得开发者关注？"
+      description: "Explain a practical consequence for development, operations, research, or adoption. / 说明其对开发、运维、研究或技术应用的实际意义。"
     validations:
       required: true
   - type: textarea
     id: china-connection
     attributes:
-      label: Connection to China's developer ecosystem
-      description: Identify the originating or contributing team and cite supporting public references when possible.
+      label: "Connection to China's developer ecosystem / 与中国开发者生态的关联"
+      description: "Identify the originating or contributing team and cite supporting public references when possible. / 说明原始团队或贡献团队，并尽量提供公开证明资料。"
     validations:
       required: true
   - type: dropdown
     id: topic
     attributes:
-      label: Suggested technical topic
-      description: Optional classification hint, subject to editorial review.
+      label: "Suggested technical topic / 建议的技术主题"
+      description: "Optional classification hint, subject to editorial review. / 仅作为分类提示，最终以审核结果为准。"
       options:
-        - Not sure
-        - Programming Languages, Compilers & Runtimes
-        - Developer Tools & Code Intelligence
-        - Web, Frontend & Application Development
-        - Backend, Cloud & Distributed Systems
-        - Databases, Search & Data Systems
-        - DevOps, Observability & Platform Engineering
-        - Security, Identity & Privacy
-        - AI Models & Open Model Ecosystems
-        - AI Engineering, Agents & Infrastructure
-        - Data Engineering, Analytics & Machine Learning
-        - Chips, Hardware & Embedded Systems
-        - Robotics, Autonomous Systems & Embodied AI
+        - "Not sure / 不确定"
+        - "Programming Languages, Compilers & Runtimes / 编程语言、编译器与运行时"
+        - "Developer Tools & Code Intelligence / 开发工具与代码智能"
+        - "Web, Frontend & Application Development / Web、前端与应用开发"
+        - "Backend, Cloud & Distributed Systems / 后端、云与分布式系统"
+        - "Databases, Search & Data Systems / 数据库、搜索与数据系统"
+        - "DevOps, Observability & Platform Engineering / DevOps、可观测性与平台工程"
+        - "Security, Identity & Privacy / 安全、身份与隐私"
+        - "AI Models & Open Model Ecosystems / AI 模型与开放模型生态"
+        - "AI Engineering, Agents & Infrastructure / AI 工程、智能体与基础设施"
+        - "Data Engineering, Analytics & Machine Learning / 数据工程、分析与机器学习"
+        - "Chips, Hardware & Embedded Systems / 芯片、硬件与嵌入式系统"
+        - "Robotics, Autonomous Systems & Embodied AI / 机器人、自主系统与具身智能"
     validations:
       required: true
   - type: textarea
     id: additional-evidence
     attributes:
-      label: Additional public references
-      description: Optional first-party sources or supporting links. Avoid copying copyrighted articles.
+      label: "Additional public references / 其他公开资料"
+      description: "Optional first-party sources or supporting links. Avoid copying copyrighted articles. / 可选填官方来源或补充链接，请勿复制受版权保护的长篇文章。"
     validations:
       required: false

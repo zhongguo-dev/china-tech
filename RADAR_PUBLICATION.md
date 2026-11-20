@@ -1,5 +1,7 @@
 # China Dev Radar publication workflow
 
+**English** | [简体中文](RADAR_PUBLICATION.zh-CN.md)
+
 [Zhongguo.dev Radar](https://www.zhongguo.dev/radar) is the canonical publication. This repository provides a concise, source-linked archive and announcement channel.
 
 ## Publication sequence
