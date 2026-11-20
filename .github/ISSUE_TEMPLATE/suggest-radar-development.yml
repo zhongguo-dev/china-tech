@@ -1,0 +1,88 @@
+name: Suggest a Radar development
+description: Share a recent release, technical change, or engineering announcement for possible China Dev Radar coverage.
+title: "Radar suggestion: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing a lead for China Dev Radar. This GitHub issue is public: do not include credentials, personal data, private correspondence, or non-public information. A suggestion is a research lead, not a verified source or a promise of publication. Please link to the original announcement when available.
+  - type: input
+    id: development
+    attributes:
+      label: Development or release
+      description: Name the specific change, release, announcement, or engineering development.
+      placeholder: Project X version 2.0 releases...
+    validations:
+      required: true
+  - type: input
+    id: project
+    attributes:
+      label: Project, technology, or organization
+      placeholder: Official project name
+    validations:
+      required: true
+  - type: input
+    id: original-source
+    attributes:
+      label: Original source URL
+      description: Prefer the original release notes, documentation, repository, paper, or publisher announcement.
+      placeholder: https://example.org/releases/latest
+    validations:
+      required: true
+  - type: input
+    id: original-date
+    attributes:
+      label: Original publication or release date
+      description: Use YYYY-MM-DD when verified. If unknown, state that explicitly; editors will independently check it.
+      placeholder: YYYY-MM-DD
+    validations:
+      required: false
+  - type: textarea
+    id: what-changed
+    attributes:
+      label: What changed?
+      description: Summarize the concrete technical difference from the previous release or state.
+    validations:
+      required: true
+  - type: textarea
+    id: developer-relevance
+    attributes:
+      label: Why should developers care?
+      description: Explain a practical consequence for development, operations, research, or adoption.
+    validations:
+      required: true
+  - type: textarea
+    id: china-connection
+    attributes:
+      label: Connection to China's developer ecosystem
+      description: Identify the originating or contributing team and cite supporting public references when possible.
+    validations:
+      required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Suggested technical topic
+      description: Optional classification hint, subject to editorial review.
+      options:
+        - Not sure
+        - Programming Languages, Compilers & Runtimes
+        - Developer Tools & Code Intelligence
+        - Web, Frontend & Application Development
+        - Backend, Cloud & Distributed Systems
+        - Databases, Search & Data Systems
+        - DevOps, Observability & Platform Engineering
+        - Security, Identity & Privacy
+        - AI Models & Open Model Ecosystems
+        - AI Engineering, Agents & Infrastructure
+        - Data Engineering, Analytics & Machine Learning
+        - Chips, Hardware & Embedded Systems
+        - Robotics, Autonomous Systems & Embodied AI
+    validations:
+      required: true
+  - type: textarea
+    id: additional-evidence
+    attributes:
+      label: Additional public references
+      description: Optional first-party sources or supporting links. Avoid copying copyrighted articles.
+    validations:
+      required: false
