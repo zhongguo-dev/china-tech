@@ -1,5 +1,7 @@
 # China Tech catalog by topic
 
+**English** | [简体中文](CATALOG.zh-CN.md)
+
 Curated published entries from [Zhongguo.dev](https://www.zhongguo.dev/directory). Snapshot refreshed 2026-11-21. Inclusion is for discovery, not endorsement or ranking.
 
 **121 unique entries** across 4 technical areas and 12 topics. Entries relevant to multiple topics may appear in multiple sections.

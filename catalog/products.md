@@ -1,5 +1,7 @@
 # Products & platforms
 
+**English** | [简体中文](products.zh-CN.md)
+
 Curated published entries from [Zhongguo.dev](https://www.zhongguo.dev/directory). Snapshot refreshed 2026-11-21. Inclusion is for discovery, not endorsement or ranking.
 
 **6 published entries** · [Browse by topic](../CATALOG.md)

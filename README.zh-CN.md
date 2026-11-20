@@ -42,6 +42,14 @@ China Tech 使用与 Zhongguo.dev 一致的四大技术领域和十二个技术�
 
 <!-- BEGIN GENERATED CATALOG -->
 
+**121 个已发布条目** · 91 项目 · 12 AI 模型 · 12 企业与组织 · 6 产品与平台
+
+**按主题浏览：**[查看全部 12 个主题](CATALOG.zh-CN.md) · [待分配主题（8）](CATALOG.zh-CN.md#awaiting-topic-assignment)
+
+**按类型浏览：**[项目（91）](catalog/projects.zh-CN.md) · [AI 模型（12）](catalog/ai-models.zh-CN.md) · [企业与组织（12）](catalog/companies.zh-CN.md) · [产品与平台（6）](catalog/products.zh-CN.md)
+
+数据快照：2026-11-21。[访问 Zhongguo.dev 实时技术目录](https://www.zhongguo.dev/zh/directory)。
+
 <!-- END GENERATED CATALOG -->
 
 GitHub 目录以 Zhongguo.dev 已发布且符合收录标准的全部技术条目为依据，而非独立维护的推荐榜单。每个条目提供详情页和适用的官方资源链接。尚未分配技术主题的条目也会保留在目录中。
