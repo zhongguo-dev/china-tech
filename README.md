@@ -14,33 +14,39 @@ China Tech follows Zhongguo.dev's four technical areas and twelve topics.
 
 ### Development & Programming
 
-- [Programming Languages, Compilers & Runtimes](https://www.zhongguo.dev/topics/languages-compilers-runtimes)
-- [Developer Tools & Code Intelligence](https://www.zhongguo.dev/topics/developer-tools-code-intelligence)
-- [Web, Frontend & Application Development](https://www.zhongguo.dev/topics/web-frontend-applications)
+- [Programming Languages, Compilers & Runtimes](https://www.zhongguo.dev/topics/languages-compilers-runtimes) · [GitHub entries](CATALOG.md#topic-languages-compilers-runtimes)
+- [Developer Tools & Code Intelligence](https://www.zhongguo.dev/topics/developer-tools-code-intelligence) · [GitHub entries](CATALOG.md#topic-developer-tools-code-intelligence)
+- [Web, Frontend & Application Development](https://www.zhongguo.dev/topics/web-frontend-applications) · [GitHub entries](CATALOG.md#topic-web-frontend-applications)
 
 ### Infrastructure & Engineering
 
-- [Backend, Cloud & Distributed Systems](https://www.zhongguo.dev/topics/backend-cloud-distributed)
-- [Databases, Search & Data Systems](https://www.zhongguo.dev/topics/databases-search-data)
-- [DevOps, Observability & Platform Engineering](https://www.zhongguo.dev/topics/devops-observability-platform)
-- [Security, Identity & Privacy](https://www.zhongguo.dev/topics/security-identity-privacy)
+- [Backend, Cloud & Distributed Systems](https://www.zhongguo.dev/topics/backend-cloud-distributed) · [GitHub entries](CATALOG.md#topic-backend-cloud-distributed)
+- [Databases, Search & Data Systems](https://www.zhongguo.dev/topics/databases-search-data) · [GitHub entries](CATALOG.md#topic-databases-search-data)
+- [DevOps, Observability & Platform Engineering](https://www.zhongguo.dev/topics/devops-observability-platform) · [GitHub entries](CATALOG.md#topic-devops-observability-platform)
+- [Security, Identity & Privacy](https://www.zhongguo.dev/topics/security-identity-privacy) · [GitHub entries](CATALOG.md#topic-security-identity-privacy)
 
 ### Artificial Intelligence & Data
 
-- [AI Models & Open Model Ecosystems](https://www.zhongguo.dev/topics/ai-models-open-ecosystems)
-- [AI Engineering, Agents & Infrastructure](https://www.zhongguo.dev/topics/ai-engineering-agents-infrastructure)
-- [Data Engineering, Analytics & Machine Learning](https://www.zhongguo.dev/topics/data-analytics-machine-learning)
+- [AI Models & Open Model Ecosystems](https://www.zhongguo.dev/topics/ai-models-open-ecosystems) · [GitHub entries](CATALOG.md#topic-ai-models-open-ecosystems)
+- [AI Engineering, Agents & Infrastructure](https://www.zhongguo.dev/topics/ai-engineering-agents-infrastructure) · [GitHub entries](CATALOG.md#topic-ai-engineering-agents-infrastructure)
+- [Data Engineering, Analytics & Machine Learning](https://www.zhongguo.dev/topics/data-analytics-machine-learning) · [GitHub entries](CATALOG.md#topic-data-analytics-machine-learning)
 
 ### Hardware & Emerging Technologies
 
-- [Chips, Hardware & Embedded Systems](https://www.zhongguo.dev/topics/chips-hardware-embedded)
-- [Robotics, Autonomous Systems & Embodied AI](https://www.zhongguo.dev/topics/robotics-autonomous-embodied)
+- [Chips, Hardware & Embedded Systems](https://www.zhongguo.dev/topics/chips-hardware-embedded) · [GitHub entries](CATALOG.md#topic-chips-hardware-embedded)
+- [Robotics, Autonomous Systems & Embodied AI](https://www.zhongguo.dev/topics/robotics-autonomous-embodied) · [GitHub entries](CATALOG.md#topic-robotics-autonomous-embodied)
 
 ## Curated catalog
 
 <!-- BEGIN GENERATED CATALOG -->
 
-The complete catalog index is being prepared. In the meantime, [browse the published Zhongguo.dev Directory](https://www.zhongguo.dev/directory).
+**121 published entries** · 91 projects · 12 ai models · 12 companies · 6 products & platforms
+
+**Explore by topic:** [Browse all 12 topics](CATALOG.md) · [Entries awaiting topic assignment (8)](CATALOG.md#awaiting-topic-assignment)
+
+**Explore by type:** [Projects (91)](catalog/projects.md) · [AI models (12)](catalog/ai-models.md) · [Companies (12)](catalog/companies.md) · [Products & platforms (6)](catalog/products.md)
+
+Catalog snapshot: 2026-11-21. [Browse the live Zhongguo.dev Directory](https://www.zhongguo.dev/directory) for the latest published content.
 
 <!-- END GENERATED CATALOG -->
 
