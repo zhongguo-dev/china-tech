@@ -60,6 +60,10 @@ China Dev Radar 每周关注中国开发者生态中的重要发布、工程实�
 
 <!-- BEGIN GENERATED RADAR -->
 
+**最新一期：**[China Dev Radar #005 | 2026-W47](radar/2026-W47.zh-CN.md) · 发布于 2026-11-20 · 4 条技术进展
+
+[查看已发布的 5 期归档](RADAR.zh-CN.md) · [阅读完整文章](https://www.zhongguo.dev/zh/radar) · [推荐技术进展](https://github.com/zhongguo-dev/china-tech/issues/new?template=suggest-radar-development.yml)
+
 <!-- END GENERATED RADAR -->
 
 欢迎通过 [Discussions](https://github.com/zhongguo-dev/china-tech/discussions) 参与讨论，或提交值得关注的新进展。
