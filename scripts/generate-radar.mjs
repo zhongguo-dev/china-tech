@@ -35,7 +35,7 @@ const formatNumber = (n) => "#" + String(n).padStart(3, "0");
 const radar = JSON.parse(await readFile("data/radar.json", "utf8"));
 assert(Object.keys(radar).sort().join(",") === "editions,schema_version,snapshot_date,source",
   "Unexpected Radar metadata");
-assert(radar.schema_version === 1 && radar.source === sourceUrl &&
+assert(radar.schema_version === 2 && radar.source === sourceUrl &&
   date(radar.snapshot_date), "Invalid Radar snapshot");
 assert(Array.isArray(radar.editions) && radar.editions.length, "No editions");
 const weeks = new Set();
@@ -43,7 +43,7 @@ let previousDate = "9999-12-31";
 let stories = 0, citations = 0;
 for (const edition of radar.editions) {
   assert(Object.keys(edition).sort().join(",") ===
-    "introduction,items,number,publication_date,slug,title,week", "Unexpected edition fields");
+    "introduction,introduction_zh,items,number,publication_date,slug,title,title_zh,week", "Unexpected edition fields");
   assert(Number.isInteger(edition.number) && edition.number > 0 &&
     typeof edition.week === "string" && /^\d{4}-W\d{2}$/.test(edition.week) &&
     edition.slug === "china-dev-radar-" + String(edition.number).padStart(3, "0") +
@@ -51,7 +51,9 @@ for (const edition of radar.editions) {
     date(edition.publication_date) && edition.publication_date <= radar.snapshot_date &&
     edition.publication_date <= previousDate &&
     typeof edition.title === "string" && edition.title.trim() &&
-    typeof edition.introduction === "string" && edition.introduction.trim(),
+    typeof edition.introduction === "string" && edition.introduction.trim() &&
+    typeof edition.title_zh === "string" && edition.title_zh.trim() &&
+    typeof edition.introduction_zh === "string" && edition.introduction_zh.trim(),
     "Invalid published Radar edition");
   previousDate = edition.publication_date;
   assert(!weeks.has(edition.week), "Duplicate Radar week");
@@ -60,9 +62,11 @@ for (const edition of radar.editions) {
   const titles = new Set();
   for (const item of edition.items) {
     assert(Object.keys(item).sort().join(",") ===
-      "original_publication_date,related_profile,section,sources,summary,title", "Unexpected Radar item fields");
+      "original_publication_date,related_profile,section,sources,summary,summary_zh,title,title_zh", "Unexpected Radar item fields");
     assert(typeof item.title === "string" && item.title.trim() &&
       typeof item.summary === "string" && item.summary.trim() &&
+      typeof item.title_zh === "string" && item.title_zh.trim() &&
+      typeof item.summary_zh === "string" && item.summary_zh.trim() &&
       date(item.original_publication_date) &&
       item.original_publication_date <= radar.snapshot_date &&
       sections.some((s) => s.key === item.section), "Invalid published development");
@@ -106,6 +110,7 @@ function storyMarkdown(item) {
 for (const edition of radar.editions) {
   const lines = [
     "# China Dev Radar " + formatNumber(edition.number) + " | " + edition.week, "",
+    "**English** | [简体中文](" + edition.week + ".zh-CN.md)", "",
     "**" + md(edition.title) + "**", "",
     "**Published:** " + edition.publication_date +
       " · **Developments:** " + edition.items.length, "",
@@ -131,6 +136,7 @@ for (const edition of radar.editions) {
 const latest = radar.editions[0];
 const archive = [
   "# China Dev Radar archive", "",
+  "**English** | [简体中文](RADAR.zh-CN.md)", "",
   "A chronological archive of published China Dev Radar editions. " +
     "Each page summarizes the developments covered, preserves their original dates, " +
     "and links to the official sources and the full bilingual article on Zhongguo.dev.", "",
@@ -177,6 +183,96 @@ const insertStart = readme.indexOf(start) + start.length;
 const insertEnd = readme.indexOf(end);
 output.set("README.md", readme.slice(0, insertStart) + "\n\n" + radarSnippet +
   "\n\n" + readme.slice(insertEnd));
+
+
+const sectionZh = new Map([
+  ["featured", "重点技术进展"],
+  ["quick_update", "开发者快讯"],
+  ["research_desk", "研究资料室"],
+]);
+function zhArchivePath(edition) { return "radar/" + edition.week + ".zh-CN.md"; }
+function zhEditionUrl(edition) { return origin + "/zh/radar/" + edition.slug; }
+function zhStory(item) {
+  const lines = [
+    "### " + md(item.title_zh), "",
+    "**原始发布日期：**" + item.original_publication_date, "",
+    md(item.summary_zh), "",
+    "**原始资料：**" + item.sources.map((s) =>
+      "[" + md(s.label) + "](" + url(s.url) + ")").join(" · "), "",
+  ];
+  if (item.related_profile) lines.push(
+    "**相关技术目录：**[在 Zhongguo.dev 查看](" + origin + "/zh" + item.related_profile + ")", "");
+  return lines;
+}
+for (const edition of radar.editions) {
+  const lines = [
+    "# 中国开发者技术雷达 " + formatNumber(edition.number) + " | " + edition.week, "",
+    "[English](" + edition.week + ".md) | **简体中文**", "",
+    "**" + md(edition.title_zh) + "**", "",
+    "**发布日期：**" + edition.publication_date + " · **技术进展：**" + edition.items.length + " 条", "",
+    "[阅读完整双语文章](" + zhEditionUrl(edition) + ")" +
+      " · [返回技术雷达归档](../RADAR.zh-CN.md)", "",
+    md(edition.introduction_zh), "",
+  ];
+  for (const section of sections) {
+    const items = edition.items.filter((item) => item.section === section.key);
+    if (!items.length) continue;
+    lines.push("## " + sectionZh.get(section.key), "");
+    if (section.key === "research_desk") lines.push(
+      "本节包含此前发布的技术资料与研究，原始日期均予以保留。", "");
+    for (const item of items) lines.push(...zhStory(item));
+  }
+  lines.push("---", "",
+    "本页是已发布 Radar 文章的简要归档。完整背景与双语内容请参见 " +
+    "[Zhongguo.dev 正式文章](" + zhEditionUrl(edition) + ")。", "");
+  output.set(zhArchivePath(edition), lines.join("\n").trimEnd() + "\n");
+}
+
+const zhArchive = [
+  "# 中国开发者技术雷达归档", "",
+  "[English](RADAR.md) | **简体中文**", "",
+  "本归档按时间列出已发布的 China Dev Radar 期刊，保留各技术进展的原始发布日期，并提供官方资料和 Zhongguo.dev 完整双语文章链接。", "",
+  "**" + radar.editions.length + " 期 · " + stories + " 条技术进展 · " +
+    citations + " 条原始资料引用**", "",
+  "**最新一期：**[China Dev Radar " + formatNumber(latest.number) + " | " +
+    latest.week + "](" + zhArchivePath(latest) + ")", "",
+  "| 周次 | 期数 | 发布日期 | 进展数量 | 完整文章 |",
+  "| --- | --- | --- | ---: | --- |",
+];
+for (const edition of radar.editions) zhArchive.push(
+  "| [" + edition.week + "](" + zhArchivePath(edition) + ")" +
+  " | [" + formatNumber(edition.number) + "](" + zhArchivePath(edition) + ")" +
+  " | " + edition.publication_date + " | " + edition.items.length +
+  " | [Zhongguo.dev 中文版](" + zhEditionUrl(edition) + ") |");
+zhArchive.push("", "## 各期摘要", "");
+for (const edition of radar.editions) zhArchive.push(
+  "### [" + md(edition.title_zh) + "](" + zhArchivePath(edition) + ")", "",
+  md(edition.introduction_zh), "");
+zhArchive.push(
+  "## 推荐技术进展", "",
+  "发现新的技术发布、工程实践或值得研究的资源？欢迎通过 " +
+    "[Radar 建议表单](https://github.com/zhongguo-dev/china-tech/issues/new?template=suggest-radar-development.yml)" +
+    " 提交线索。所有建议仍须经过独立验证，不保证收录。", "",
+  "[在 Zhongguo.dev 浏览完整中文雷达](https://www.zhongguo.dev/zh/radar)。", "",
+);
+output.set("RADAR.zh-CN.md", zhArchive.join("\n").trimEnd() + "\n");
+
+const readmeZh = await readFile("README.zh-CN.md", "utf8");
+assert(readmeZh.split(start).length === 2 && readmeZh.split(end).length === 2 &&
+  readmeZh.indexOf(start) < readmeZh.indexOf(end),
+  "Invalid Chinese Radar README markers");
+const zhStart = readmeZh.indexOf(start) + start.length;
+const zhEnd = readmeZh.indexOf(end);
+const zhSnippet = [
+  "**最新一期：**[China Dev Radar " + formatNumber(latest.number) +
+    " | " + latest.week + "](" + zhArchivePath(latest) + ")" +
+    " · 发布于 " + latest.publication_date + " · " + latest.items.length + " 条技术进展",
+  "", "[查看已发布的 " + radar.editions.length + " 期归档](RADAR.zh-CN.md)" +
+    " · [阅读完整文章](https://www.zhongguo.dev/zh/radar)" +
+    " · [推荐技术进展](https://github.com/zhongguo-dev/china-tech/issues/new?template=suggest-radar-development.yml)",
+].join("\n");
+output.set("README.zh-CN.md", readmeZh.slice(0, zhStart) +
+  "\n\n" + zhSnippet + "\n\n" + readmeZh.slice(zhEnd));
 
 const check = process.argv.includes("--check");
 let mismatches = 0;
