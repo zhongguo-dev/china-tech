@@ -1,0 +1,1455 @@
+{
+  "schema_version": 1,
+  "source": "https://www.zhongguo.dev/directory",
+  "refreshed_on": "2026-11-21",
+  "entries": [
+    {
+      "type": "project",
+      "name": "1Panel",
+      "description": "Open-source Linux server management panel and self-hosting tools.",
+      "path": "/projects/1panel",
+      "website": "https://1panel.pro/",
+      "repository": "https://github.com/1Panel-dev/1Panel",
+      "documentation": "https://1panel.pro/docs/",
+      "topics": [
+        "backend-cloud-distributed",
+        "devops-observability-platform"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Alibaba Arthas",
+      "description": "Arthas is an Alibaba-maintained diagnostic tool for live Java applications. It supports runtime inspection, method tracing, profiling and troubleshooting without recompiling an application.",
+      "path": "/projects/alibaba-arthas",
+      "website": "https://github.com/alibaba/arthas",
+      "repository": "https://github.com/alibaba/arthas",
+      "documentation": "https://github.com/alibaba/arthas#readme",
+      "topics": [
+        "developer-tools-code-intelligence"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Alibaba Canal",
+      "description": "Canal is Alibaba's change-data-capture component for subscribing to MySQL binary logs and distributing database changes to downstream consumers.",
+      "path": "/projects/alibaba-canal",
+      "website": "https://github.com/alibaba/canal",
+      "repository": "https://github.com/alibaba/canal",
+      "documentation": "https://github.com/alibaba/canal#readme",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "Alibaba Cloud",
+      "description": "Alibaba Group cloud and AI business associated with Qwen and ModelScope.",
+      "path": "/companies/alibaba-cloud",
+      "website": "https://www.alibabacloud.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "ai-engineering-agents-infrastructure",
+        "ai-models-open-ecosystems",
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Alibaba DataX",
+      "description": "DataX is an Alibaba-published framework for synchronizing data between heterogeneous sources and destinations, with connectors and batch transfer tooling.",
+      "path": "/projects/alibaba-datax",
+      "website": "https://github.com/alibaba/DataX",
+      "repository": "https://github.com/alibaba/DataX",
+      "documentation": "https://github.com/alibaba/DataX#readme",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Alibaba Dragonwell",
+      "description": "Alibaba Dragonwell is an OpenJDK-based Java distribution developed by Alibaba for large-scale Java workloads, with Standard and Extended editions.",
+      "path": "/projects/alibaba-dragonwell",
+      "website": "https://www.alibabacloud.com/help/en/ecs/user-guide/deploy-alibaba-dragonwell-jdk",
+      "repository": "https://github.com/dragonwell-project/dragonwell11",
+      "documentation": "https://www.alibabacloud.com/help/en/ecs/user-guide/deploy-alibaba-dragonwell-jdk",
+      "topics": [
+        "languages-compilers-runtimes"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "Alibaba Group",
+      "description": "Technology group associated with commerce, cloud services and developer-facing engineering projects.",
+      "path": "/companies/alibaba-group",
+      "website": "https://www.alibabagroup.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "ai-engineering-agents-infrastructure"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Alibaba Low-Code Engine",
+      "description": "Alibaba-origin low-code editor framework with component-material protocols and extension points.",
+      "path": "/projects/alibaba-lowcode-engine",
+      "website": "https://lowcode-engine.cn/",
+      "repository": "https://github.com/alibaba/lowcode-engine",
+      "documentation": "https://github.com/alibaba/lowcode-engine/blob/main/README.md",
+      "topics": []
+    },
+    {
+      "type": "project",
+      "name": "Alibaba OpenCodeReview",
+      "description": "Alibaba-origin hybrid code-review CLI combining deterministic checks with LLM-assisted comments.",
+      "path": "/projects/alibaba-open-code-review",
+      "website": "https://github.com/alibaba/open-code-review",
+      "repository": "https://github.com/alibaba/open-code-review",
+      "documentation": "https://github.com/alibaba/open-code-review/blob/main/README.md",
+      "topics": []
+    },
+    {
+      "type": "project",
+      "name": "Alibaba P3C",
+      "description": "Alibaba P3C implements the Alibaba Java Coding Guidelines as static analysis rules and IDE tooling for Java development.",
+      "path": "/projects/alibaba-p3c",
+      "website": "https://github.com/alibaba/p3c",
+      "repository": "https://github.com/alibaba/p3c",
+      "documentation": "https://github.com/alibaba/p3c/wiki",
+      "topics": [
+        "developer-tools-code-intelligence"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Angel",
+      "description": "Angel is a distributed machine-learning framework and parameter-server platform with graph and large-scale model-training capabilities.",
+      "path": "/projects/angel-ml",
+      "website": "https://angelml.ai/",
+      "repository": "https://github.com/Angel-ML/angel",
+      "documentation": "https://angelml.ai/",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Ant Design",
+      "description": "React UI component library and design system for web applications.",
+      "path": "/projects/ant-design",
+      "website": "https://ant.design/",
+      "repository": "https://github.com/ant-design/ant-design",
+      "documentation": "https://ant.design/docs/react/introduce/",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "Ant Group",
+      "description": "Technology company associated with OceanBase and Ant Design.",
+      "path": "/companies/ant-group",
+      "website": "https://www.antgroup.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "databases-search-data",
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache APISIX",
+      "description": "Open-source API and AI gateway for routing, traffic management, authentication, and observability.",
+      "path": "/projects/apache-apisix",
+      "website": "https://apisix.apache.org/",
+      "repository": "https://github.com/apache/apisix",
+      "documentation": "https://apisix.apache.org/docs/",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache Cloudberry",
+      "description": "Apache Incubator community-governed massively parallel PostgreSQL-based analytical database with Chinese-origin project history.",
+      "path": "/projects/apache-cloudberry",
+      "website": "https://cloudberry.apache.org/",
+      "repository": "https://github.com/apache/cloudberry",
+      "documentation": "https://cloudberry.apache.org/docs/",
+      "topics": []
+    },
+    {
+      "type": "project",
+      "name": "Apache DolphinScheduler",
+      "description": "Apache DolphinScheduler is a distributed workflow scheduler for data pipelines, supporting visual DAG-based orchestration and task scheduling.",
+      "path": "/projects/apache-dolphinscheduler",
+      "website": "https://dolphinscheduler.apache.org/",
+      "repository": "https://github.com/apache/dolphinscheduler",
+      "documentation": "https://dolphinscheduler.apache.org/",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache Doris",
+      "description": "Open-source real-time analytical database for analytics and search workloads.",
+      "path": "/projects/apache-doris",
+      "website": "https://doris.apache.org/",
+      "repository": "https://github.com/apache/doris",
+      "documentation": "https://doris.apache.org/docs/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache Dubbo",
+      "description": "Open-source RPC and microservices framework with service discovery and governance features.",
+      "path": "/projects/apache-dubbo",
+      "website": "https://dubbo.apache.org/en/",
+      "repository": "https://github.com/apache/dubbo",
+      "documentation": "https://dubbo.apache.org/en/overview/home/",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache InLong",
+      "description": "Apache InLong is a data integration framework for collecting and transferring large volumes of data between heterogeneous systems.",
+      "path": "/projects/apache-inlong",
+      "website": "https://inlong.apache.org/",
+      "repository": "https://github.com/apache/inlong",
+      "documentation": "https://inlong.apache.org/",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache IoTDB",
+      "description": "Apache IoTDB is a time-series database for industrial and Internet of Things workloads, originating in research at Tsinghua University.",
+      "path": "/projects/apache-iotdb",
+      "website": "https://iotdb.apache.org/",
+      "repository": "https://github.com/apache/iotdb",
+      "documentation": "https://iotdb.apache.org/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache Kylin",
+      "description": "Apache Kylin is an OLAP analytics engine that originated with an eBay engineering team including Chinese developers.",
+      "path": "/projects/apache-kylin",
+      "website": "https://kylin.apache.org/",
+      "repository": "https://github.com/apache/kylin",
+      "documentation": "https://kylin.apache.org/docs/",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache Linkis",
+      "description": "Apache Linkis is a distributed middleware layer connecting and governing big-data computation engines and application services.",
+      "path": "/projects/apache-linkis",
+      "website": "https://linkis.apache.org/",
+      "repository": "https://github.com/apache/linkis",
+      "documentation": "https://linkis.apache.org/docs/latest/",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache RocketMQ",
+      "description": "Open-source messaging and event-streaming platform for distributed systems.",
+      "path": "/projects/apache-rocketmq",
+      "website": "https://rocketmq.apache.org/",
+      "repository": "https://github.com/apache/rocketmq",
+      "documentation": "https://rocketmq.apache.org/docs/",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache Seata",
+      "description": "Open-source distributed transaction solution for microservice architectures.",
+      "path": "/projects/apache-seata",
+      "website": "https://seata.apache.org/",
+      "repository": "https://github.com/apache/incubator-seata",
+      "documentation": "https://seata.apache.org/docs/user/quickstart/",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache SeaTunnel",
+      "description": "Apache SeaTunnel is a distributed data integration framework for high-volume ingestion, synchronization and transformation.",
+      "path": "/projects/apache-seatunnel",
+      "website": "https://seatunnel.apache.org/",
+      "repository": "https://github.com/apache/seatunnel",
+      "documentation": "https://seatunnel.apache.org/docs/",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache SkyWalking",
+      "description": "Open-source observability platform for distributed, cloud-native, and AI systems.",
+      "path": "/projects/apache-skywalking",
+      "website": "https://skywalking.apache.org/",
+      "repository": "https://github.com/apache/skywalking",
+      "documentation": "https://skywalking.apache.org/docs/",
+      "topics": [
+        "devops-observability-platform"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apache StreamPark",
+      "description": "Apache StreamPark is a framework and operations platform for developing and managing Flink and Spark streaming applications.",
+      "path": "/projects/apache-streampark",
+      "website": "https://streampark.apache.org/",
+      "repository": "https://github.com/apache/streampark",
+      "documentation": "https://streampark.apache.org/docs/get-started/introduction/",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Apollo",
+      "description": "Open autonomous-driving platform with software, simulation, and vehicle-development tooling.",
+      "path": "/projects/apollo",
+      "website": "https://apollo.auto/",
+      "repository": "https://github.com/ApolloAuto/apollo",
+      "documentation": "https://apollo.baidu.com/docs/apollo/latest/",
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "Baichuan 2",
+      "description": "Baichuan 2 is a historically influential family of 7B and 13B language models released by the Chinese AI company Baichuan Intelligent Technology in 2023.",
+      "path": "/ai/baichuan2",
+      "website": "https://github.com/baichuan-inc/Baichuan2",
+      "repository": null,
+      "documentation": "https://github.com/baichuan-inc/Baichuan2/blob/main/README_EN.md",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "Baidu",
+      "description": "Technology company associated with PaddlePaddle and Apollo.",
+      "path": "/companies/baidu",
+      "website": "https://www.baidu.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "data-analytics-machine-learning",
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "product",
+      "name": "Baidu Comate",
+      "description": "Baidu AI Cloud's commercial AI coding assistant, with IDE plug-ins for code suggestions, generation, explanation and tests.",
+      "path": "/directory/baidu-comate",
+      "website": "https://cloud.baidu.com/doc/COMATE/index.html",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "developer-tools-code-intelligence"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "ByteDance",
+      "description": "Technology company developing the Seed model family and supporting Rspack through its Web Infra team.",
+      "path": "/companies/bytedance",
+      "website": "https://www.bytedance.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "ai-models-open-ecosystems",
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Cangjie",
+      "description": "Cangjie is a programming language and compiler ecosystem associated with Huawei's HarmonyOS development environment.",
+      "path": "/projects/cangjie",
+      "website": "https://github.com/cangjielanguage/cangjie_compiler",
+      "repository": "https://github.com/cangjielanguage/cangjie_compiler",
+      "documentation": "https://github.com/cangjielanguage/cangjie_compiler#readme",
+      "topics": [
+        "languages-compilers-runtimes"
+      ]
+    },
+    {
+      "type": "product",
+      "name": "Chaitin xray",
+      "description": "xray is a closed-source web security assessment and vulnerability-scanning toolkit published by Chaitin.",
+      "path": "/directory/chaitin-xray",
+      "website": "https://docs.xray.cool/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "security-identity-privacy"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Chaos Mesh",
+      "description": "Chaos Mesh is a Kubernetes-native chaos-engineering platform for introducing controlled faults and testing the resilience of distributed services.",
+      "path": "/projects/chaos-mesh",
+      "website": "https://chaos-mesh.org/",
+      "repository": "https://github.com/chaos-mesh/chaos-mesh",
+      "documentation": "https://chaos-mesh.org/docs/",
+      "topics": [
+        "devops-observability-platform"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "deepin",
+      "description": "Linux desktop distribution with community kernel and hardware integration work.",
+      "path": "/projects/deepin",
+      "website": "https://www.deepin.org/",
+      "repository": "https://github.com/deepin-community/kernel",
+      "documentation": "https://wiki.deepin.org/",
+      "topics": []
+    },
+    {
+      "type": "ai_model",
+      "name": "DeepSeek",
+      "description": "Model family for reasoning and general-purpose AI.",
+      "path": "/ai/deepseek",
+      "website": "https://www.deepseek.com/",
+      "repository": null,
+      "documentation": "https://api-docs.deepseek.com/",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "DeepSeek",
+      "description": "Company behind the DeepSeek model family.",
+      "path": "/companies/deepseek",
+      "website": "https://www.deepseek.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "product",
+      "name": "DJI Mobile SDK V5",
+      "description": "DJI Mobile SDK V5 provides Android APIs for creating applications that communicate with and control compatible DJI aircraft.",
+      "path": "/directory/dji-mobile-sdk-v5",
+      "website": "https://developer.dji.com/mobile-sdk/downloads/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "product",
+      "name": "DJI Onboard SDK",
+      "description": "An older DJI developer SDK for connecting onboard computing systems to compatible enterprise aircraft.",
+      "path": "/directory/dji-onboard-sdk",
+      "website": "https://enterprise.dji.com/sdk",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Dragonfly",
+      "description": "Open-source peer-to-peer distribution system for container images and other large artifacts.",
+      "path": "/projects/dragonfly",
+      "website": "https://d7y.io/",
+      "repository": "https://github.com/dragonflyoss/dragonfly",
+      "documentation": "https://d7y.io/docs/",
+      "topics": [
+        "ai-engineering-agents-infrastructure",
+        "devops-observability-platform"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "DriveLM",
+      "description": "DriveLM is a visual-language autonomous-driving research project using graph-structured question answering to study perception, prediction and planning.",
+      "path": "/projects/drivelm",
+      "website": "https://opendrivelab.com/DriveLM/",
+      "repository": "https://github.com/OpenDriveLab/DriveLM",
+      "documentation": "https://opendrivelab.com/DriveLM/",
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "ESP-IDF",
+      "description": "ESP-IDF is Espressif's official development framework for ESP32 microcontrollers, providing SDK components, build tools and embedded documentation.",
+      "path": "/projects/esp-idf",
+      "website": "https://docs.espressif.com/projects/esp-idf/en/stable/",
+      "repository": "https://github.com/espressif/esp-idf",
+      "documentation": "https://docs.espressif.com/projects/esp-idf/en/stable/",
+      "topics": [
+        "chips-hardware-embedded"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "FastGPT",
+      "description": "FastGPT is an AI knowledge-base and agent application platform offering retrieval, workflows and API integration.",
+      "path": "/projects/fastgpt",
+      "website": "https://fastgpt.cn/",
+      "repository": "https://github.com/labring/FastGPT",
+      "documentation": "https://doc.fastgpt.cn/",
+      "topics": [
+        "ai-engineering-agents-infrastructure"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "FATE",
+      "description": "FATE is a federated-learning framework that enables collaborative machine learning across organizations without centralizing all raw training data.",
+      "path": "/projects/fate",
+      "website": "https://github.com/FederatedAI/FATE",
+      "repository": "https://github.com/FederatedAI/FATE",
+      "documentation": "https://fate.fedai.org/",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "GLM",
+      "description": "Model family maintained by Z.ai for language, reasoning, coding, and multimodal tasks.",
+      "path": "/ai/glm",
+      "website": "https://z.ai/",
+      "repository": null,
+      "documentation": "https://docs.z.ai/",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "go-zero",
+      "description": "go-zero is a Go framework for building high-availability web and RPC microservices with API definitions, code generation and resilience features.",
+      "path": "/projects/go-zero",
+      "website": "https://go-zero.dev/",
+      "repository": "https://github.com/zeromicro/go-zero",
+      "documentation": "https://go-zero.dev/docs/",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "GraspNet-1Billion Baseline",
+      "description": "GraspNet-1Billion Baseline is a Shanghai Jiao Tong University research implementation for evaluating robotic object grasp detection.",
+      "path": "/projects/graspnet-baseline",
+      "website": "https://graspnet.net/",
+      "repository": "https://github.com/graspnet/graspnet-baseline",
+      "documentation": "https://github.com/graspnet/graspnet-baseline#readme",
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "GreptimeDB",
+      "description": "GreptimeDB is a columnar database for time-series and observability workloads such as metrics, logs and traces.",
+      "path": "/projects/greptimedb",
+      "website": "https://greptime.com/product/db",
+      "repository": "https://github.com/GreptimeTeam/greptimedb",
+      "documentation": "https://docs.greptime.com/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Hertz",
+      "description": "Hertz is a Go HTTP framework developed within ByteDance's CloudWeGo ecosystem, providing routing, middleware and server components.",
+      "path": "/projects/hertz",
+      "website": "https://www.cloudwego.io/",
+      "repository": "https://github.com/cloudwego/hertz",
+      "documentation": "https://www.cloudwego.io/docs/hertz/overview/",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "Huawei",
+      "description": "Technology company associated with MindSpore and the origin of openGauss.",
+      "path": "/companies/huawei",
+      "website": "https://www.huawei.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "product",
+      "name": "Huawei CodeArts Agent IDE",
+      "description": "Huawei Cloud's commercial AI-assisted development environment for programming, codebase understanding and agent-driven workflows.",
+      "path": "/directory/huawei-codearts-agent-ide",
+      "website": "https://codearts.huaweicloud.com/download.html",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "developer-tools-code-intelligence"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "Hunyuan",
+      "description": "Tencent model family available through Tencent Cloud developer services.",
+      "path": "/ai/hunyuan",
+      "website": "https://hunyuan.tencent.com/",
+      "repository": null,
+      "documentation": "https://cloud.tencent.com/document/product/1729",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Infinity",
+      "description": "Infinity is an AI-native database and search engine supporting vector, full-text and hybrid retrieval.",
+      "path": "/projects/infinity-database",
+      "website": "https://infiniflow.org/",
+      "repository": "https://github.com/infiniflow/infinity",
+      "documentation": "https://infiniflow.org/docs/dev/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "InternLM",
+      "description": "InternLM is a family of multilingual language models, including InternLM, InternLM2, InternLM2.5 and InternLM3, developed by Shanghai AI Laboratory.",
+      "path": "/ai/internlm",
+      "website": "https://github.com/InternLM/InternLM",
+      "repository": null,
+      "documentation": "https://internlm.readthedocs.io/",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "InternNav",
+      "description": "InternNav is an embodied-navigation research platform publishing code and resources for training and evaluating robot navigation models.",
+      "path": "/projects/internnav",
+      "website": "https://internrobotics.github.io/user_guide/internnav/index.html",
+      "repository": "https://github.com/InternRobotics/InternNav",
+      "documentation": "https://internrobotics.github.io/user_guide/internnav/index.html",
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Karmada",
+      "description": "Karmada orchestrates Kubernetes applications across multiple clusters and clouds without requiring application changes.",
+      "path": "/projects/karmada",
+      "website": "https://karmada.io/",
+      "repository": "https://github.com/karmada-io/karmada",
+      "documentation": "https://karmada.io/docs/",
+      "topics": [
+        "devops-observability-platform"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "KCL",
+      "description": "KCL is a declarative configuration and policy language for cloud-native systems, with constraints, schemas and reusable configuration logic.",
+      "path": "/projects/kcl",
+      "website": "https://www.kcl-lang.io/",
+      "repository": "https://github.com/kcl-lang/kcl",
+      "documentation": "https://www.kcl-lang.io/docs/user_docs/getting-started/intro",
+      "topics": [
+        "languages-compilers-runtimes"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "Kimi",
+      "description": "Moonshot AI model family exposed through Kimi products and developer APIs.",
+      "path": "/ai/kimi",
+      "website": "https://www.kimi.com/",
+      "repository": null,
+      "documentation": "https://www.kimi.com/en/help/kimi-api/api-overview",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Kitex",
+      "description": "Kitex is a Go RPC framework developed within ByteDance's CloudWeGo middleware ecosystem for microservice communication and service development.",
+      "path": "/projects/kitex",
+      "website": "https://www.cloudwego.io/",
+      "repository": "https://github.com/cloudwego/kitex",
+      "documentation": "https://www.cloudwego.io/docs/kitex/overview/",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Kratos",
+      "description": "Kratos is a Go framework for building cloud-native microservices using HTTP/gRPC, service abstractions, middleware and code-generation tools.",
+      "path": "/projects/kratos",
+      "website": "https://go-kratos.dev/",
+      "repository": "https://github.com/go-kratos/kratos",
+      "documentation": "https://go-kratos.dev/docs/intro/design/",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "KubeSphere",
+      "description": "KubeSphere is a cloud-native platform for managing Kubernetes clusters, applications and enterprise platform operations.",
+      "path": "/projects/kubesphere",
+      "website": "https://kubesphere.io/",
+      "repository": "https://github.com/kubesphere/kubesphere",
+      "documentation": "https://kubesphere.io/docs/",
+      "topics": [
+        "devops-observability-platform"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Langchain-Chatchat",
+      "description": "Langchain-Chatchat is a Chinese-community RAG and agent application framework that began as Langchain-ChatGLM in 2023.",
+      "path": "/projects/langchain-chatchat",
+      "website": "https://github.com/chatchat-space/Langchain-Chatchat",
+      "repository": "https://github.com/chatchat-space/Langchain-Chatchat",
+      "documentation": "https://github.com/chatchat-space/Langchain-Chatchat/blob/master/README_en.md",
+      "topics": [
+        "ai-engineering-agents-infrastructure"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "LMDeploy",
+      "description": "LMDeploy is a toolkit for compressing, deploying and serving large language models, associated with the InternLM and Shanghai AI Laboratory ecosystem.",
+      "path": "/projects/lmdeploy",
+      "website": "https://github.com/InternLM/lmdeploy",
+      "repository": "https://github.com/InternLM/lmdeploy",
+      "documentation": "https://lmdeploy.readthedocs.io/en/latest/",
+      "topics": [
+        "ai-engineering-agents-infrastructure"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "LongCat",
+      "description": "Meituan's family of language and multimodal models for developer and agentic workflows.",
+      "path": "/ai/longcat",
+      "website": "https://longcat.ai/",
+      "repository": null,
+      "documentation": "https://longcat.ai/blog/longcat-2.5/",
+      "topics": []
+    },
+    {
+      "type": "project",
+      "name": "LoongCollector",
+      "description": "LoongCollector is an Alibaba-origin observability data collector supporting logs, metrics, and distributed tracing inputs.",
+      "path": "/projects/loongcollector",
+      "website": "https://github.com/alibaba/loongcollector",
+      "repository": "https://github.com/alibaba/loongcollector",
+      "documentation": "https://github.com/alibaba/loongcollector#readme",
+      "topics": [
+        "devops-observability-platform"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "LoopForge",
+      "description": "Tencent's self-hosted coding-agent workspaces and reviewed SOP automation for software teams.",
+      "path": "/projects/loopforge",
+      "website": "https://github.com/Tencent/LoopForge",
+      "repository": "https://github.com/Tencent/LoopForge",
+      "documentation": "https://github.com/Tencent/LoopForge/blob/main/docs/deployment.md",
+      "topics": []
+    },
+    {
+      "type": "project",
+      "name": "Lynx",
+      "description": "Lynx is a cross-platform UI framework originating from ByteDance engineering, combining web-style development with native interface rendering.",
+      "path": "/projects/lynx-ui",
+      "website": "https://lynxjs.org/",
+      "repository": "https://github.com/lynx-family/lynx",
+      "documentation": "https://lynxjs.org/",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "MaixPy",
+      "description": "MaixPy is Sipeed's Python-oriented development environment for embedded AI hardware, including camera, sensor and on-device inference workflows.",
+      "path": "/projects/maixpy",
+      "website": "https://github.com/sipeed/MaixPy",
+      "repository": "https://github.com/sipeed/MaixPy",
+      "documentation": "https://github.com/sipeed/MaixPy#readme",
+      "topics": [
+        "chips-hardware-embedded"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "Meituan",
+      "description": "A technology retail company whose engineering team publishes work on software infrastructure, search and recommendation.",
+      "path": "/companies/meituan",
+      "website": "https://www.meituan.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": []
+    },
+    {
+      "type": "project",
+      "name": "Milvus",
+      "description": "Open-source vector database for AI applications and vector search.",
+      "path": "/projects/milvus",
+      "website": "https://milvus.io/",
+      "repository": "https://github.com/milvus-io/milvus",
+      "documentation": "https://milvus.io/docs",
+      "topics": [
+        "ai-engineering-agents-infrastructure",
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "MindSpore",
+      "description": "AI framework for model development, training, and deployment.",
+      "path": "/projects/mindspore",
+      "website": "https://www.mindspore.cn/en",
+      "repository": "https://gitee.com/mindspore/mindspore",
+      "documentation": "https://www.mindspore.cn/tutorials/en/stable/beginner/introduction.html",
+      "topics": [
+        "ai-engineering-agents-infrastructure",
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "MiniCPM",
+      "description": "MiniCPM is a family of compact language and multimodal AI models developed by ModelBest and Chinese academic collaborators for efficient and on-device applications.",
+      "path": "/ai/minicpm",
+      "website": "https://modelbest.cn/en",
+      "repository": null,
+      "documentation": "https://github.com/OpenBMB/MiniCPM",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "MiniMax M Series",
+      "description": "MiniMax M is a language and multimodal foundation-model family from Chinese-founded MiniMax, spanning reasoning, coding and agent workflows.",
+      "path": "/ai/minimax-m",
+      "website": "https://www.minimax.io/",
+      "repository": null,
+      "documentation": "https://www.minimax.io/blog/minimax-m3",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "MMDetection3D",
+      "description": "MMDetection3D is an OpenMMLab toolbox for research and development of 3D object detection using camera and point-cloud datasets.",
+      "path": "/projects/mmdetection3d",
+      "website": "https://mmdetection3d.readthedocs.io/en/latest/",
+      "repository": "https://github.com/open-mmlab/mmdetection3d",
+      "documentation": "https://mmdetection3d.readthedocs.io/en/latest/",
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "MNN",
+      "description": "Lightweight on-device machine learning inference framework from Alibaba Group.",
+      "path": "/projects/mnn",
+      "website": "https://mnn-docs.readthedocs.io/",
+      "repository": "https://github.com/alibaba/MNN",
+      "documentation": "https://mnn-docs.readthedocs.io/",
+      "topics": [
+        "ai-engineering-agents-infrastructure",
+        "chips-hardware-embedded"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "ModelScope",
+      "description": "Model-as-a-Service library and platform for discovering, training, evaluating, and deploying AI models.",
+      "path": "/projects/modelscope",
+      "website": "https://modelscope.cn/",
+      "repository": "https://github.com/modelscope/modelscope",
+      "documentation": "https://modelscope.cn/docs",
+      "topics": [
+        "ai-engineering-agents-infrastructure",
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Modern.js",
+      "description": "Modern.js is a React application framework and toolchain from the Web Infra engineering ecosystem associated with ByteDance.",
+      "path": "/projects/modernjs",
+      "website": "https://modernjs.dev/",
+      "repository": "https://github.com/web-infra-dev/modern.js",
+      "documentation": "https://modernjs.dev/",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "MoonBit",
+      "description": "MoonBit is a general-purpose programming language and compiler toolchain optimized for WebAssembly and other targets.",
+      "path": "/projects/moonbit",
+      "website": "https://www.moonbitlang.com/",
+      "repository": "https://github.com/moonbitlang/moonbit-compiler",
+      "documentation": "https://docs.moonbitlang.com/",
+      "topics": [
+        "languages-compilers-runtimes"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "Moonshot AI",
+      "description": "AI company developing Kimi.",
+      "path": "/companies/moonshot-ai",
+      "website": "https://www.moonshot.cn/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Nacos",
+      "description": "Open-source platform for service discovery, configuration management, and service governance.",
+      "path": "/projects/nacos",
+      "website": "https://nacos.io/en/",
+      "repository": "https://github.com/alibaba/nacos",
+      "documentation": "https://nacos.io/en/docs/latest/overview/",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "NanoKVM",
+      "description": "NanoKVM is a compact KVM-over-IP hardware and software project by Sipeed, enabling remote management of compatible computers.",
+      "path": "/projects/nanokvm",
+      "website": "https://github.com/sipeed/NanoKVM",
+      "repository": "https://github.com/sipeed/NanoKVM",
+      "documentation": "https://github.com/sipeed/NanoKVM#readme",
+      "topics": [
+        "chips-hardware-embedded"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "NebulaGraph",
+      "description": "Open-source distributed graph database for large connected datasets.",
+      "path": "/projects/nebulagraph",
+      "website": "https://www.nebula-graph.io/",
+      "repository": "https://github.com/vesoft-inc/nebula",
+      "documentation": "https://docs.nebula-graph.io/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "NocoBase",
+      "description": "Extensible AI-assisted no-code platform for business data, workflows and internal applications.",
+      "path": "/projects/nocobase",
+      "website": "https://www.nocobase.com/",
+      "repository": "https://github.com/nocobase/nocobase",
+      "documentation": "https://docs.nocobase.com/",
+      "topics": []
+    },
+    {
+      "type": "project",
+      "name": "OceanBase",
+      "description": "Distributed relational database designed for scalable transactional and analytical workloads.",
+      "path": "/projects/oceanbase",
+      "website": "https://en.oceanbase.com/",
+      "repository": "https://github.com/oceanbase/oceanbase",
+      "documentation": "https://en.oceanbase.com/docs/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "OpenCompass",
+      "description": "OpenCompass is a model evaluation framework for language and multimodal AI, organizing benchmarks, datasets and repeatable evaluation runs.",
+      "path": "/projects/opencompass",
+      "website": "https://github.com/open-compass/opencompass",
+      "repository": "https://github.com/open-compass/opencompass",
+      "documentation": "https://github.com/open-compass/opencompass#readme",
+      "topics": [
+        "ai-engineering-agents-infrastructure"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "openGauss",
+      "description": "Open-source relational database with developer and administration tooling.",
+      "path": "/projects/opengauss",
+      "website": "https://opengauss.org/",
+      "repository": "https://gitee.com/opengauss/openGauss-server",
+      "documentation": "https://docs.opengauss.org/en/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "OpenHarmony",
+      "description": "OpenHarmony is an open operating-system platform governed by the OpenAtom Foundation, with code and documentation across a family of repositories.",
+      "path": "/projects/openharmony",
+      "website": "https://www.openharmony.cn/",
+      "repository": "https://gitcode.com/openharmony",
+      "documentation": "https://docs.openharmony.cn/",
+      "topics": [
+        "chips-hardware-embedded"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "OpenKruise",
+      "description": "OpenKruise extends Kubernetes with workload controllers for application deployment, rollout and lifecycle management.",
+      "path": "/projects/openkruise",
+      "website": "https://openkruise.io/",
+      "repository": "https://github.com/openkruise/kruise",
+      "documentation": "https://openkruise.io/docs/",
+      "topics": [
+        "devops-observability-platform"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "OpenMLDB",
+      "description": "OpenMLDB is a machine-learning database from Fourth Paradigm, designed for online and offline feature computation for production ML systems.",
+      "path": "/projects/openmldb",
+      "website": "https://github.com/4paradigm/OpenMLDB",
+      "repository": "https://github.com/4paradigm/OpenMLDB",
+      "documentation": "https://github.com/4paradigm/OpenMLDB#readme",
+      "topics": [
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "OpenRASP",
+      "description": "OpenRASP is a Baidu-origin runtime application self-protection framework for detecting and blocking classes of web application attacks.",
+      "path": "/projects/openrasp",
+      "website": "https://github.com/baidu/openrasp",
+      "repository": "https://github.com/baidu/openrasp",
+      "documentation": "https://github.com/baidu/openrasp#readme",
+      "topics": [
+        "security-identity-privacy"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "OpenScene (OpenDriveLab)",
+      "description": "OpenScene is an autonomous-driving 3D occupancy-prediction research benchmark and published implementation from the OpenDriveLab research network.",
+      "path": "/projects/openscene-research",
+      "website": "https://opendrivelab.com/",
+      "repository": "https://github.com/OpenDriveLab/OpenScene",
+      "documentation": "https://github.com/OpenDriveLab/OpenScene#readme",
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "PaddlePaddle",
+      "description": "Open-source deep-learning framework for model development and deployment.",
+      "path": "/projects/paddlepaddle",
+      "website": "https://www.paddlepaddle.org.cn/en",
+      "repository": "https://github.com/PaddlePaddle/Paddle",
+      "documentation": "https://www.paddlepaddle.org.cn/documentation/docs/en/guides/index_en.html",
+      "topics": [
+        "ai-engineering-agents-infrastructure",
+        "data-analytics-machine-learning"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "PingCAP",
+      "description": "Company developing TiDB.",
+      "path": "/companies/pingcap",
+      "website": "https://www.pingcap.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "Qwen",
+      "description": "General-purpose model family spanning language, multimodal, coding, and reasoning tasks.",
+      "path": "/ai/qwen",
+      "website": "https://qwen.ai/",
+      "repository": null,
+      "documentation": "https://qwen.readthedocs.io/en/latest/",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "RAGFlow",
+      "description": "RAGFlow is a retrieval-augmented generation platform combining document ingestion, knowledge retrieval and agentic workflows.",
+      "path": "/projects/ragflow",
+      "website": "https://ragflow.io/",
+      "repository": "https://github.com/infiniflow/ragflow",
+      "documentation": "https://ragflow.io/docs/",
+      "topics": [
+        "ai-engineering-agents-infrastructure"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Rsbuild",
+      "description": "A build tool for web applications powered by Rspack, with a development server and framework plugins.",
+      "path": "/projects/rsbuild",
+      "website": "https://rsbuild.rs/",
+      "repository": "https://github.com/web-infra-dev/rsbuild",
+      "documentation": "https://rsbuild.rs/guide/start/",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Rspack",
+      "description": "Rust-based web bundler designed for webpack compatibility.",
+      "path": "/projects/rspack",
+      "website": "https://rspack.dev/",
+      "repository": "https://github.com/web-infra-dev/rspack",
+      "documentation": "https://rspack.dev/guide/start/introduction",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "RT-Thread",
+      "description": "RT-Thread is a real-time operating system and embedded software ecosystem with low-resource kernel configurations and support for IoT devices.",
+      "path": "/projects/rt-thread",
+      "website": "https://www.rt-thread.io/",
+      "repository": "https://github.com/RT-Thread/rt-thread",
+      "documentation": "https://www.rt-thread.io/",
+      "topics": [
+        "chips-hardware-embedded"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "SafeLine",
+      "description": "SafeLine is a self-hosted web application firewall from Chaitin, providing reverse-proxy protection against common web attacks.",
+      "path": "/projects/safeline",
+      "website": "https://github.com/chaitin/SafeLine",
+      "repository": "https://github.com/chaitin/SafeLine",
+      "documentation": "https://github.com/chaitin/SafeLine#readme",
+      "topics": [
+        "security-identity-privacy"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "Seed",
+      "description": "ByteDance foundation-model family covering language, multimodal, coding, and other AI workloads.",
+      "path": "/ai/seed",
+      "website": "https://seed.bytedance.com/",
+      "repository": null,
+      "documentation": "https://seed.bytedance.com/en/seed_model_portfolio",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Semi Design",
+      "description": "Semi Design is a React component library and design system maintained by the Douyin frontend community, with interface components and design guidance.",
+      "path": "/projects/semi-design",
+      "website": "https://semi.design/en-US/",
+      "repository": "https://github.com/DouyinFE/semi-design",
+      "documentation": "https://semi.design/en-US/start/introduction",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Sentinel",
+      "description": "Sentinel is an Alibaba-origin library for traffic control, circuit breaking and reliability management in distributed Java applications.",
+      "path": "/projects/alibaba-sentinel",
+      "website": "https://github.com/alibaba/Sentinel",
+      "repository": "https://github.com/alibaba/Sentinel",
+      "documentation": "https://github.com/alibaba/Sentinel#readme",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "StarRocks",
+      "description": "Open-source analytical database for real-time and data-lake analytics.",
+      "path": "/projects/starrocks",
+      "website": "https://www.starrocks.io/",
+      "repository": "https://github.com/StarRocks/starrocks",
+      "documentation": "https://docs.starrocks.io/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Taro",
+      "description": "Taro is a cross-platform application framework from the JD.com mini-program ecosystem. It supports building applications with React or Vue for multiple mini-program and web targets.",
+      "path": "/projects/taro",
+      "website": "https://taro-docs.jd.com/",
+      "repository": "https://github.com/NervJS/taro",
+      "documentation": "https://taro-docs.jd.com/",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Tars",
+      "description": "Tars is a distributed RPC framework and service-management platform originally developed at Tencent.",
+      "path": "/projects/tars",
+      "website": "https://tarscloud.org/",
+      "repository": "https://github.com/TarsCloud/Tars",
+      "documentation": "https://tarscloud.org/document/documentation?path=README.md",
+      "topics": [
+        "backend-cloud-distributed"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "TDengine",
+      "description": "TDengine is a time-series database from TAOS Data for storing and querying industrial and IoT telemetry. Its repository uses AGPL-3.0.",
+      "path": "/projects/tdengine",
+      "website": "https://www.taosdata.com/",
+      "repository": "https://github.com/taosdata/TDengine",
+      "documentation": "https://docs.tdengine.com/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "TDesign",
+      "description": "TDesign is Tencent's design system and suite of UI component libraries for React, Vue, mobile and mini-program applications.",
+      "path": "/projects/tdesign",
+      "website": "https://tdesign.tencent.com/",
+      "repository": "https://github.com/Tencent/tdesign",
+      "documentation": "https://tdesign.tencent.com/",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "Tencent",
+      "description": "Technology company developing the Hunyuan model family.",
+      "path": "/companies/tencent",
+      "website": "https://www.tencent.com/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "product",
+      "name": "Tencent CodeBuddy",
+      "description": "Tencent Cloud's commercial AI coding assistant, IDE and CLI tools for code generation, completion, debugging and agent-assisted development.",
+      "path": "/directory/tencent-codebuddy",
+      "website": "https://cloud.tencent.com/product/acc",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "developer-tools-code-intelligence"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "TiDB",
+      "description": "Open-source distributed SQL database for transactional and analytical workloads.",
+      "path": "/projects/tidb",
+      "website": "https://www.pingcap.com/tidb/",
+      "repository": "https://github.com/pingcap/tidb",
+      "documentation": "https://docs.pingcap.com/tidb/stable/",
+      "topics": [
+        "databases-search-data"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "TMagicEditor",
+      "description": "TMagicEditor is Tencent's visual low-code page editor. It offers components and integration tools for building application interfaces.",
+      "path": "/projects/tmagic-editor",
+      "website": "https://github.com/Tencent/tmagic-editor",
+      "repository": "https://github.com/Tencent/tmagic-editor",
+      "documentation": "https://github.com/Tencent/tmagic-editor#readme",
+      "topics": [
+        "developer-tools-code-intelligence"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Umi",
+      "description": "Extensible React application framework with routing and plugin support.",
+      "path": "/projects/umi",
+      "website": "https://umijs.org/",
+      "repository": "https://github.com/umijs/umi",
+      "documentation": "https://umijs.org/docs/introduce/introduce",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "uni-app",
+      "description": "uni-app is DCloud's Vue-based cross-platform framework for building mobile, web and mini-program applications.",
+      "path": "/projects/uni-app",
+      "website": "https://uniapp.dcloud.net.cn/",
+      "repository": "https://github.com/dcloudio/uni-app",
+      "documentation": "https://uniapp.dcloud.net.cn/",
+      "topics": [
+        "web-frontend-applications"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "UniAD",
+      "description": "UniAD is an autonomous-driving research framework that jointly models perception, prediction and planning.",
+      "path": "/projects/uniad",
+      "website": "https://opendrivelab.com/",
+      "repository": "https://github.com/OpenDriveLab/UniAD",
+      "documentation": "https://github.com/OpenDriveLab/UniAD#readme",
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Unitree SDK2",
+      "description": "Unitree SDK2 provides communication APIs and example code for integrating applications with supported Unitree Robotics platforms.",
+      "path": "/projects/unitree-sdk2",
+      "website": "https://support.unitree.com/home/zh/developer",
+      "repository": "https://github.com/unitreerobotics/unitree_sdk2",
+      "documentation": "https://support.unitree.com/home/zh/developer",
+      "topics": [
+        "robotics-autonomous-embodied"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "XiangShan",
+      "description": "XiangShan is a high-performance open-source RISC-V processor core developed through Chinese academic and industry collaboration, with public hardware design sources.",
+      "path": "/projects/xiangshan",
+      "website": "https://xiangshan.cc/en/",
+      "repository": "https://github.com/OpenXiangShan/XiangShan",
+      "documentation": "https://xiangshan.cc/en/",
+      "topics": [
+        "chips-hardware-embedded"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Xinference",
+      "description": "Xinference is a model-serving toolkit with APIs for deploying language, audio, embedding and multimodal models across local and clustered infrastructure.",
+      "path": "/projects/xinference",
+      "website": "https://inference.readthedocs.io/",
+      "repository": "https://github.com/xorbitsai/inference",
+      "documentation": "https://inference.readthedocs.io/en/stable/",
+      "topics": [
+        "ai-engineering-agents-infrastructure"
+      ]
+    },
+    {
+      "type": "project",
+      "name": "Yaklang",
+      "description": "Yaklang is a programming language and tool ecosystem designed for cybersecurity testing, scripting and automation.",
+      "path": "/projects/yaklang",
+      "website": "https://yaklang.io/",
+      "repository": "https://github.com/yaklang/yaklang",
+      "documentation": "https://yaklang.io/",
+      "topics": [
+        "security-identity-privacy"
+      ]
+    },
+    {
+      "type": "ai_model",
+      "name": "Yi (01.AI)",
+      "description": "Yi is a family of language models from 01.AI, historically influential in China's open-weight model ecosystem.",
+      "path": "/ai/yi",
+      "website": "https://01.ai/",
+      "repository": null,
+      "documentation": "https://platform.01.ai/docs",
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    },
+    {
+      "type": "company",
+      "name": "Z.ai",
+      "description": "AI company maintaining the GLM model family.",
+      "path": "/companies/z-ai",
+      "website": "https://z.ai/",
+      "repository": null,
+      "documentation": null,
+      "topics": [
+        "ai-models-open-ecosystems"
+      ]
+    }
+  ]
+}
