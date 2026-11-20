@@ -2,7 +2,7 @@ name: Synchronize published Radar archive
 
 on:
   schedule:
-    - cron: "17 */4 * * *"
+    - cron: "17 2 * * *"
   workflow_dispatch:
 
 permissions:

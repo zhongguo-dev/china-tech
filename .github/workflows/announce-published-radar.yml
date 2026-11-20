@@ -8,7 +8,7 @@ on:
       - "data/radar.json"
       - "radar/**"
   schedule:
-    - cron: "47 */4 * * *"
+    - cron: "47 2 * * *"
   workflow_dispatch:
 
 permissions:
