@@ -9,7 +9,7 @@
 3. A maintainer reviews the pull request and required validation checks, then merges it to `main`. Previously archived editions cannot silently change through this automated path; corrections require a separate review.
 4. The **Announce published Radar editions** Action verifies the edition against the live published feed and checks existing Discussions. It posts one announcement per newly archived edition in the **China Dev Radar** announcement category.
 
-The two actions can also be run manually from the repository's Actions tab. Scheduled runs check for new publications approximately every four hours. GitHub scheduling and website deployment may introduce delays.
+After an edition is published on Zhongguo.dev, use **Actions → Synchronize published Radar archive → Run workflow** to prepare the archive update immediately. A daily scheduled check provides a fallback if the manual run is missed (02:17 UTC). Once the archive pull request is merged, the announcement runs automatically on the resulting `main` push. Its separate daily check (02:47 UTC) provides a fallback for missed announcements. GitHub's scheduled runs can be delayed.
 
 ## Editorial boundaries
 
