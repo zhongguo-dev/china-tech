@@ -10,7 +10,7 @@
 
 - [ ] I checked the affected content or files.
 - [ ] Factual additions have appropriate sources.
-- [ ] I did not manually edit the generated catalog section.
+- [ ] I did not manually edit generated catalog or Radar archive content.
 - [ ] I did not include private, personal, or confidential information.
 
 <!-- Add any additional checks or screenshots when useful. -->

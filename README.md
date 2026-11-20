@@ -52,6 +52,20 @@ Catalog snapshot: 2026-11-21. [Browse the live Zhongguo.dev Directory](https://w
 
 The GitHub index is intended to reflect **all eligible, published entries** in the curated Zhongguo.dev Directory rather than a separate list of favorites. Entries will link to the corresponding Directory profile and relevant official resources. Some entries may have no public code repository, and some topic areas may have no entries.
 
+## China Dev Radar
+
+Weekly briefings on significant developer-focused releases, engineering work, and technical discoveries. The GitHub archive provides concise English summaries with original dates and source links; complete bilingual articles are available on [Zhongguo.dev](https://www.zhongguo.dev/radar).
+
+<!-- BEGIN GENERATED RADAR -->
+
+**Latest:** [China Dev Radar #005 | 2026-W47](radar/2026-W47.md) · Published 2026-11-20 · 4 developments
+
+[Explore all 5 published editions](RADAR.md) · [Read full articles](https://www.zhongguo.dev/radar) · [Suggest a Radar development](https://github.com/zhongguo-dev/china-tech/issues/new?template=suggest-radar-development.yml)
+
+<!-- END GENERATED RADAR -->
+
+[Discuss Radar editions](https://github.com/zhongguo-dev/china-tech/discussions) or suggest a development for future coverage.
+
 ## Contribute
 
 Suggestions, corrections, and removal requests are welcome:

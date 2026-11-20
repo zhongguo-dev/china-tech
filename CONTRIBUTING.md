@@ -5,6 +5,7 @@ Thanks for helping developers discover technologies from China's developer ecosy
 ## How to contribute
 
 - **Suggest a technology:** use the [suggestion form](https://github.com/zhongguo-dev/china-tech/issues/new?template=suggest-technology.yml).
+- **Suggest a Radar development:** use the [Radar suggestion form](https://github.com/zhongguo-dev/china-tech/issues/new?template=suggest-radar-development.yml) for a specific new release, technical change, or engineering announcement.
 - **Correct or remove a listing:** use the [correction form](https://github.com/zhongguo-dev/china-tech/issues/new?template=correction-or-removal.yml).
 - **Improve repository documentation:** open a pull request.
 
@@ -23,6 +24,12 @@ The suggested topic is a starting point for review, not a final classification. 
 Maintainers review suggestions for relevance, identity, evidence, duplicates, and accurate terminology. Accepted entries appear in the curated Zhongguo.dev Directory first; the GitHub index follows its published content. Suggestions may be declined or deferred with a brief explanation.
 
 Submitting an issue or pull request does not guarantee inclusion. Community suggestions do not automatically modify the catalog.
+
+## China Dev Radar suggestions
+
+Radar suggestions are leads for possible future coverage, not verified developments or automatic publications. Include a dated original announcement when possible, explain what changed and its relevance to developers, and provide first-party evidence. Maintainers assess relevance, dates, duplicates, and claims independently.
+
+The public archive contains only published Radar editions. Suggestions, discussion comments, or contributor recommendations do not automatically become Radar articles.
 
 ## Pull requests
 
