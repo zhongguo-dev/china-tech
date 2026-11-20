@@ -29,7 +29,7 @@ export function validatePublicUrl(input) {
 
 export function checkPublishedFeed(previous, incoming) {
   if (!previous || !incoming ||
-      previous.schema_version !== 1 || incoming.schema_version !== 1 ||
+      previous.schema_version !== 2 || incoming.schema_version !== 2 ||
       previous.source !== BASE_URL || incoming.source !== BASE_URL ||
       !Array.isArray(previous.editions) || !Array.isArray(incoming.editions) ||
       !/^\d{4}-\d{2}-\d{2}$/.test(incoming.snapshot_date))
@@ -45,6 +45,8 @@ export function checkPublishedFeed(previous, incoming) {
         e.publication_date > incoming.snapshot_date ||
         typeof e.title !== "string" || !e.title.trim() ||
         typeof e.introduction !== "string" || !e.introduction.trim() ||
+        typeof e.title_zh !== "string" || !e.title_zh.trim() ||
+        typeof e.introduction_zh !== "string" || !e.introduction_zh.trim() ||
         !Array.isArray(e.items) || e.items.length === 0 ||
         ids.has(e.number) || weeks.has(e.week))
       throw new Error("Invalid or duplicate published Radar edition.");
@@ -52,6 +54,8 @@ export function checkPublishedFeed(previous, incoming) {
     weeks.add(e.week);
     for (const story of e.items) {
       if (!story || !story.title || !story.summary ||
+          typeof story.title_zh !== "string" || !story.title_zh.trim() ||
+          typeof story.summary_zh !== "string" || !story.summary_zh.trim() ||
           !["featured", "quick_update", "research_desk"].includes(story.section) ||
           !/^\d{4}-\d{2}-\d{2}$/.test(story.original_publication_date) ||
           !Array.isArray(story.sources) || !story.sources.length)

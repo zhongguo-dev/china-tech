@@ -16,11 +16,15 @@ function newEdition() {
     week: "2026-W48",
     slug: "china-dev-radar-006-2026-w48",
     title: "China Dev Radar #006: Example published developments",
+    title_zh: "中国开发者技术雷达 #006：示例技术进展",
     introduction: "A synthetic description of published changes.",
+    introduction_zh: "仅供测试的中文技术摘要。",
     publication_date: "2026-11-27",
     items: [{
       title: "Synthetic engineering release",
+      title_zh: "用于测试的工程技术发布",
       summary: "A synthetic summary used only for testing.",
+      summary_zh: "仅供测试的中文摘要。",
       section: "featured",
       original_publication_date: "2026-11-26",
       related_profile: "/projects/example",
@@ -72,6 +76,10 @@ test("announcements are derived from public copy, not editorial worksheets", () 
   const e = newEdition();
   const body = discussionBody(e);
   assert.ok(body.includes(e.introduction));
+  assert.ok(body.includes(e.introduction_zh));
+  assert.ok(body.includes(e.items[0].title_zh));
+  assert.ok(body.includes("/zh/radar/" + e.slug));
+  assert.ok(body.includes("/blob/main/RADAR.zh-CN.md"));
   assert.ok(body.includes("https://example.org/release/v2"));
   assert.ok(body.includes("https://www.zhongguo.dev/radar/" + e.slug));
   assert.ok(body.includes(editionMarker(e)));
@@ -109,4 +117,11 @@ test("discussion category and history must be fully readable before posting", as
       pageInfo: { hasNextPage: false }, nodes: [],
     } },
   })), /must exist exactly once/);
+});
+
+test("missing Chinese copy stops synchronization and announcements", () => {
+  const bad = next();
+  bad.editions[0] = { ...bad.editions[0], introduction_zh: "" };
+  assert.throws(() => checkPublishedFeed(previous, bad), /Chinese|published Radar edition/);
+  assert.throws(() => discussionBody(bad.editions[0]), /Incomplete published bilingual edition/);
 });
