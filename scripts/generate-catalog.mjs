@@ -27,7 +27,7 @@ const safeUrl = (value) => {
     !url.username && !url.password &&
     !["localhost", "127.0.0.1", "::1"].includes(url.hostname),
     "Invalid official URL");
-  return url.href.replace(/\(/g, "%28").replace(/\)/g, "%29");
+  return value.replace(/\(/g, "%28").replace(/\)/g, "%29");
 };
 const compare = (a, b) => {
   const x = a.name.toLowerCase(), y = b.name.toLowerCase();
