@@ -117,6 +117,8 @@ if (!readme.includes("https://www.zhongguo.dev/directory")) errors.push("Missing
 if (!readme.includes("RADAR_PUBLICATION.md")) errors.push("Missing Radar publishing guide link");
 if (!readme.includes("README.zh-CN.md") || !readmeZh.includes("README.md"))
   errors.push("Missing bilingual README navigation");
+if (!readmeZh.includes("(RADAR_PUBLICATION.zh-CN.md)") || !readmeZh.includes("(CODE_OF_CONDUCT.zh-CN.md)"))
+  errors.push("Chinese README must link to Chinese policy and publication guides");
 if (!readmeZh.includes("RADAR.zh-CN.md") || !readmeZh.includes("CATALOG.zh-CN.md"))
   errors.push("Chinese README missing generated catalog or Radar navigation");
 for (const p of ["data/catalog.json", "data/radar.json"]) {
