@@ -1,42 +1,43 @@
-name: Correction or removal
-description: Report inaccurate information, duplicates, outdated links, or a reason to remove an entry.
+name: "Correction or removal / 资料更正或移除"
+description: "Report inaccurate information, duplicates, outdated links, or a reason to remove an entry. / 反馈资料错误、失效链接、重复或移除请求。"
 title: "Correction: "
 body:
   - type: markdown
     attributes:
       value: |
         This report will be public. Include verifiable references but no confidential information or personal contact details.
+        此反馈将公开显示。请附上可核实的参考资料，勿包含保密信息或私人联系方式。
   - type: input
     id: entry
     attributes:
-      label: Affected entry URL
-      description: Link to the Zhongguo.dev profile or the catalog entry.
+      label: "Affected entry URL / 涉及的条目链接"
+      description: "Link to the Zhongguo.dev profile or the catalog entry. / 提供官网详情页或目录中的条目链接。"
       placeholder: https://www.zhongguo.dev/projects/example
     validations:
       required: true
   - type: dropdown
     id: change
     attributes:
-      label: What needs attention?
+      label: "What needs attention? / 需要更正的内容"
       options:
-        - Factual correction
-        - Broken or outdated link
-        - Duplicate entry
-        - Removal request
-        - Other
+        - "Factual correction / 事实更正"
+        - "Broken or outdated link / 失效或过时链接"
+        - "Duplicate entry / 重复条目"
+        - "Removal request / 移除请求"
+        - "Other / 其他"
     validations:
       required: true
   - type: textarea
     id: explanation
     attributes:
-      label: Explanation
-      description: Describe the issue and your proposed correction.
+      label: "Explanation / 问题说明"
+      description: "Describe the issue and your proposed correction. / 描述问题并说明建议的更正内容。"
     validations:
       required: true
   - type: textarea
     id: sources
     attributes:
-      label: Supporting evidence
-      description: Cite original documentation, official statements, or other relevant sources.
+      label: "Supporting evidence / 证明材料"
+      description: "Cite original documentation, official statements, or other relevant sources. / 引用原始文档、官方说明或其他可靠资料。"
     validations:
       required: true

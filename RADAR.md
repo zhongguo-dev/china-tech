@@ -1,5 +1,7 @@
 # China Dev Radar archive
 
+**English** | [简体中文](RADAR.zh-CN.md)
+
 A chronological archive of published China Dev Radar editions. Each page summarizes the developments covered, preserves their original dates, and links to the official sources and the full bilingual article on Zhongguo.dev.
 
 **5 editions · 30 developments · 48 source references**

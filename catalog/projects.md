@@ -1,5 +1,7 @@
 # Projects
 
+**English** | [简体中文](projects.zh-CN.md)
+
 Curated published entries from [Zhongguo.dev](https://www.zhongguo.dev/directory). Snapshot refreshed 2026-11-21. Inclusion is for discovery, not endorsement or ranking.
 
 **91 published entries** · [Browse by topic](../CATALOG.md)

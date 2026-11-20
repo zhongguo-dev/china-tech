@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "source": "https://www.zhongguo.dev/topics",
   "areas": [
     {
@@ -7,68 +7,84 @@
       "topics": [
         {
           "title": "Programming Languages, Compilers & Runtimes",
-          "slug": "languages-compilers-runtimes"
+          "slug": "languages-compilers-runtimes",
+          "title_zh": "编程语言、编译器与运行时"
         },
         {
           "title": "Developer Tools & Code Intelligence",
-          "slug": "developer-tools-code-intelligence"
+          "slug": "developer-tools-code-intelligence",
+          "title_zh": "开发工具与代码智能"
         },
         {
           "title": "Web, Frontend & Application Development",
-          "slug": "web-frontend-applications"
+          "slug": "web-frontend-applications",
+          "title_zh": "Web、前端与应用开发"
         }
-      ]
+      ],
+      "area_zh": "开发与编程"
     },
     {
       "area": "Infrastructure & Engineering",
       "topics": [
         {
           "title": "Backend, Cloud & Distributed Systems",
-          "slug": "backend-cloud-distributed"
+          "slug": "backend-cloud-distributed",
+          "title_zh": "后端、云与分布式系统"
         },
         {
           "title": "Databases, Search & Data Systems",
-          "slug": "databases-search-data"
+          "slug": "databases-search-data",
+          "title_zh": "数据库、搜索与数据系统"
         },
         {
           "title": "DevOps, Observability & Platform Engineering",
-          "slug": "devops-observability-platform"
+          "slug": "devops-observability-platform",
+          "title_zh": "DevOps、可观测性与平台工程"
         },
         {
           "title": "Security, Identity & Privacy",
-          "slug": "security-identity-privacy"
+          "slug": "security-identity-privacy",
+          "title_zh": "安全、身份与隐私"
         }
-      ]
+      ],
+      "area_zh": "基础设施与工程"
     },
     {
       "area": "Artificial Intelligence & Data",
       "topics": [
         {
           "title": "AI Models & Open Model Ecosystems",
-          "slug": "ai-models-open-ecosystems"
+          "slug": "ai-models-open-ecosystems",
+          "title_zh": "AI 模型与开放模型生态"
         },
         {
           "title": "AI Engineering, Agents & Infrastructure",
-          "slug": "ai-engineering-agents-infrastructure"
+          "slug": "ai-engineering-agents-infrastructure",
+          "title_zh": "AI 工程、智能体与基础设施"
         },
         {
           "title": "Data Engineering, Analytics & Machine Learning",
-          "slug": "data-analytics-machine-learning"
+          "slug": "data-analytics-machine-learning",
+          "title_zh": "数据工程、分析与机器学习"
         }
-      ]
+      ],
+      "area_zh": "人工智能与数据"
     },
     {
       "area": "Hardware & Emerging Technologies",
       "topics": [
         {
           "title": "Chips, Hardware & Embedded Systems",
-          "slug": "chips-hardware-embedded"
+          "slug": "chips-hardware-embedded",
+          "title_zh": "芯片、硬件与嵌入式系统"
         },
         {
           "title": "Robotics, Autonomous Systems & Embodied AI",
-          "slug": "robotics-autonomous-embodied"
+          "slug": "robotics-autonomous-embodied",
+          "title_zh": "机器人、自主系统与具身智能"
         }
-      ]
+      ],
+      "area_zh": "硬件与新兴技术"
     }
   ]
 }

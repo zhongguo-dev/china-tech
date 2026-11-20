@@ -2,6 +2,11 @@ import { readFile } from "node:fs/promises";
 
 const required = [
   "README.md",
+  "README.zh-CN.md",
+  "CONTRIBUTING.zh-CN.md",
+  "EDITORIAL_POLICY.zh-CN.md",
+  "CODE_OF_CONDUCT.zh-CN.md",
+  "RADAR_PUBLICATION.zh-CN.md",
   "CONTRIBUTING.md",
   "EDITORIAL_POLICY.md",
   "CODE_OF_CONDUCT.md",
@@ -9,10 +14,15 @@ const required = [
   "data/taxonomy.json",
   "data/catalog.json",
   "CATALOG.md",
+  "CATALOG.zh-CN.md",
   "catalog/projects.md",
+  "catalog/projects.zh-CN.md",
   "catalog/ai-models.md",
+  "catalog/ai-models.zh-CN.md",
   "catalog/companies.md",
+  "catalog/companies.zh-CN.md",
   "catalog/products.md",
+  "catalog/products.zh-CN.md",
   "scripts/generate-catalog.mjs",
   "scripts/generate-radar.mjs",
   "scripts/sync-published-radar.mjs",
@@ -22,11 +32,17 @@ const required = [
   ".github/workflows/announce-published-radar.yml",
   "data/radar.json",
   "RADAR.md",
+  "RADAR.zh-CN.md",
   "radar/2026-W43.md",
+  "radar/2026-W43.zh-CN.md",
   "radar/2026-W44.md",
+  "radar/2026-W44.zh-CN.md",
   "radar/2026-W45.md",
+  "radar/2026-W45.zh-CN.md",
   "radar/2026-W46.md",
+  "radar/2026-W46.zh-CN.md",
   "radar/2026-W47.md",
+  "radar/2026-W47.zh-CN.md",
   ".github/CODEOWNERS",
   ".github/ISSUE_TEMPLATE/config.yml",
   ".github/ISSUE_TEMPLATE/suggest-technology.yml",
@@ -50,6 +66,7 @@ for (const file of required) {
 
 const readme = contents.get("README.md") ?? "";
 const form = contents.get(".github/ISSUE_TEMPLATE/suggest-technology.yml") ?? "";
+const readmeZh = contents.get("README.zh-CN.md") ?? "";
 const topicData = contents.get("data/taxonomy.json") ?? "{}";
 let taxonomy;
 try {
@@ -69,6 +86,8 @@ if (taxonomy) {
       if (!area.area || areaNames.has(area.area)) errors.push("Missing or duplicate technical area");
       areaNames.add(area.area);
       if (!readme.includes(`### ${area.area}`)) errors.push(`Missing README area: ${area.area}`);
+      if (!area.area_zh?.trim() || !readmeZh.includes(`### ${area.area_zh}`))
+        errors.push(`Missing Chinese area: ${area.area}`);
       if (!Array.isArray(area.topics) || !area.topics.length) errors.push(`Empty area: ${area.area}`);
       for (const topic of area.topics ?? []) {
         if (!topic.slug || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(topic.slug) || slugs.has(topic.slug))
@@ -78,7 +97,10 @@ if (taxonomy) {
         titles.add(topic.title);
         const link = `[${topic.title}](https://www.zhongguo.dev/topics/${topic.slug})`;
         if (!readme.includes(link)) errors.push(`Missing README topic link: ${topic.slug}`);
-        if (!form.includes(`- ${topic.title}`)) errors.push(`Missing issue-form topic: ${topic.title}`);
+        if (!form.includes(`- \"${topic.title} / ${topic.title_zh}\"`))
+          errors.push(`Missing bilingual issue-form topic: ${topic.title}`);
+        if (!topic.title_zh?.trim() || !readmeZh.includes(`https://www.zhongguo.dev/zh/topics/${topic.slug}`))
+          errors.push(`Missing Chinese topic link: ${topic.slug}`);
       }
     }
     if (slugs.size !== 12) errors.push(`Expected twelve topics, found ${slugs.size}`);
@@ -93,6 +115,20 @@ if (occurrences(begin) !== 1 || occurrences(end) !== 1 || readme.indexOf(begin) 
 }
 if (!readme.includes("https://www.zhongguo.dev/directory")) errors.push("Missing Directory link");
 if (!readme.includes("RADAR_PUBLICATION.md")) errors.push("Missing Radar publishing guide link");
+if (!readme.includes("README.zh-CN.md") || !readmeZh.includes("README.md"))
+  errors.push("Missing bilingual README navigation");
+if (!readmeZh.includes("RADAR.zh-CN.md") || !readmeZh.includes("CATALOG.zh-CN.md"))
+  errors.push("Chinese README missing generated catalog or Radar navigation");
+for (const p of ["data/catalog.json", "data/radar.json"]) {
+  try {
+    const parsed = JSON.parse(contents.get(p) || "{}");
+    if (parsed.schema_version !== 2) errors.push(`Bilingual schema required: ${p}`);
+    if (p.includes("catalog") && parsed.entries?.some((e) => !e.description_zh?.trim()))
+      errors.push("Directory contains an untranslated published description");
+    if (p.includes("radar") && parsed.editions?.some((e) => !e.title_zh?.trim() || !e.introduction_zh?.trim() || e.items.some((i) => !i.title_zh?.trim() || !i.summary_zh?.trim())))
+      errors.push("Radar contains an untranslated published edition or development");
+  } catch { errors.push(`Invalid published snapshot: ${p}`); }
+}
 if (!readme.includes("RADAR.md") || !readme.includes("<!-- BEGIN GENERATED RADAR -->") || !readme.includes("<!-- END GENERATED RADAR -->")) errors.push("Radar archive navigation or markers missing");
 if (!contents.get("LICENSE")?.startsWith("MIT License")) errors.push("MIT license missing or malformed");
 

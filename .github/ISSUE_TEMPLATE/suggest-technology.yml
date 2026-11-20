@@ -1,65 +1,66 @@
-name: Suggest a technology
-description: Propose a project, tool, AI model, platform, company, or other developer-relevant entry.
+name: "Suggest a technology / 建议收录技术"
+description: "Propose a project, tool, AI model, platform, company, or other developer-relevant entry. / 建议收录技术条目，提供官方来源。"
 title: "Suggestion: "
 body:
   - type: markdown
     attributes:
       value: |
         Thank you for contributing. This issue will be public. Do not include personal contact details or confidential material. Please search the Directory and existing issues before posting.
+        感谢参与贡献。本 Issue 为公开内容，请勿提交私人联系方式或保密资料。提交前请先搜索技术目录与现有 Issue。
   - type: input
     id: name
     attributes:
-      label: Official name
+      label: "Official name / 官方名称"
       placeholder: Project or organization name
     validations:
       required: true
   - type: input
     id: url
     attributes:
-      label: Official link
-      description: Official website, documentation, repository, or model page
+      label: "Official link / 官方网站或链接"
+      description: "Official website, documentation, repository, or model page / 官方站点、文档、代码仓库或模型页面"
       placeholder: https://example.com/
     validations:
       required: true
   - type: textarea
     id: relevance
     attributes:
-      label: Developer relevance
-      description: What does it do? Why would developers find it useful?
+      label: "Developer relevance / 对开发者的价值"
+      description: "What does it do? Why would developers find it useful? / 它能解决什么问题？为何对开发者有用？"
     validations:
       required: true
   - type: textarea
     id: connection
     attributes:
-      label: Connection to China's developer ecosystem
-      description: Explain and support the relevant origin or development connection.
+      label: "Connection to China's developer ecosystem / 与中国开发者生态的关联"
+      description: "Explain and support the relevant origin or development connection. / 说明并提供公开资料证明其来源或开发活动与中国技术生态的联系。"
     validations:
       required: true
   - type: dropdown
     id: topic
     attributes:
-      label: Suggested technical topic
-      description: Optional editorial suggestion; the final classification may differ.
+      label: "Suggested technical topic / 建议的技术主题"
+      description: "Optional editorial suggestion; the final classification may differ. / 仅作为分类建议，最终分类以审核结果为准。"
       options:
-        - Not sure
-        - Programming Languages, Compilers & Runtimes
-        - Developer Tools & Code Intelligence
-        - Web, Frontend & Application Development
-        - Backend, Cloud & Distributed Systems
-        - Databases, Search & Data Systems
-        - DevOps, Observability & Platform Engineering
-        - Security, Identity & Privacy
-        - AI Models & Open Model Ecosystems
-        - AI Engineering, Agents & Infrastructure
-        - Data Engineering, Analytics & Machine Learning
-        - Chips, Hardware & Embedded Systems
-        - Robotics, Autonomous Systems & Embodied AI
+        - "Not sure / 不确定"
+        - "Programming Languages, Compilers & Runtimes / 编程语言、编译器与运行时"
+        - "Developer Tools & Code Intelligence / 开发工具与代码智能"
+        - "Web, Frontend & Application Development / Web、前端与应用开发"
+        - "Backend, Cloud & Distributed Systems / 后端、云与分布式系统"
+        - "Databases, Search & Data Systems / 数据库、搜索与数据系统"
+        - "DevOps, Observability & Platform Engineering / DevOps、可观测性与平台工程"
+        - "Security, Identity & Privacy / 安全、身份与隐私"
+        - "AI Models & Open Model Ecosystems / AI 模型与开放模型生态"
+        - "AI Engineering, Agents & Infrastructure / AI 工程、智能体与基础设施"
+        - "Data Engineering, Analytics & Machine Learning / 数据工程、分析与机器学习"
+        - "Chips, Hardware & Embedded Systems / 芯片、硬件与嵌入式系统"
+        - "Robotics, Autonomous Systems & Embodied AI / 机器人、自主系统与具身智能"
     validations:
       required: true
   - type: textarea
     id: sources
     attributes:
-      label: Supporting sources
-      description: Share official references or other evidence that helps verify the suggestion.
+      label: "Supporting sources / 支持资料"
+      description: "Share official references or other evidence that helps verify the suggestion. / 提供有助于核实的信息来源，优先使用官方资料。"
     validations:
       required: false

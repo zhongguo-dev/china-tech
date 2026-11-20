@@ -17,38 +17,56 @@ export function editionMarker(edition) {
 }
 
 export function discussionBody(edition) {
+  if (!edition.title?.trim() || !edition.introduction?.trim() ||
+      !edition.title_zh?.trim() || !edition.introduction_zh?.trim() ||
+      !Array.isArray(edition.items) || !edition.items.length)
+    throw new Error("Incomplete published bilingual edition.");
   const canonical = SOURCE + "/" + edition.slug;
+  const canonicalZh = "https://www.zhongguo.dev/zh/radar/" + edition.slug;
   const lines = [
     "A newly published [China Dev Radar](" + SOURCE + ") briefing from Zhongguo.dev.",
+    "Zhongguo.dev 最新一期 [中国开发者技术雷达](https://www.zhongguo.dev/zh/radar) 已发布。",
     "",
-    "**" + edition.week + " · Published " + edition.publication_date + "**",
+    "**" + edition.week + " · Published " + edition.publication_date + " / 发布日期 " + edition.publication_date + "**",
+    "",
+    "### English",
     "",
     edition.introduction.trim(),
     "",
-    "### In this edition",
+    "### 简体中文",
+    "",
+    edition.introduction_zh.trim(),
+    "",
+    "### Developments / 技术进展",
     "",
   ];
   for (const item of edition.items) {
-    if (!item.title?.trim() || !item.sources?.length)
-      throw new Error("Incomplete published Radar item.");
+    if (!item.title?.trim() || !item.title_zh?.trim() ||
+        !item.sources?.length)
+      throw new Error("Incomplete published bilingual Radar item.");
     const firstSource = item.sources[0];
     if (!firstSource?.url || !/^https?:\/\//.test(firstSource.url))
       throw new Error("Radar item has no public original source.");
-    const safeTitle = item.title.trim().replace(/\r?\n/g, " ");
+    const englishTitle = item.title.trim().replace(/\r?\n/g, " ");
+    const chineseTitle = item.title_zh.trim().replace(/\r?\n/g, " ");
     const url = firstSource.url.replace(/\(/g, "%28").replace(/\)/g, "%29");
-    lines.push("- **" + safeTitle + "** ([original source](" + url + "))");
+    lines.push("- **" + englishTitle + " / " + chineseTitle +
+      "** ([original source / 原始来源](" + url + "))");
   }
   lines.push(
     "",
-    "**[Read the complete bilingual edition](" + canonical + ")**",
+    "**[Full English article / 英文全文](" + canonical + ")** · " +
+    "**[中文全文](" + canonicalZh + ")**",
     "",
-    "[Browse the GitHub Radar archive](https://github.com/" + OWNER + "/" +
-      REPO + "/blob/main/RADAR.md) · " +
-      "[Suggest a development](https://github.com/" + OWNER + "/" + REPO +
-      "/issues/new?template=suggest-radar-development.yml)",
+    "[English GitHub archive](https://github.com/" + OWNER + "/" + REPO +
+      "/blob/main/RADAR.md) · " +
+      "[中文 GitHub 归档](https://github.com/" + OWNER + "/" + REPO +
+      "/blob/main/RADAR.zh-CN.md) · " +
+      "[Suggest a development / 推荐技术进展](https://github.com/" + OWNER + "/" +
+      REPO + "/issues/new?template=suggest-radar-development.yml)",
     "",
-    "Coverage is provided for technical discovery and does not imply endorsement. " +
-      "Original release dates and additional sources are preserved in the full edition.",
+    "Coverage is for technical discovery and does not imply endorsement. " +
+      "内容仅供技术发现与参考，不构成背书。原始发布日期和更多来源见完整文章。",
     "",
     editionMarker(edition),
   );
@@ -69,6 +87,7 @@ export function alreadyAnnounced(edition, discussions) {
 
 export function unannouncedEditions(snapshot, publishedFeed, discussions) {
   if (!snapshot || !publishedFeed ||
+      snapshot.schema_version !== 2 || publishedFeed.schema_version !== 2 ||
       !Array.isArray(snapshot.editions) || !Array.isArray(publishedFeed.editions))
     throw new Error("Missing Radar publication snapshots.");
   const published = new Map(publishedFeed.editions.map((e) => [e.slug, e]));

@@ -1,5 +1,7 @@
 # Contributing to China Tech
 
+**English** | [简体中文](CONTRIBUTING.zh-CN.md)
+
 Thanks for helping developers discover technologies from China's developer ecosystem.
 
 ## How to contribute

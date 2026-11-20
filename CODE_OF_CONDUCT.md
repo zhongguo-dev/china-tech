@@ -1,5 +1,7 @@
 # Community guidelines
 
+**English** | [简体中文](CODE_OF_CONDUCT.zh-CN.md)
+
 China Tech welcomes developers, maintainers, researchers, and readers from all backgrounds. Contributions should help others discover and understand technologies accurately.
 
 ## Expected behavior
