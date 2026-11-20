@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Zhongguo.dev Directory
+    url: https://www.zhongguo.dev/directory
+    about: Check whether a technology is already listed.
+  - name: Zhongguo.dev submission form
+    url: https://www.zhongguo.dev/submit
+    about: Suggest a project using the website instead of a public GitHub issue.
