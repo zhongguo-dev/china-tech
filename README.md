@@ -1,5 +1,7 @@
 # China Tech
 
+**English** | [简体中文](README.zh-CN.md)
+
 **A curated guide to China's developer and open-source ecosystem.**
 
 [Explore Zhongguo.dev](https://www.zhongguo.dev/) · [Browse the Directory](https://www.zhongguo.dev/directory) · [China Dev Radar](https://www.zhongguo.dev/radar) · [Suggest a project](https://github.com/zhongguo-dev/china-tech/issues/new/choose)
@@ -54,7 +56,7 @@ The GitHub index is intended to reflect **all eligible, published entries** in t
 
 ## China Dev Radar
 
-Weekly briefings on significant developer-focused releases, engineering work, and technical discoveries. The GitHub archive provides concise English summaries with original dates and source links; complete bilingual articles are available on [Zhongguo.dev](https://www.zhongguo.dev/radar).
+Weekly briefings on significant developer-focused releases, engineering work, and technical discoveries. The GitHub archive provides bilingual summaries with original dates and source links; complete bilingual articles are available on [Zhongguo.dev](https://www.zhongguo.dev/radar).
 
 <!-- BEGIN GENERATED RADAR -->
 
