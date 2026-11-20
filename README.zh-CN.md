@@ -68,7 +68,7 @@ China Dev Radar 每周关注中国开发者生态中的重要发布、工程实�
 
 欢迎通过 [Discussions](https://github.com/zhongguo-dev/china-tech/discussions) 参与讨论，或提交值得关注的新进展。
 
-[了解 Radar 归档与公告流程](RADAR_PUBLICATION.md)。
+[了解 Radar 归档与公告流程](RADAR_PUBLICATION.zh-CN.md)。
 
 ## 参与贡献
 
@@ -85,4 +85,4 @@ China Dev Radar 每周关注中国开发者生态中的重要发布、工程实�
 
 本仓库的原创文档及代码在适用范围内遵循 [MIT 许可证](LICENSE)。第三方项目及外部资料各自适用其原有许可证和使用条款。请勿将收录视为第三方内容的重新授权。
 
-[编辑规范](EDITORIAL_POLICY.zh-CN.md) · [行为准则](CODE_OF_CONDUCT.md)
+[编辑规范](EDITORIAL_POLICY.zh-CN.md) · [行为准则](CODE_OF_CONDUCT.zh-CN.md)
