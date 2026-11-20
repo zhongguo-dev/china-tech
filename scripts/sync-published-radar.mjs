@@ -100,7 +100,8 @@ export async function synchronizeRadar(previous, incoming, verifyPage) {
     const pageUrl = BASE_URL + "/" + slug;
     const response = await verifyPage(pageUrl);
     if (!response || !response.ok ||
-        (response.url && !response.url.startsWith(pageUrl)))
+        (response.url && (new URL(response.url).origin !== new URL(pageUrl).origin ||
+          new URL(response.url).pathname !== new URL(pageUrl).pathname)))
       throw new Error("The published Radar article is not available at its canonical URL.");
   }
   return { changed: true, editions: result.editions, snapshot: incoming };

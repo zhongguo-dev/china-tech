@@ -66,6 +66,8 @@ Weekly briefings on significant developer-focused releases, engineering work, an
 
 [Discuss Radar editions](https://github.com/zhongguo-dev/china-tech/discussions) or suggest a development for future coverage.
 
+[How Radar editions are archived and announced](RADAR_PUBLICATION.md).
+
 ## Contribute
 
 Suggestions, corrections, and removal requests are welcome:

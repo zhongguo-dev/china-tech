@@ -22,3 +22,4 @@ jobs:
           node scripts/validate.mjs
           node scripts/generate-catalog.mjs --check
           node scripts/generate-radar.mjs --check
+          node --test tests/radar-publication-sync.test.mjs
