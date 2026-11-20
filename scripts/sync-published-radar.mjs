@@ -5,6 +5,17 @@ export const PUBLIC_FEED = "https://www.zhongguo.dev/api/radar/public-archive";
 const BASE_URL = "https://www.zhongguo.dev/radar";
 const badQuery = /(?:token|api_key|access_key|password|secret)=/i;
 
+export function samePublishedContent(left, right) {
+  const canonical = (value) => {
+    if (Array.isArray(value)) return value.map(canonical);
+    if (value && typeof value === "object")
+      return Object.fromEntries(Object.keys(value).sort()
+        .map((key) => [key, canonical(value[key])]));
+    return value;
+  };
+  return JSON.stringify(canonical(left)) === JSON.stringify(canonical(right));
+}
+
 export function validatePublicUrl(input) {
   if (typeof input !== "string" || /\s|[<>]/.test(input))
     throw new Error("Invalid public source URL.");
@@ -56,7 +67,7 @@ export function checkPublishedFeed(previous, incoming) {
   for (const previousEdition of previous.editions) {
     const updated = incoming.editions.find((e) => e.slug === previousEdition.slug);
     if (!updated) throw new Error("Previously published Radar edition disappeared.");
-    if (JSON.stringify(updated) !== JSON.stringify(previousEdition))
+    if (!samePublishedContent(updated, previousEdition))
       throw new Error("Previously published Radar content changed; review corrections separately.");
   }
   const maxNumber = Math.max(0, ...previous.editions.map((e) => e.number));

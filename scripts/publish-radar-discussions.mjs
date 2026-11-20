@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
+import { samePublishedContent } from "./sync-published-radar.mjs";
 
 export const OWNER = "zhongguo-dev";
 export const REPO = "china-tech";
@@ -76,7 +77,7 @@ export function unannouncedEditions(snapshot, publishedFeed, discussions) {
     .sort((a, b) => a.number - b.number)
     .filter((e) => {
       const actual = published.get(e.slug);
-      if (!actual || JSON.stringify(actual) !== JSON.stringify(e))
+      if (!actual || !samePublishedContent(actual, e))
         throw new Error("Radar edition not confirmed by the public publication feed.");
       return !alreadyAnnounced(e, discussions);
     });
