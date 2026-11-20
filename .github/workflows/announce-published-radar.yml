@@ -1,0 +1,39 @@
+name: Announce published Radar editions
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/radar.json"
+      - "radar/**"
+  schedule:
+    - cron: "47 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  discussions: write
+
+concurrency:
+  group: radar-published-discussions
+  cancel-in-progress: false
+
+jobs:
+  announce:
+    name: Announce verified published Radar editions
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "22.16.0"
+      - name: Validate archive before announcement
+        run: |
+          node scripts/validate.mjs
+          node scripts/generate-radar.mjs --check
+      - name: Announce only new verified editions
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/publish-radar-discussions.mjs
