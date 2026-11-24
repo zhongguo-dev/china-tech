@@ -141,16 +141,25 @@ assert(readme.split(beginMarker).length === 2 && readme.split(endMarker).length 
 const first = readme.indexOf(beginMarker) + beginMarker.length;
 const last = readme.indexOf(endMarker);
 assert(first <= last, "Invalid generated catalog markers");
+// Reuse the same topic sections in the standalone catalog and README.
+// Counts remain in the standalone catalog; the homepage is a browsing surface.
+function homepageSections(page) {
+  const start = page.findIndex((line) => line.startsWith('<a id="area-'));
+  assert(start !== -1, "Missing catalog sections");
+  return page.slice(start).map((line) =>
+    /^#{2,3} /.test(line) ? line.replace(/(?: \(\d+\)|（\d+）)$/, "") : line);
+}
+
 const summary = [
-  "**" + entries.length + " published entries** · " +
-    groups.map((t) => t.entries.length + " " + t.label.toLowerCase()).join(" · "),
-  "", "**Explore by topic:** [Browse all " + topics.length + " topics](CATALOG.md) · " +
-    "[Entries awaiting topic assignment (" + unassigned.length +
-    ")](CATALOG.md#awaiting-topic-assignment)",
-  "", "**Explore by type:** " + typeLinks.join(" · "),
-  "", "Catalog snapshot: " + snapshot.refreshed_on +
-    ". [Browse the live Zhongguo.dev Directory](" + origin + "/directory) for the latest published content.",
-].join("\n");
+  "**Browse by type:** " + groups.map((t) =>
+    "[" + t.label + "](" + t.file + ")").join(" · "),
+  "",
+  "[Standalone catalog](CATALOG.md) · [Live Directory](" + origin + "/directory)",
+  "",
+  "Entries may appear under multiple relevant topics.",
+  "",
+  ...homepageSections(topicPage),
+].join("\n").trimEnd();
 generated.set("README.md", readme.slice(0, first) + "\n\n" + summary + "\n\n" + readme.slice(last));
 
 
@@ -234,14 +243,15 @@ assert(readmeZh.split(beginMarker).length === 2 && readmeZh.split(endMarker).len
 const firstZh = readmeZh.indexOf(beginMarker) + beginMarker.length;
 const lastZh = readmeZh.indexOf(endMarker);
 const summaryZh = [
-  "**" + entries.length + " 个已发布条目** · " +
-    groups.map((t) => t.entries.length + " " + labelsZh.get(t.id)[0]).join(" · "),
-  "", "**按主题浏览：**[查看全部 " + topics.length + " 个主题](CATALOG.zh-CN.md) · " +
-    "[待分配主题（" + unassigned.length + "）](CATALOG.zh-CN.md#awaiting-topic-assignment)",
-  "", "**按类型浏览：**" + zhTypeLinks.join(" · "),
-  "", "数据快照：" + snapshot.refreshed_on +
-    "。[访问 Zhongguo.dev 实时技术目录](" + origin + "/zh/directory)。",
-].join("\n");
+  "**按类型浏览：**" + groups.map((t) =>
+    "[" + labelsZh.get(t.id)[0] + "](" + typeFileZh(t) + ")").join(" · "),
+  "",
+  "[独立技术目录](CATALOG.zh-CN.md) · [官网实时目录](" + origin + "/zh/directory)",
+  "",
+  "同一条目可能同时归属多个相关主题。",
+  "",
+  ...homepageSections(zhTopicPage),
+].join("\n").trimEnd();
 generated.set("README.zh-CN.md", readmeZh.slice(0, firstZh) +
   "\n\n" + summaryZh + "\n\n" + readmeZh.slice(lastZh));
 
