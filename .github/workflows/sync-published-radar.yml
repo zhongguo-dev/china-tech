@@ -37,7 +37,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if [[ -z "$(git status --porcelain -- README.md RADAR.md radar data/radar.json)" ]]; then
+          if [[ -z "$(git status --porcelain -- README.md README.zh-CN.md RADAR.md RADAR.zh-CN.md radar data/radar.json)" ]]; then
             echo "The published Radar archive is already current."
             exit 0
           fi
@@ -46,7 +46,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch origin automation/radar-published:refs/remotes/origin/automation/radar-published || true
           git checkout -B automation/radar-published
-          git add README.md RADAR.md radar data/radar.json
+          git add README.md README.zh-CN.md RADAR.md RADAR.zh-CN.md radar data/radar.json
           git commit -m "docs(radar): synchronize published editions"
           git push --force-with-lease origin HEAD:refs/heads/automation/radar-published
 

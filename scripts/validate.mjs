@@ -85,8 +85,8 @@ if (taxonomy) {
     for (const area of areas) {
       if (!area.area || areaNames.has(area.area)) errors.push("Missing or duplicate technical area");
       areaNames.add(area.area);
-      if (!readme.includes(`### ${area.area}`)) errors.push(`Missing README area: ${area.area}`);
-      if (!area.area_zh?.trim() || !readmeZh.includes(`### ${area.area_zh}`))
+      if (!readme.includes(`## ${area.area}\n`)) errors.push(`Missing README area: ${area.area}`);
+      if (!area.area_zh?.trim() || !readmeZh.includes(`## ${area.area_zh}\n`))
         errors.push(`Missing Chinese area: ${area.area}`);
       if (!Array.isArray(area.topics) || !area.topics.length) errors.push(`Empty area: ${area.area}`);
       for (const topic of area.topics ?? []) {
@@ -95,7 +95,7 @@ if (taxonomy) {
         if (!topic.title || titles.has(topic.title)) errors.push(`Missing or duplicate topic name: ${topic.title}`);
         slugs.add(topic.slug);
         titles.add(topic.title);
-        const link = `[${topic.title}](https://www.zhongguo.dev/topics/${topic.slug})`;
+        const link = `(https://www.zhongguo.dev/topics/${topic.slug})`;
         if (!readme.includes(link)) errors.push(`Missing README topic link: ${topic.slug}`);
         if (!form.includes(`- \"${topic.title} / ${topic.title_zh}\"`))
           errors.push(`Missing bilingual issue-form topic: ${topic.title}`);
@@ -132,6 +132,32 @@ for (const p of ["data/catalog.json", "data/radar.json"]) {
   } catch { errors.push(`Invalid published snapshot: ${p}`); }
 }
 if (!readme.includes("RADAR.md") || !readme.includes("<!-- BEGIN GENERATED RADAR -->") || !readme.includes("<!-- END GENERATED RADAR -->")) errors.push("Radar archive navigation or markers missing");
+// Both homepage views must contain every published entity, and their contents
+// links must point to sections on the same page.
+for (const [path, locale] of [["README.md", ""], ["README.zh-CN.md", "/zh"]]) {
+  const content = contents.get(path) ?? "";
+  const start = content.indexOf(begin);
+  const finish = content.indexOf(end);
+  if (start < 0 || finish <= start) {
+    errors.push("Missing homepage catalog: " + path);
+    continue;
+  }
+  const section = content.slice(start, finish);
+  try {
+    const catalog = JSON.parse(contents.get("data/catalog.json") ?? "{}");
+    const expected = new Set(catalog.entries.map((e) => "https://www.zhongguo.dev" + locale + e.path));
+    const actual = new Set([...section.matchAll(/\]\((https:\/\/www\.zhongguo\.dev\/(?:zh\/)?(?:projects|ai|companies|directory)\/[a-z0-9-]+)\)/g)].map((m) => m[1]));
+    if (expected.size !== actual.size || [...expected].some((url) => !actual.has(url)))
+      errors.push("Homepage catalog differs from published entries: " + path);
+  } catch { errors.push("Could not verify homepage catalog: " + path); }
+  for (const match of content.matchAll(/^\s*-\s+\[[^\]\n]+\]\(#([^)\n]+)\)$/gm)) {
+    if (!content.includes('<a id="' + match[1] + '"></a>'))
+      errors.push("Missing homepage contents anchor: " + path + "#" + match[1]);
+  }
+  if (/\[Explore all \d+ published editions\]|\[查看已发布的 \d+ 期归档\]/.test(content))
+    errors.push("Use a count-free Radar archive link: " + path);
+}
+
 if (!contents.get("LICENSE")?.startsWith("MIT License")) errors.push("MIT license missing or malformed");
 
 if (errors.length) {

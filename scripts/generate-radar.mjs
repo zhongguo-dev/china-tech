@@ -171,13 +171,13 @@ const readme = await readFile("README.md", "utf8");
 assert(readme.split(start).length === 2 && readme.split(end).length === 2 &&
   readme.indexOf(start) < readme.indexOf(end), "Invalid Radar README markers");
 const radarSnippet = [
-  "**Latest:** [China Dev Radar " + formatNumber(latest.number) + " | " +
-    latest.week + "](" + archivePath(latest) + ") · Published " +
-    latest.publication_date + " · " + latest.items.length + " developments",
+  "**Latest edition:** [" + md(latest.title) + "](" + archivePath(latest) + ")",
   "",
-  "[Explore all " + radar.editions.length + " published editions](RADAR.md)" +
-    " · [Read full articles](" + sourceUrl + ")" +
-    " · [Suggest a Radar development](https://github.com/zhongguo-dev/china-tech/issues/new?template=suggest-radar-development.yml)",
+  latest.week + " · Published " + latest.publication_date,
+  "",
+  "[Browse the Radar archive](RADAR.md)" +
+    " · [Read on Zhongguo.dev](" + sourceUrl + ")" +
+    " · [Join the discussion](https://github.com/zhongguo-dev/china-tech/discussions)",
 ].join("\n");
 const insertStart = readme.indexOf(start) + start.length;
 const insertEnd = readme.indexOf(end);
@@ -264,12 +264,13 @@ assert(readmeZh.split(start).length === 2 && readmeZh.split(end).length === 2 &&
 const zhStart = readmeZh.indexOf(start) + start.length;
 const zhEnd = readmeZh.indexOf(end);
 const zhSnippet = [
-  "**最新一期：**[China Dev Radar " + formatNumber(latest.number) +
-    " | " + latest.week + "](" + zhArchivePath(latest) + ")" +
-    " · 发布于 " + latest.publication_date + " · " + latest.items.length + " 条技术进展",
-  "", "[查看已发布的 " + radar.editions.length + " 期归档](RADAR.zh-CN.md)" +
-    " · [阅读完整文章](https://www.zhongguo.dev/zh/radar)" +
-    " · [推荐技术进展](https://github.com/zhongguo-dev/china-tech/issues/new?template=suggest-radar-development.yml)",
+  "**最新一期：**[" + md(latest.title_zh) + "](" + zhArchivePath(latest) + ")",
+  "",
+  latest.week + " · 发布于 " + latest.publication_date,
+  "",
+  "[浏览技术雷达归档](RADAR.zh-CN.md)" +
+    " · [在 Zhongguo.dev 阅读](https://www.zhongguo.dev/zh/radar)" +
+    " · [参与讨论](https://github.com/zhongguo-dev/china-tech/discussions)",
 ].join("\n");
 output.set("README.zh-CN.md", readmeZh.slice(0, zhStart) +
   "\n\n" + zhSnippet + "\n\n" + readmeZh.slice(zhEnd));
