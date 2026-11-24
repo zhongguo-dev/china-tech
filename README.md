@@ -1,12 +1,26 @@
-# China Tech
+<p align="center">
+  <a href="https://www.zhongguo.dev/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/branding/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/branding/logo-light.svg">
+      <img src="assets/branding/logo-light.svg" width="280" alt="Zhongguo.dev logo">
+    </picture>
+  </a>
+</p>
 
-**English** | [简体中文](README.zh-CN.md)
+<h1 align="center">China Tech</h1>
 
-**Discover China's developer ecosystem.**
+<p align="center">
+  <strong>English</strong> | <a href="README.zh-CN.md">简体中文</a>
+</p>
 
-A curated, source-backed directory of software projects, developer tools, AI models, infrastructure, and emerging technologies, maintained by [Zhongguo.dev](https://www.zhongguo.dev/).
+<p align="center"><strong>Discover China's developer ecosystem.</strong></p>
 
-[Website](https://www.zhongguo.dev/) · [Directory](https://www.zhongguo.dev/directory) · [Radar archive](RADAR.md) · [Contribute](CONTRIBUTING.md)
+<p align="center">A curated, source-backed directory of software projects, developer tools, AI models, infrastructure, and emerging technologies, maintained by <a href="https://www.zhongguo.dev/">Zhongguo.dev</a>.</p>
+
+<p align="center">
+  <a href="https://www.zhongguo.dev/">Website</a> · <a href="https://www.zhongguo.dev/directory">Directory</a> · <a href="RADAR.md">Radar archive</a> · <a href="CONTRIBUTING.md">Contribute</a>
+</p>
 
 Not every listed technology is open source. Inclusion is for discovery and context, not endorsement, certification, or ranking.
 
@@ -290,6 +304,6 @@ Contributions in English or Simplified Chinese are welcome. Suggestions are revi
 
 ## License and attribution
 
-This repository's original code and documentation are provided under the [MIT License](LICENSE). Third-party names, trademarks, logos, code, and linked resources remain subject to their respective rights and licenses.
+This repository's original code and documentation are provided under the [MIT License](LICENSE). Third-party names, trademarks, logos, code, and linked resources remain subject to their respective rights and licenses. The Zhongguo.dev brand artwork is excluded from the MIT license; see the [branding notice](assets/branding/README.md).
 
 Maintained by [Zhongguo.dev](https://www.zhongguo.dev/).
