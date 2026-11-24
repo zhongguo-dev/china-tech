@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 const required = [
   "README.md",
   "README.zh-CN.md",
+  "assets/branding/README.md",
   "CONTRIBUTING.zh-CN.md",
   "EDITORIAL_POLICY.zh-CN.md",
   "CODE_OF_CONDUCT.zh-CN.md",
@@ -156,6 +157,25 @@ for (const [path, locale] of [["README.md", ""], ["README.zh-CN.md", "/zh"]]) {
   }
   if (/\[Explore all \d+ published editions\]|\[查看已发布的 \d+ 期归档\]/.test(content))
     errors.push("Use a count-free Radar archive link: " + path);
+}
+
+// Original logo SVG files are checked separately because their supplied artwork
+// need not end in a newline.
+for (const asset of ["logo-light.svg", "logo-dark.svg"]) {
+  const path = "assets/branding/" + asset;
+  try {
+    const artwork = await readFile(path, "utf8");
+    if (!/<svg\b/.test(artwork) || !/<\/svg>\s*$/.test(artwork))
+      errors.push("Invalid brand artwork: " + path);
+  } catch { errors.push("Missing brand artwork: " + path); }
+}
+for (const [path, body] of [["README.md", readme], ["README.zh-CN.md", readmeZh]]) {
+  if (!body.includes('<picture>') ||
+      !body.includes('media="(prefers-color-scheme: dark)" srcset="assets/branding/logo-dark.svg"') ||
+      !body.includes('media="(prefers-color-scheme: light)" srcset="assets/branding/logo-light.svg"') ||
+      !body.includes('src="assets/branding/logo-light.svg"') ||
+      !body.includes("(assets/branding/README.md)"))
+    errors.push("Missing theme-aware branding or usage notice: " + path);
 }
 
 if (!contents.get("LICENSE")?.startsWith("MIT License")) errors.push("MIT license missing or malformed");

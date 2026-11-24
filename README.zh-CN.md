@@ -1,12 +1,26 @@
-# China Tech · 中国开发者技术生态
+<p align="center">
+  <a href="https://www.zhongguo.dev/zh">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/branding/logo-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/branding/logo-light.svg">
+      <img src="assets/branding/logo-light.svg" width="280" alt="Zhongguo.dev 标志">
+    </picture>
+  </a>
+</p>
 
-[English](README.md) | **简体中文**
+<h1 align="center">China Tech · 中国开发者技术生态</h1>
 
-**探索中国开发者生态，连接全球技术社区。**
+<p align="center">
+  <a href="README.md">English</a> | <strong>简体中文</strong>
+</p>
 
-由 [Zhongguo.dev](https://www.zhongguo.dev/zh) 维护的精选技术目录，涵盖软件项目、开发工具、AI 模型、基础设施及新兴技术，并提供可靠的原始资料链接。
+<p align="center"><strong>探索中国开发者生态，连接全球技术社区。</strong></p>
 
-[官方网站](https://www.zhongguo.dev/zh) · [技术目录](https://www.zhongguo.dev/zh/directory) · [技术雷达归档](RADAR.zh-CN.md) · [参与贡献](CONTRIBUTING.zh-CN.md)
+<p align="center">由 <a href="https://www.zhongguo.dev/zh">Zhongguo.dev</a> 维护的精选技术目录，涵盖软件项目、开发工具、AI 模型、基础设施及新兴技术，并提供可靠的原始资料链接。</p>
+
+<p align="center">
+  <a href="https://www.zhongguo.dev/zh">官方网站</a> · <a href="https://www.zhongguo.dev/zh/directory">技术目录</a> · <a href="RADAR.zh-CN.md">技术雷达归档</a> · <a href="CONTRIBUTING.zh-CN.md">参与贡献</a>
+</p>
 
 并非所有收录技术均为开源项目。收录仅供技术发现与信息参考，不代表认可、认证或排名。
 
@@ -290,6 +304,6 @@
 
 ## 许可证与内容来源
 
-本仓库的原创代码和文档在适用范围内遵循 [MIT 许可证](LICENSE)。第三方名称、商标、图形、代码及链接资料各自适用其原有权利和许可证。
+本仓库的原创代码和文档在适用范围内遵循 [MIT 许可证](LICENSE)。第三方名称、商标、图形、代码及链接资料各自适用其原有权利和许可证。 Zhongguo.dev 品牌标志不属于 MIT 授权范围，详见[品牌资产使用说明](assets/branding/README.md)。
 
 由 [Zhongguo.dev](https://www.zhongguo.dev/zh) 维护。
