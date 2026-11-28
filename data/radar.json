@@ -1,19 +1,141 @@
 {
   "schema_version": 2,
   "source": "https://www.zhongguo.dev/radar",
-  "snapshot_date": "2026-11-21",
+  "snapshot_date": "2026-11-28",
   "editions": [
+    {
+      "number": 6,
+      "week": "2026-W48",
+      "slug": "china-dev-radar-006-2026-w48",
+      "title": "China Dev Radar #006: AI Inference, Coding Agents and Reliable Developer Infrastructure",
+      "introduction": "Six developments from November 22–25 cover multi-GPU diffusion inference, a new Coding Plan model, lakehouse correctness, frontend tooling and an earlier agent-harness release in Research Desk. Original dates and first-party evidence are preserved; performance claims are not independently reproduced.",
+      "title_zh": "中国开发者雷达 #006：AI 推理、编程 Agent 与可靠开发基础设施",
+      "introduction_zh": "本期收录 11 月 22 至 25 日的六项技术进展，涉及扩散模型多 GPU 推理、Coding Plan 新模型、湖仓数据正确性、前端工具，并在研究资料栏目介绍较早发布的 Agent 执行框架。各条目保留原始日期及一手资料，性能结论未经独立复现。",
+      "publication_date": "2026-11-28",
+      "items": [
+        {
+          "title": "DiffSynth-Studio unifies multi-GPU inference and context compression",
+          "summary": "The ModelScope community project announced unified parallel inference and configurable context compression on November 23. Current documentation describes sequence parallelism, distributing token computation across GPUs, and classifier-free guidance parallelism, distributing guidance branches across GPU groups. The two axes can be combined. Compression reduces the storage needed for intermediate tensors, reconstructing them when required; documented methods include EntroPack, SVD and Cholesky-QR, with model-specific support.",
+          "title_zh": "DiffSynth-Studio 统一多 GPU 推理与上下文压缩",
+          "summary_zh": "ModelScope 社区的 DiffSynth-Studio 于 11 月 23 日公布统一并行推理和可配置上下文压缩。当前文档介绍将 token 计算分配至多个 GPU 的序列并行，以及将引导分支分配至不同 GPU 组的无分类器引导并行。两种方式可组合。压缩机制减少中间张量的存储开销，并在需要时重建；文档涉及 EntroPack、SVD 和 Cholesky-QR 等方法，支持范围因模型而异。",
+          "section": "featured",
+          "original_publication_date": "2026-11-23",
+          "related_profile": null,
+          "sources": [
+            {
+              "url": "https://diffsynth-studio-doc.readthedocs.io/en/latest/Pipeline_Usage/KV_Cache_Compression.html",
+              "label": "Context compression documentation"
+            },
+            {
+              "url": "https://github.com/modelscope/DiffSynth-Studio",
+              "label": "Maintainer announcement"
+            },
+            {
+              "url": "https://diffsynth-studio-doc.readthedocs.io/en/latest/Pipeline_Usage/Parallel_Inference.html",
+              "label": "Parallel inference documentation"
+            }
+          ]
+        },
+        {
+          "title": "GLM-5.4 becomes available through Z.ai Coding Plan",
+          "summary": "ZCode 4.0.0 confirms GLM-5.4 availability and preconfiguration for Coding Plan users on November 23. The official changelog identifies visual input and broader coding capabilities as additions. Its developer FAQ also documents model selection in other Coding Plan clients, giving developers a concrete integration path.",
+          "title_zh": "GLM-5.4 上线智谱 Coding Plan",
+          "summary_zh": "ZCode 4.0.0 官方更新日志确认 GLM-5.4 于 11 月 23 日上线 Coding Plan 并完成预置配置，新增视觉能力及更广泛的编程能力。官方常见问题还介绍了其他 Coding Plan 客户端中的模型选择方式，为开发者提供实际接入路径。",
+          "section": "featured",
+          "original_publication_date": "2026-11-23",
+          "related_profile": "/ai/glm",
+          "sources": [
+            {
+              "url": "https://zcode.z.ai/en/docs/qa",
+              "label": "ZCode developer FAQ"
+            },
+            {
+              "url": "https://zcode.z.ai/en/changelog",
+              "label": "ZCode official changelog"
+            }
+          ]
+        },
+        {
+          "title": "Apache Paimon 2.1.1 addresses lakehouse data correctness",
+          "summary": "The November 25 release fixes commit-abort handling of reused compaction files, tag deletion, Iceberg snapshot metadata, REST rollback identity and Python compatibility. Automatic conflict rollback is disabled by default. The official catalog lists signed source distributions.",
+          "title_zh": "Apache Paimon 2.1.1 修复湖仓数据正确性问题",
+          "summary_zh": "11 月 25 日发布的版本修复提交中止时复用的压缩文件处理、标签删除、Iceberg 快照元数据、REST 回滚标识及 Python 兼容性问题。冲突自动回滚默认关闭。官方目录提供签名源码包。",
+          "section": "quick_update",
+          "original_publication_date": "2026-11-25",
+          "related_profile": null,
+          "sources": [
+            {
+              "url": "https://release-catalog.apache.org/paimon/2.1.1/index.html",
+              "label": "Apache official release catalog"
+            },
+            {
+              "url": "https://github.com/apache/paimon/releases/tag/release-2.1.1",
+              "label": "Upstream release notes"
+            }
+          ]
+        },
+        {
+          "title": "Rspack 2.3.4 improves diagnostics and adds Solid v2 support",
+          "summary": "The November 24 release removes unnecessary runtime helpers for compatible targets, adds plugin, loader and filename context to diagnostics, and supports Solid v2 through solid-loader and JavaScript/TypeScript starter templates. Cache and watch-mode fixes are also included.",
+          "title_zh": "Rspack 2.3.4 改进构建诊断并支持 Solid v2",
+          "summary_zh": "11 月 24 日发布的版本为兼容目标减少不必要的运行时辅助代码，丰富诊断中的插件、加载器及文件名信息，并通过 solid-loader 和 JavaScript/TypeScript 模板支持 Solid v2，同时包含缓存与监听模式修复。",
+          "section": "quick_update",
+          "original_publication_date": "2026-11-24",
+          "related_profile": "/projects/rspack",
+          "sources": [
+            {
+              "url": "https://github.com/web-infra-dev/rspack/releases/tag/v2.3.4",
+              "label": "Rspack upstream release"
+            }
+          ]
+        },
+        {
+          "title": "Ant Design 6.7.2 fixes component behavior and TypeScript declarations",
+          "summary": "The November 23 patch addresses form labels for numeric field names, grouped-table default sorting, layout classes and custom prefixes, strict TypeScript optional-property declarations, and the native mixed state of indeterminate checkboxes.",
+          "title_zh": "Ant Design 6.7.2 修复组件行为与 TypeScript 声明",
+          "summary_zh": "11 月 23 日发布的补丁修复数字字段名对应的表单标签、分组表格默认排序、布局类名及自定义前缀、严格 TypeScript 可选属性声明，以及不确定状态复选框的原生混合状态。",
+          "section": "quick_update",
+          "original_publication_date": "2026-11-23",
+          "related_profile": "/projects/ant-design",
+          "sources": [
+            {
+              "url": "https://ant.design/changelog/",
+              "label": "Ant Design official changelog"
+            }
+          ]
+        },
+        {
+          "title": "Research Desk: XXL-AI 1.7.0 restructures its agent harness",
+          "summary": "The November 22 desktop release moves the session loop into a dedicated harness covering model requests, tools, MCP and skill loading. Session properties distinguish permission and human-interaction modes; scheduled tasks trigger sessions through a revised scheduler. Goal mode is reserved but not implemented.",
+          "title_zh": "研究资料：XXL-AI 1.7.0 重构 Agent 执行框架",
+          "summary_zh": "11 月 22 日发布的桌面版本将会话执行循环独立为 Harness 模块，涵盖模型请求、工具调用、MCP 和技能加载。会话属性区分权限及人机交互模式，定时任务通过重构的调度机制触发会话。Goal 模式仅预留，本版本未实现。",
+          "section": "research_desk",
+          "original_publication_date": "2026-11-22",
+          "related_profile": null,
+          "sources": [
+            {
+              "url": "https://github.com/xuxueli/xxl-ai/releases/tag/1.7.0",
+              "label": "Maintainer tagged release"
+            }
+          ]
+        }
+      ]
+    },
     {
       "number": 5,
       "week": "2026-W47",
       "slug": "china-dev-radar-005-2026-w47",
       "title": "China Dev Radar #005: Models, Data Pipelines and Code Review",
       "introduction": "This week's Radar spans developer-facing AI models, Apache data integration and practical code-review tooling. Qwen4-Max moves from preview to regular model availability, while SeaTunnel 3.1.0 provides an official release for data pipeline operators. Alibaba OpenCodeReview updates its engineering workflows, and the Research Desk revisits Cloudberry's earlier database upgrade with its original November 6 date clearly identified. These are implementation and release signals, not independently verified performance rankings.",
+      "title_zh": "中国开发者雷达 #005：模型、数据管道与代码审查",
+      "introduction_zh": "本期雷达聚焦面向开发者的 AI 模型、Apache 数据集成与代码审查工具。Qwen4-Max 从预览阶段进入常规版本，SeaTunnel 3.1.0 为数据管道工程提供正式发布版本，阿里 OpenCodeReview 更新研发流程工具。研究资料栏目回顾 Cloudberry 早于本周发布的数据库更新，并明确标注其 11 月 6 日原始日期。本文关注可查证的工程变化，而非未经独立验证的性能排行。",
       "publication_date": "2026-11-20",
       "items": [
         {
           "title": "Qwen4-Max reaches regular availability with developer integration features",
           "summary": "Qwen's November 16 announcement and platform changelog document the regular Qwen4-Max model following a November 11 preview. The publisher describes multimodal capabilities for coding and agents, plus tool calling, structured outputs and caching in the developer interface. This gives teams a new model choice for application integration, but actual supported API features, access regions and commercial terms should be checked for the intended endpoint. Model safety, context-size and efficiency figures remain publisher claims, and this announcement does not establish downloadable Qwen4-Max weights.",
+          "title_zh": "Qwen4-Max 正式提供常规版本，支持开发者工具集成",
+          "summary_zh": "Qwen 于 11 月 16 日发布 Qwen4-Max 常规版本，官方平台更新记录显示此前 11 月 11 日已有预览版。发布方介绍了面向编程与智能体任务的多模态能力，以及工具调用、结构化输出和缓存等接口功能。这为应用开发者提供了新的模型选择，但具体 API 支持、区域可用性和商业条款仍需按实际接入端点核实。安全性、上下文规模及效率数据属于发布方声明，本次发布并不证明 Qwen4-Max 权重已开放下载。",
           "section": "featured",
           "original_publication_date": "2026-11-16",
           "related_profile": "/ai/qwen",
@@ -30,13 +152,13 @@
               "url": "https://docs.qwencloud.com/changelog/models",
               "label": "QwenCloud original model platform changelog"
             }
-          ],
-          "title_zh": "Qwen4-Max 正式提供常规版本，支持开发者工具集成",
-          "summary_zh": "Qwen 于 11 月 16 日发布 Qwen4-Max 常规版本，官方平台更新记录显示此前 11 月 11 日已有预览版。发布方介绍了面向编程与智能体任务的多模态能力，以及工具调用、结构化输出和缓存等接口功能。这为应用开发者提供了新的模型选择，但具体 API 支持、区域可用性和商业条款仍需按实际接入端点核实。安全性、上下文规模及效率数据属于发布方声明，本次发布并不证明 Qwen4-Max 权重已开放下载。"
+          ]
         },
         {
           "title": "Apache SeaTunnel 3.1.0 expands data integration tooling and Edge Agent distribution",
           "summary": "The Apache Software Foundation lists SeaTunnel 3.1.0 as an official November 17 release. The project publishes updated data-integration and connector changes, together with a separately distributed Edge Agent package for collecting and forwarding edge-side events. Its versioned documentation covers installation, endpoint configuration and the boundary with the core engine's checkpoints. Teams running ETL and change-data-capture pipelines should evaluate connector behavior and upgrade requirements against their own workloads; the public release listing is not proof of production performance.",
+          "title_zh": "Apache SeaTunnel 3.1.0 更新数据集成工具与 Edge Agent 发布包",
+          "summary_zh": "Apache Software Foundation 将 SeaTunnel 3.1.0 列为 11 月 17 日的正式版本。项目发布了数据集成及连接器更新，并提供独立分发的 Edge Agent 软件包，用于采集和转发边缘侧事件。对应版本文档说明了部署、端点配置，以及与核心引擎检查点机制的边界。运行 ETL 和变更数据捕获管道的团队应结合自身工作负载评估连接器行为与升级条件，不能将官方版本说明视为生产性能验证。",
           "section": "featured",
           "original_publication_date": "2026-11-17",
           "related_profile": "/projects/apache-seatunnel",
@@ -53,13 +175,13 @@
               "url": "https://seatunnel.apache.org/docs/3.1.0/edge-agent/quick-start/",
               "label": "SeaTunnel 3.1.0 Edge Agent versioned quick start"
             }
-          ],
-          "title_zh": "Apache SeaTunnel 3.1.0 更新数据集成工具与 Edge Agent 发布包",
-          "summary_zh": "Apache Software Foundation 将 SeaTunnel 3.1.0 列为 11 月 17 日的正式版本。项目发布了数据集成及连接器更新，并提供独立分发的 Edge Agent 软件包，用于采集和转发边缘侧事件。对应版本文档说明了部署、端点配置，以及与核心引擎检查点机制的边界。运行 ETL 和变更数据捕获管道的团队应结合自身工作负载评估连接器行为与升级条件，不能将官方版本说明视为生产性能验证。"
+          ]
         },
         {
           "title": "Alibaba OpenCodeReview 1.13.11 refines branch-aware sessions and review rules",
           "summary": "Alibaba's OpenCodeReview maintainers released v1.13.11 on November 17, introducing branch-based filtering for listed review sessions and the ability to move review rules. Its changelog also documents corrections for path normalization, multibyte file-name display and comment truncation. These changes matter for teams reviewing code across branches and languages, but release notes do not establish improved defect-detection accuracy or independently measured token savings.",
+          "title_zh": "阿里 OpenCodeReview 1.13.11 改进分支会话筛选与代码审查规则",
+          "summary_zh": "阿里 OpenCodeReview 维护者于 11 月 17 日发布 v1.13.11，增加按分支筛选代码审查会话及移动审查规则的能力。官方更新说明还记录了路径规范化、多字节文件名显示及审查评论截断等修复。对于跨分支、跨语言进行代码审查的团队，这些调整具有实际意义，但版本说明不能证明缺陷检测准确率或 Token 消耗的独立改善。",
           "section": "quick_update",
           "original_publication_date": "2026-11-17",
           "related_profile": "/projects/alibaba-open-code-review",
@@ -72,13 +194,13 @@
               "url": "https://github.com/alibaba/open-code-review",
               "label": "Original OpenCodeReview source and README"
             }
-          ],
-          "title_zh": "阿里 OpenCodeReview 1.13.11 改进分支会话筛选与代码审查规则",
-          "summary_zh": "阿里 OpenCodeReview 维护者于 11 月 17 日发布 v1.13.11，增加按分支筛选代码审查会话及移动审查规则的能力。官方更新说明还记录了路径规范化、多字节文件名显示及审查评论截断等修复。对于跨分支、跨语言进行代码审查的团队，这些调整具有实际意义，但版本说明不能证明缺陷检测准确率或 Token 消耗的独立改善。"
+          ]
         },
         {
           "title": "Research Desk: Apache Cloudberry 2.2 updates its PostgreSQL foundation",
           "summary": "Originally released on November 6, Apache Cloudberry 2.2.0-incubating brings its PostgreSQL base from 14.4 to 14.10, with additional extensions and coordinated packaging for the core MPP database, PXF, Backup and Go Libs. The release is relevant to analytical database engineers assessing extension support, system compatibility and upgrade paths. It was discovered during W47 research but is not a new W47 launch. The project is currently governed within the Apache Incubator; its historical HashData origins do not imply present commercial ownership.",
+          "title_zh": "研究资料：Apache Cloudberry 2.2 更新 PostgreSQL 基础版本",
+          "summary_zh": "Apache Cloudberry 2.2.0-incubating 实际发布于 11 月 6 日，将 PostgreSQL 基础版本从 14.4 更新至 14.10，并增加扩展能力，同时协调发布 MPP 数据库核心、PXF、Backup 和 Go Libs 等组件。对分析型数据库工程师而言，该版本值得从扩展支持、系统兼容性与升级路径方面研究。虽然本期才纳入研究，但它并非 W47 新版本。项目目前由 Apache 孵化器社区治理，历史上的 HashData 背景不代表现有商业所有权。",
           "section": "research_desk",
           "original_publication_date": "2026-11-06",
           "related_profile": "/projects/apache-cloudberry",
@@ -95,13 +217,9 @@
               "url": "https://cloudberry.apache.org/releases/",
               "label": "Cloudberry official version and original November 6 date"
             }
-          ],
-          "title_zh": "研究资料：Apache Cloudberry 2.2 更新 PostgreSQL 基础版本",
-          "summary_zh": "Apache Cloudberry 2.2.0-incubating 实际发布于 11 月 6 日，将 PostgreSQL 基础版本从 14.4 更新至 14.10，并增加扩展能力，同时协调发布 MPP 数据库核心、PXF、Backup 和 Go Libs 等组件。对分析型数据库工程师而言，该版本值得从扩展支持、系统兼容性与升级路径方面研究。虽然本期才纳入研究，但它并非 W47 新版本。项目目前由 Apache 孵化器社区治理，历史上的 HashData 背景不代表现有商业所有权。"
+          ]
         }
-      ],
-      "title_zh": "中国开发者雷达 #005：模型、数据管道与代码审查",
-      "introduction_zh": "本期雷达聚焦面向开发者的 AI 模型、Apache 数据集成与代码审查工具。Qwen4-Max 从预览阶段进入常规版本，SeaTunnel 3.1.0 为数据管道工程提供正式发布版本，阿里 OpenCodeReview 更新研发流程工具。研究资料栏目回顾 Cloudberry 早于本周发布的数据库更新，并明确标注其 11 月 6 日原始日期。本文关注可查证的工程变化，而非未经独立验证的性能排行。"
+      ]
     },
     {
       "number": 4,
@@ -109,11 +227,15 @@
       "slug": "china-dev-radar-004-2026-w46",
       "title": "China Dev Radar #004: Server AI Operations, Frontend Engineering and Open Models",
       "introduction": "This week's focused Radar covers new server operations for self-hosted AI, frontend build correctness and openly available model artifacts. A separate Research Desk note examines an earlier Ant Design release for accessible UI implementation. Each development retains its original date and primary-source references. Editorial update (November 14, 2026): This edition was expanded with three separately verified developments—Tencent LoopForge, Alibaba Low-Code Engine 1.2.2 and NocoBase v3 beta. The original edition publication date and all original story dates remain unchanged.",
+      "title_zh": "中国开发者技术雷达 #004：AI 服务器运维、前端工程与开放模型",
+      "introduction_zh": "本期技术雷达聚焦自建 AI 服务的服务器运维、前端构建正确性，以及开放模型资源的实际可用性。研究札记另外回顾稍早发布的 Ant Design 更新，关注组件 API 与无障碍交互。所有条目均保留原始发布日期和一手来源。 编辑更新（2026 年 11 月 14 日）：本期增补了三项经单独核实的进展——腾讯 LoopForge、阿里低代码引擎 1.2.2 和 NocoBase v3 Beta。原始期刊发布日期与各条目原始日期均保持不变。",
       "publication_date": "2026-11-13",
       "items": [
         {
           "title": "1Panel 2.5.0 rebuilds GPU and vLLM operations for Linux servers",
           "summary": "1Panel's November 11 release reorganizes GPU, vLLM and model-service management within its Linux administration platform. The original notes describe GPU status and token-throughput views, model-service controls, MCP management, container update workflows and virtual-machine management in Community Edition. These changes are useful for operators combining self-hosted inference services with traditional server administration. The documentation does not establish universal hardware compatibility or independent performance gains; check your drivers, machine capabilities and edition-specific feature limits before upgrading. The release is distinct from the 1Panel 2.4 update covered in Radar #002.",
+          "title_zh": "1Panel 2.5.0 重构 Linux 服务器的 GPU 与 vLLM 运维功能",
+          "summary_zh": "1Panel 于 11 月 11 日发布 2.5.0，对 Linux 管理平台中的 GPU、vLLM 和模型服务管理进行重构。官方说明列出了 GPU 状态与 Token 吞吐量视图、模型服务控制、MCP 管理、容器更新流程，以及社区版虚拟机管理能力。对于同时维护自建推理服务和传统服务器环境的开发团队，这些改动具有实际参考价值。官方资料并未证明所有硬件均可兼容，也不构成独立性能测试。升级前应核对驱动、主机环境及不同版本的功能限制。本次更新区别于 Radar #002 已报道的 1Panel 2.4。",
           "section": "featured",
           "original_publication_date": "2026-11-11",
           "related_profile": "/projects/1panel",
@@ -126,13 +248,13 @@
               "url": "https://1panel.pro/docs/v2/changelog/",
               "label": "1Panel v2 official changelog"
             }
-          ],
-          "title_zh": "1Panel 2.5.0 重构 Linux 服务器的 GPU 与 vLLM 运维功能",
-          "summary_zh": "1Panel 于 11 月 11 日发布 2.5.0，对 Linux 管理平台中的 GPU、vLLM 和模型服务管理进行重构。官方说明列出了 GPU 状态与 Token 吞吐量视图、模型服务控制、MCP 管理、容器更新流程，以及社区版虚拟机管理能力。对于同时维护自建推理服务和传统服务器环境的开发团队，这些改动具有实际参考价值。官方资料并未证明所有硬件均可兼容，也不构成独立性能测试。升级前应核对驱动、主机环境及不同版本的功能限制。本次更新区别于 Radar #002 已报道的 1Panel 2.4。"
+          ]
         },
         {
           "title": "Tencent open-sources LoopForge for team-based coding-agent workflows",
           "summary": "Tencent's Light Cloud team published its LoopForge open-source engineering introduction on November 9. The self-hosted project combines Docker-isolated coding-agent workspaces, shared team roles and reusable SOP workflows with explicit human approval gates. Its November 11 v0.3.5 release separately added lightweight GitHub actions for Main Bot, personal model catalogs and workflow fixes. For developer teams, the important change is reviewable coordination around coding agents rather than a claim that autonomous agents can safely ship unreviewed changes. Tencent's reported internal usage has not been independently verified.",
+          "title_zh": "腾讯开源 LoopForge，支持团队级编码智能体与 SOP 研发流程",
+          "summary_zh": "腾讯轻量云团队于 11 月 9 日介绍并开源 LoopForge，项目将 Docker 隔离的编码智能体工作区、团队共享角色、可复用 SOP 流程与人工审批节点结合。11 月 11 日发布的 v0.3.5 另行加入 Main Bot 轻量级 GitHub 操作、个人模型目录及流程修复。对开发团队而言，关键价值在于让智能体参与的软件交付过程可追踪、可审核，而非证明智能体能够在无人审查下安全上线。腾讯提供的内部使用数字尚无独立验证。",
           "section": "featured",
           "original_publication_date": "2026-11-09",
           "related_profile": "/projects/loopforge",
@@ -145,13 +267,13 @@
               "url": "https://developer.cloud.tencent.com/article/2779233",
               "label": "Tencent LoopForge original open-source engineering announcement"
             }
-          ],
-          "title_zh": "腾讯开源 LoopForge，支持团队级编码智能体与 SOP 研发流程",
-          "summary_zh": "腾讯轻量云团队于 11 月 9 日介绍并开源 LoopForge，项目将 Docker 隔离的编码智能体工作区、团队共享角色、可复用 SOP 流程与人工审批节点结合。11 月 11 日发布的 v0.3.5 另行加入 Main Bot 轻量级 GitHub 操作、个人模型目录及流程修复。对开发团队而言，关键价值在于让智能体参与的软件交付过程可追踪、可审核，而非证明智能体能够在无人审查下安全上线。腾讯提供的内部使用数字尚无独立验证。"
+          ]
         },
         {
           "title": "Rspack 2.3.2 improves HMR chunk handling and adds experimental rule matching",
           "summary": "Rspack 2.3.2 updates hot module replacement behavior around split chunks, including loading newly required chunks before accept callbacks and avoiding some unnecessary update propagation. The patch also adds experimental `rule.as` resource-path matching and improves handling of side-effect-free re-exports. These changes may help frontend teams with complex dependency graphs and custom bundler configurations. The feature is experimental, and release notes are not independent evidence of measured performance improvements.",
+          "title_zh": "Rspack 2.3.2 改进热更新依赖处理并引入实验性规则匹配",
+          "summary_zh": "Rspack 2.3.2 调整代码分割场景下的热模块替换逻辑，在执行接受回调前加载新依赖的代码块，并减少部分不必要的更新传播。该版本还引入实验性的 `rule.as` 资源路径匹配，并改进对无副作用重导出模块的处理。这些调整有助于维护复杂依赖关系和自定义打包配置的前端团队。相关功能仍属实验性，官方更新说明也不等同于独立性能测评。",
           "section": "quick_update",
           "original_publication_date": "2026-11-10",
           "related_profile": "/projects/rspack",
@@ -160,13 +282,13 @@
               "url": "https://github.com/web-infra-dev/rspack/releases/tag/v2.3.2",
               "label": "Rspack 2.3.2 original release"
             }
-          ],
-          "title_zh": "Rspack 2.3.2 改进热更新依赖处理并引入实验性规则匹配",
-          "summary_zh": "Rspack 2.3.2 调整代码分割场景下的热模块替换逻辑，在执行接受回调前加载新依赖的代码块，并减少部分不必要的更新传播。该版本还引入实验性的 `rule.as` 资源路径匹配，并改进对无副作用重导出模块的处理。这些调整有助于维护复杂依赖关系和自定义打包配置的前端团队。相关功能仍属实验性，官方更新说明也不等同于独立性能测评。"
+          ]
         },
         {
           "title": "Meituan makes LongCat-2.5 weights available under MIT",
           "summary": "On November 10, Meituan published a separate open-source announcement for LongCat-2.5 under the MIT license and linked an official Hugging Face repository containing model artifacts and deployment documentation. This follows the model's engineering introduction on November 2, already covered in Radar #003. The new developer-facing development is the announced availability and licensing of reusable weights, not a new architecture. Commercial inference and further training are described as permitted under the stated license; teams should inspect the repository, license text and hardware requirements directly. The exact first upload time and any independent performance measurements were not verified.",
+          "title_zh": "美团以 MIT 协议开放 LongCat-2.5 模型权重",
+          "summary_zh": "美团于 11 月 10 日单独发布 LongCat-2.5 的开源公告，采用 MIT 协议，并提供包含模型文件和部署说明的官方 Hugging Face 仓库。Radar #003 已介绍 11 月 2 日的技术架构，因此本次报道的新进展是模型权重与使用许可的对外开放，而不是新架构发布。根据官方说明，开发者可按适用许可条款进行商业推理部署与二次训练，但仍须自行核对仓库文件、许可证及硬件要求。模型文件的首次上传时间和独立性能评测未获确认。",
           "section": "quick_update",
           "original_publication_date": "2026-11-10",
           "related_profile": "/ai/longcat",
@@ -179,13 +301,13 @@
               "url": "https://huggingface.co/meituan-longcat/LongCat-2.5",
               "label": "Official LongCat-2.5 model repository and MIT license"
             }
-          ],
-          "title_zh": "美团以 MIT 协议开放 LongCat-2.5 模型权重",
-          "summary_zh": "美团于 11 月 10 日单独发布 LongCat-2.5 的开源公告，采用 MIT 协议，并提供包含模型文件和部署说明的官方 Hugging Face 仓库。Radar #003 已介绍 11 月 2 日的技术架构，因此本次报道的新进展是模型权重与使用许可的对外开放，而不是新架构发布。根据官方说明，开发者可按适用许可条款进行商业推理部署与二次训练，但仍须自行核对仓库文件、许可证及硬件要求。模型文件的首次上传时间和独立性能评测未获确认。"
+          ]
         },
         {
           "title": "Alibaba Low-Code Engine 1.2.2 adds ESM component metadata support",
           "summary": "Alibaba Low-Code Engine released v1.2.2 on November 13, adding ES module support for component metadata resources and expanded engine-class exports. The maintainers also fixed a cache decision after importing a schema, alongside documentation and build updates. The patch matters to teams maintaining custom low-code editors and reusable component-material packages, particularly where import correctness and metadata formats are part of a tooling workflow. These are release-note changes, not independently tested compatibility or performance guarantees.",
+          "title_zh": "阿里低代码引擎 1.2.2 增加 ESM 组件元数据支持",
+          "summary_zh": "阿里低代码引擎于 11 月 13 日发布 v1.2.2，增加组件元数据资源的 ES module 支持，并扩展引擎类导出。维护者还修复了导入 Schema 后的缓存判断问题，同时更新了文档与构建配置。对于维护自定义低代码编辑器及可复用组件物料的开发者，这些改动主要影响导入正确性和元数据格式支持。上述信息来自官方更新说明，并非独立兼容性或性能测试结果。",
           "section": "quick_update",
           "original_publication_date": "2026-11-13",
           "related_profile": "/projects/alibaba-lowcode-engine",
@@ -198,13 +320,13 @@
               "url": "https://github.com/alibaba/lowcode-engine/releases/tag/v1.2.2",
               "label": "Alibaba Low-Code Engine v1.2.2 release"
             }
-          ],
-          "title_zh": "阿里低代码引擎 1.2.2 增加 ESM 组件元数据支持",
-          "summary_zh": "阿里低代码引擎于 11 月 13 日发布 v1.2.2，增加组件元数据资源的 ES module 支持，并扩展引擎类导出。维护者还修复了导入 Schema 后的缓存判断问题，同时更新了文档与构建配置。对于维护自定义低代码编辑器及可复用组件物料的开发者，这些改动主要影响导入正确性和元数据格式支持。上述信息来自官方更新说明，并非独立兼容性或性能测试结果。"
+          ]
         },
         {
           "title": "NocoBase v3 beta improves multi-instance setup and application tooling",
           "summary": "NocoBase's November 9 v3 beta release 2026-11-09.3 introduced Agent Skills to help configure and verify multi-instance applications using a shared Redis backend. It also added a foundation startup-scan option and improved database-explorer and mobile layout behavior, while reorganizing permissions for features and extensions. These changes are relevant to teams evaluating AI-assisted business application platforms, but the cited version is explicitly a prerelease—not a stable v3 launch. NocoBase is Singapore-incorporated and documents team or operational locations in China.",
+          "title_zh": "NocoBase v3 Beta 更新多实例配置与应用管理工具",
+          "summary_zh": "NocoBase 于 11 月 9 日发布 v3 Beta 版本 2026-11-09.3，新增用于配置与验证共享 Redis 后端的多实例应用 Agent Skills，并增加应用基础层的启动扫描选项，同时改进数据库浏览器、移动端布局以及功能扩展的权限设置。这些改动适合评估 AI 辅助业务应用平台的团队关注，但该版本明确属于预发布测试版，不应称为 v3 稳定版。NocoBase 注册于新加坡，官方网站亦列有中国团队或业务联系地点。",
           "section": "quick_update",
           "original_publication_date": "2026-11-09",
           "related_profile": "/projects/nocobase",
@@ -217,13 +339,13 @@
               "url": "https://github.com/nocobase/nocobase",
               "label": "NocoBase v3 beta original project and documentation"
             }
-          ],
-          "title_zh": "NocoBase v3 Beta 更新多实例配置与应用管理工具",
-          "summary_zh": "NocoBase 于 11 月 9 日发布 v3 Beta 版本 2026-11-09.3，新增用于配置与验证共享 Redis 后端的多实例应用 Agent Skills，并增加应用基础层的启动扫描选项，同时改进数据库浏览器、移动端布局以及功能扩展的权限设置。这些改动适合评估 AI 辅助业务应用平台的团队关注，但该版本明确属于预发布测试版，不应称为 v3 稳定版。NocoBase 注册于新加坡，官方网站亦列有中国团队或业务联系地点。"
+          ]
         },
         {
           "title": "Research Desk: Ant Design 6.7.0 broadens component APIs and keyboard-accessible controls",
           "summary": "Originally released on November 4, Ant Design 6.7.0 added global component variants for Button, Tag, Steps, Alert and Timeline, expanded suffix customization across selection and date inputs, and introduced clearer keyboard-navigation and accessible-name controls for clear buttons. Other changes extend React integration and selection behavior. This is an earlier release worth examining for design-system migrations and accessible frontend interfaces, not a new W46 launch. Developers should consult the upstream compatibility notes before applying the new props.",
+          "title_zh": "研究札记：Ant Design 6.7.0 扩展组件配置与键盘无障碍操作",
+          "summary_zh": "Ant Design 6.7.0 最初发布于 **11 月 4 日**。该版本为 Button、Tag、Steps、Alert、Timeline 等组件增加全局变体配置，扩展选择器和日期输入控件的后缀自定义，并加入清除按钮的键盘焦点顺序与无障碍名称配置等能力。其他调整还涉及 React 集成和选择交互。本文将其作为值得回顾的较早版本，而不是 W46 新发布内容。升级时应结合官方说明核对组件属性与兼容性。",
           "section": "research_desk",
           "original_publication_date": "2026-11-04",
           "related_profile": "/projects/ant-design",
@@ -236,13 +358,9 @@
               "url": "https://github.com/ant-design/ant-design/blob/master/CHANGELOG.en-US.md",
               "label": "Ant Design maintainer changelog"
             }
-          ],
-          "title_zh": "研究札记：Ant Design 6.7.0 扩展组件配置与键盘无障碍操作",
-          "summary_zh": "Ant Design 6.7.0 最初发布于 **11 月 4 日**。该版本为 Button、Tag、Steps、Alert、Timeline 等组件增加全局变体配置，扩展选择器和日期输入控件的后缀自定义，并加入清除按钮的键盘焦点顺序与无障碍名称配置等能力。其他调整还涉及 React 集成和选择交互。本文将其作为值得回顾的较早版本，而不是 W46 新发布内容。升级时应结合官方说明核对组件属性与兼容性。"
+          ]
         }
-      ],
-      "title_zh": "中国开发者技术雷达 #004：AI 服务器运维、前端工程与开放模型",
-      "introduction_zh": "本期技术雷达聚焦自建 AI 服务的服务器运维、前端构建正确性，以及开放模型资源的实际可用性。研究札记另外回顾稍早发布的 Ant Design 更新，关注组件 API 与无障碍交互。所有条目均保留原始发布日期和一手来源。 编辑更新（2026 年 11 月 14 日）：本期增补了三项经单独核实的进展——腾讯 LoopForge、阿里低代码引擎 1.2.2 和 NocoBase v3 Beta。原始期刊发布日期与各条目原始日期均保持不变。"
+      ]
     },
     {
       "number": 3,
@@ -250,11 +368,15 @@
       "slug": "china-dev-radar-003-2026-w45",
       "title": "China Dev Radar #003 — Verified AI Engineering, Linux Updates and Developer Tools",
       "introduction": "Six evidence-reviewed stories from November 2–6, 2026: Atrex supervised GPU optimization, Meituan LongCat agent-training engineering, Baidu ERNIE base-model weights, openEuler LTS maintenance, Tencent Hunyuan Hy4 visual computer-use announcement, and deepin desktop engineering research. Hy4 weights were forthcoming at announcement. The deepin report is a November-published retrospective of October work, not a new November release.",
+      "title_zh": "中国开发者雷达 #003 — AI 工程、Linux 更新与开发工具",
+      "introduction_zh": "本期收录六条经过资料核查的技术内容，涉及 Atrex 受监督 GPU 优化、美团 LongCat Agent 训练工程、百度 ERNIE 基座权重、openEuler LTS 维护、腾讯混元 Hy4 视觉 Computer Use 公告及 deepin 桌面工程。Hy4 权重在公告时尚待发布；deepin 属于十一月发表的十月工作回顾，并非十一月新版本。",
       "publication_date": "2026-11-06",
       "items": [
         {
           "title": "Atrex Kernel Agent 0.4.0 introduces supervised GPU kernel optimization",
           "summary": "Atrex 0.4.0 introduces the Light workflow and modular provider architecture for GPU-kernel optimization with coding agents. An independent Supervisor controls correctness tests, source snapshots, same-allocation ABBA latency comparisons and candidate promotion. The release adds native CUDA manifests, multi-file sources and improved recovery, while migration from v0.3.0 requires workflow and workspace changes. Performance and token-savings claims remain publisher-reported.",
+          "title_zh": "Atrex Kernel Agent 0.4.0 引入受监督的 GPU Kernel 优化流程",
+          "summary_zh": "Atrex 0.4.0 引入 Light 工作流与模块化插件架构。独立 Supervisor 负责正确性检查、源码快照、同一资源下的 ABBA 延迟对比和候选实现验收。新版支持多文件源码和原生 CUDA 清单，并改进恢复机制；从 v0.3.0 升级需检查工作流与工作区兼容性。性能及 Token 节省数据均来自发布方。",
           "section": "featured",
           "original_publication_date": "2026-11-02",
           "related_profile": null,
@@ -267,13 +389,13 @@
               "url": "https://github.com/alibaba/atrex-kernel-agent/releases/tag/v0.4.0",
               "label": "Atrex v0.4.0 original release"
             }
-          ],
-          "title_zh": "Atrex Kernel Agent 0.4.0 引入受监督的 GPU Kernel 优化流程",
-          "summary_zh": "Atrex 0.4.0 引入 Light 工作流与模块化插件架构。独立 Supervisor 负责正确性检查、源码快照、同一资源下的 ABBA 延迟对比和候选实现验收。新版支持多文件源码和原生 CUDA 清单，并改进恢复机制；从 v0.3.0 升级需检查工作流与工作区兼容性。性能及 Token 节省数据均来自发布方。"
+          ]
         },
         {
           "title": "Meituan LongCat-2.5 details verifiable agent training and multimodal infrastructure",
           "summary": "Meituan's November 2 report describes a natively multimodal LongCat-2.5 model for long-horizon tasks, including complex codebase development. Its engineering account covers executable coding-task construction, fail-to-pass and pass-to-pass tests, asynchronous partial reinforcement-learning rollouts, and accelerator-aware long-context training and inference. Performance comparisons and throughput improvements are Meituan's own measurements, not independent benchmarks. This is distinct from the Meituan AI Coding article covered in Radar #002.",
+          "title_zh": "美团 LongCat-2.5 介绍可验证 Agent 训练与多模态基础设施",
+          "summary_zh": "美团 11 月 2 日的 LongCat-2.5 技术报告介绍面向长程任务的原生多模态模型，包括复杂代码库开发。文章详述可执行编程任务构建、fail-to-pass 与 pass-to-pass 测试、异步部分轨迹强化学习，以及面向加速器的长上下文训推优化。性能与吞吐量为美团自测；此发布不同于 Radar #002 已报道的 AI Coding 文章。",
           "section": "featured",
           "original_publication_date": "2026-11-02",
           "related_profile": "/companies/meituan",
@@ -282,13 +404,13 @@
               "url": "https://tech.meituan.com/2026/11/02/Meituan-LongCat-2.5.html",
               "label": "Meituan LongCat-2.5 technical report"
             }
-          ],
-          "title_zh": "美团 LongCat-2.5 介绍可验证 Agent 训练与多模态基础设施",
-          "summary_zh": "美团 11 月 2 日的 LongCat-2.5 技术报告介绍面向长程任务的原生多模态模型，包括复杂代码库开发。文章详述可执行编程任务构建、fail-to-pass 与 pass-to-pass 测试、异步部分轨迹强化学习，以及面向加速器的长上下文训推优化。性能与吞吐量为美团自测；此发布不同于 Radar #002 已报道的 AI Coding 文章。"
+          ]
         },
         {
           "title": "Baidu releases ERNIE 5.5 Flash Base model weights and hybrid attention design",
           "summary": "Baidu released FP8 and BF16 pretrained base weights for ERNIE 5.5 Flash Base, a sparse MoE model with 280B total and about 14B active parameters. Its original architecture report describes compressed attention, selective full-context layers, and SGLang/vLLM-serving pathways. The 128K training context is distinct from configurations supporting up to 1M tokens in inference. This is a base checkpoint, not an instruction-tuned chat model, and the weights use a dedicated ERNIE model license. Benchmark comparisons are publisher-provided.",
+          "title_zh": "百度发布 ERNIE 5.5 Flash Base 权重与混合注意力架构",
+          "summary_zh": "百度公开 ERNIE 5.5 Flash Base 的 FP8 与 BF16 预训练基座权重。该稀疏 MoE 模型总参数量 2800 亿，每 Token 约激活 140 亿参数，采用压缩注意力与部分完整上下文层，并提供 SGLang/vLLM 相关部署说明。128K 训练上下文不应与最高 1M 推理配置混淆。该模型不是指令微调聊天模型，权重采用专用许可；评测结果来自发布方。",
           "section": "featured",
           "original_publication_date": "2026-11-05",
           "related_profile": "/companies/baidu",
@@ -301,13 +423,13 @@
               "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base",
               "label": "ERNIE 5.5 Flash Base original release"
             }
-          ],
-          "title_zh": "百度发布 ERNIE 5.5 Flash Base 权重与混合注意力架构",
-          "summary_zh": "百度公开 ERNIE 5.5 Flash Base 的 FP8 与 BF16 预训练基座权重。该稀疏 MoE 模型总参数量 2800 亿，每 Token 约激活 140 亿参数，采用压缩注意力与部分完整上下文层，并提供 SGLang/vLLM 相关部署说明。128K 训练上下文不应与最高 1M 推理配置混淆。该模型不是指令微调聊天模型，权重采用专用许可；评测结果来自发布方。"
+          ]
         },
         {
           "title": "openEuler issues November maintenance and security updates for LTS branches",
           "summary": "openEuler's Release, QA and CI/CD groups announced the update_20261102 train for 22.03-LTS-SP4 and multiple 24.03 LTS service-pack branches. The original announcement lists package changes, security advisories and branch-specific issues. Operators should check their exact branch and individual CVE bulletins before deployment. Publisher-reported vulnerability fix counts across branches must not be added as unique CVEs.",
+          "title_zh": "openEuler 发布面向 LTS 分支的 11 月维护与安全更新",
+          "summary_zh": "openEuler 社区 Release、QA 与 CICD SIG 公布 update_20261102 更新，覆盖 22.03-LTS-SP4 及多个 24.03 LTS SP 分支，列出软件包变更、安全公告及已知问题。管理员应核对所属分支与具体 CVE 信息，不应将不同分支的修复数量相加为独立漏洞总数。",
           "section": "quick_update",
           "original_publication_date": "2026-11-04",
           "related_profile": null,
@@ -316,13 +438,13 @@
               "url": "https://mailweb.openeuler.org/archives/list/dev%40openeuler.org/thread/5TXIJGN6NRLZEFX4O3UVWPHA7MJYCZY2/",
               "label": "openEuler development mailing list announcement"
             }
-          ],
-          "title_zh": "openEuler 发布面向 LTS 分支的 11 月维护与安全更新",
-          "summary_zh": "openEuler 社区 Release、QA 与 CICD SIG 公布 update_20261102 更新，覆盖 22.03-LTS-SP4 及多个 24.03 LTS SP 分支，列出软件包变更、安全公告及已知问题。管理员应核对所属分支与具体 CVE 信息，不应将不同分支的修复数量相加为独立漏洞总数。"
+          ]
         },
         {
           "title": "Worth exploring: deepin's October Linux and desktop engineering report",
           "summary": "deepin's November 5 retrospective documents October work on device drivers, LoongArch compatibility, kernel maintenance, reproducible builds, Treeland compositor integration and DTK toolkit improvements. It is a useful technical map for Linux maintainers and desktop developers, not a new November kernel release. Radar #002 already covered the Linux 7.3 community preview.",
+          "title_zh": "值得关注：deepin 10 月 Linux 与桌面工程月报",
+          "summary_zh": "deepin 11 月 5 日发布的 10 月社区技术月报总结驱动适配、龙芯兼容、内核维护、可重复构建、Treeland 合成器与 DTK 工具链改进。这是一份供 Linux 维护者及桌面开发者参考的十月工作回顾，并非十一月新内核发布；Radar #002 已报道 7.3 内核尝鲜。",
           "section": "research_desk",
           "original_publication_date": "2026-11-05",
           "related_profile": "/projects/deepin",
@@ -331,13 +453,13 @@
               "url": "https://www.deepin.org/zh/deepin-community-monthly-report-2026-10/",
               "label": "deepin original October report"
             }
-          ],
-          "title_zh": "值得关注：deepin 10 月 Linux 与桌面工程月报",
-          "summary_zh": "deepin 11 月 5 日发布的 10 月社区技术月报总结驱动适配、龙芯兼容、内核维护、可重复构建、Treeland 合成器与 DTK 工具链改进。这是一份供 Linux 维护者及桌面开发者参考的十月工作回顾，并非十一月新内核发布；Radar #002 已报道 7.3 内核尝鲜。"
+          ]
         },
         {
           "title": "Tencent announces Hunyuan Hy4 vision and computer-use capabilities",
           "summary": "Tencent announced Hunyuan Hy4 on November 4 with visual understanding and computer-use tools for graphical and command-line workflows. The company described API availability and planned to release downloadable weights and a system card later. This is an announcement of model capabilities and hosted access, not evidence that open weights had already been released. Performance and safety assessments remain publisher-reported.",
+          "title_zh": "腾讯公布混元 Hy4 视觉理解与 Computer Use 能力",
+          "summary_zh": "腾讯于 11 月 4 日公布混元 Hy4 的视觉理解和面向图形界面、命令行的 Computer Use 能力，并介绍了托管 API 接入方式。腾讯当时表示，模型权重及系统卡将在后续公开；不能把 API 可用等同于权重已经发布。性能与安全评价仍属发布方观点。",
           "section": "quick_update",
           "original_publication_date": "2026-11-04",
           "related_profile": "/ai/hunyuan",
@@ -346,13 +468,9 @@
               "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
               "label": "Tencent official Hy4 announcement"
             }
-          ],
-          "title_zh": "腾讯公布混元 Hy4 视觉理解与 Computer Use 能力",
-          "summary_zh": "腾讯于 11 月 4 日公布混元 Hy4 的视觉理解和面向图形界面、命令行的 Computer Use 能力，并介绍了托管 API 接入方式。腾讯当时表示，模型权重及系统卡将在后续公开；不能把 API 可用等同于权重已经发布。性能与安全评价仍属发布方观点。"
+          ]
         }
-      ],
-      "title_zh": "中国开发者雷达 #003 — AI 工程、Linux 更新与开发工具",
-      "introduction_zh": "本期收录六条经过资料核查的技术内容，涉及 Atrex 受监督 GPU 优化、美团 LongCat Agent 训练工程、百度 ERNIE 基座权重、openEuler LTS 维护、腾讯混元 Hy4 视觉 Computer Use 公告及 deepin 桌面工程。Hy4 权重在公告时尚待发布；deepin 属于十一月发表的十月工作回顾，并非十一月新版本。"
+      ]
     },
     {
       "number": 2,
@@ -360,11 +478,15 @@
       "slug": "china-dev-radar-002-2026-w44",
       "title": "China Dev Radar #002 — On-device AI, Verified AI Coding and Developer Tools",
       "introduction": "This week: on-device inference, evidence-driven AI coding, stable frontend toolchains, a Linux kernel community preview and useful earlier technical discoveries. Older sources are explicitly dated.",
+      "title_zh": "中国开发者技术雷达 #002 — 端侧 AI、可验证 AI Coding 与开发工具",
+      "introduction_zh": "本周关注端侧 AI 推理、以证据验证的 AI Coding、前端工具正式版及 Linux 内核社区预览，并收录注明原始日期的技术资料。",
       "publication_date": "2026-10-30",
       "items": [
         {
           "title": "MNN 3.6.2 improves on-device AI inference",
           "summary": "MNN 3.6.2 improves Metal and Qualcomm Hexagon execution, DFlash speculative decoding and model compatibility. Older DFlash draft models require re-export; publisher performance results are hardware-specific.",
+          "title_zh": "MNN 3.6.2 优化端侧 AI 推理",
+          "summary_zh": "MNN 3.6.2 优化 Metal、高通 Hexagon 后端及 DFlash 投机解码，扩展模型兼容性。旧版 DFlash 草稿模型需重新导出，性能数据取决于硬件。",
           "section": "featured",
           "original_publication_date": "2026-10-29",
           "related_profile": "/projects/mnn",
@@ -373,13 +495,13 @@
               "url": "https://github.com/alibaba/MNN/releases/tag/3.6.2",
               "label": "Original first-party source"
             }
-          ],
-          "title_zh": "MNN 3.6.2 优化端侧 AI 推理",
-          "summary_zh": "MNN 3.6.2 优化 Metal、高通 Hexagon 后端及 DFlash 投机解码，扩展模型兼容性。旧版 DFlash 草稿模型需重新导出，性能数据取决于硬件。"
+          ]
         },
         {
           "title": "Meituan shares evidence-driven AI coding practices",
           "summary": "Meituan describes AI-assisted reviews, debugging and automation in distributed storage, emphasizing reproducible tests and human oversight. Its reported case study is not a general model accuracy benchmark.",
+          "title_zh": "美团分享 AI Coding 的可验证工程实践",
+          "summary_zh": "美团介绍分布式存储中的 AI 辅助评审、排障和自动化实践，强调可复现测试、运行时证据与人工复核。案例统计不代表 AI 的通用准确率。",
           "section": "featured",
           "original_publication_date": "2026-10-29",
           "related_profile": "/companies/meituan",
@@ -388,13 +510,13 @@
               "url": "https://tech.meituan.com/2026/10/29/AI-Coding-IN-Distributed-Storage-System.html",
               "label": "Original first-party source"
             }
-          ],
-          "title_zh": "美团分享 AI Coding 的可验证工程实践",
-          "summary_zh": "美团介绍分布式存储中的 AI 辅助评审、排障和自动化实践，强调可复现测试、运行时证据与人工复核。案例统计不代表 AI 的通用准确率。"
+          ]
         },
         {
           "title": "Rspack and Rsbuild 2.3 reach stable releases",
           "summary": "Both tools shipped stable 2.3 releases. This is a stable-availability follow-up to the beta coverage in Radar #001, not a claim that previously documented SWC Next and loader-filtering features first appeared this week. Rspack caching remains experimental.",
+          "title_zh": "Rspack 与 Rsbuild 2.3 正式版发布",
+          "summary_zh": "两款工具推出 2.3 正式版。这是对上期 Beta 报道的正式版跟进，SWC Next 等功能并非本周首次出现；Rspack 新缓存仍属实验性能力。",
           "section": "quick_update",
           "original_publication_date": "2026-10-29",
           "related_profile": "/projects/rspack",
@@ -407,13 +529,13 @@
               "url": "https://github.com/web-infra-dev/rspack/releases/tag/v2.3.0",
               "label": "Original first-party source"
             }
-          ],
-          "title_zh": "Rspack 与 Rsbuild 2.3 正式版发布",
-          "summary_zh": "两款工具推出 2.3 正式版。这是对上期 Beta 报道的正式版跟进，SWC Next 等功能并非本周首次出现；Rspack 新缓存仍属实验性能力。"
+          ]
         },
         {
           "title": "deepin releases Linux 7.3 community preview packages",
           "summary": "Following the official upstream Linux 7.3 release, deepin released community preview packages for AMD64, ARM64 and Loong64. They are for manual testing, not a stable automatic system update; retain a fallback kernel and avoid production use.",
+          "title_zh": "deepin 发布 Linux 7.3 社区内核预览包",
+          "summary_zh": "Linux 7.3 上游内核发布后，deepin 提供 AMD64、ARM64 和 Loong64 的社区尝鲜包。该包并非稳定版系统自动更新，需保留回退内核，不建议用于生产环境。",
           "section": "quick_update",
           "original_publication_date": "2026-10-27",
           "related_profile": "/projects/deepin",
@@ -426,13 +548,13 @@
               "url": "https://github.com/deepin-community/kernel/releases/tag/v25.01.01.01-v7.3.0",
               "label": "Original first-party source"
             }
-          ],
-          "title_zh": "deepin 发布 Linux 7.3 社区内核预览包",
-          "summary_zh": "Linux 7.3 上游内核发布后，deepin 提供 AMD64、ARM64 和 Loong64 的社区尝鲜包。该包并非稳定版系统自动更新，需保留回退内核，不建议用于生产环境。"
+          ]
         },
         {
           "title": "Ant Design 6.6.8 fixes confirmation callbacks",
           "summary": "The October 26 release fixes Modal and Popconfirm custom-button callback behavior, and the upstream changelog records focus-indicator, Progress ARIA and other component fixes.",
+          "title_zh": "Ant Design 6.6.8 修复确认回调问题",
+          "summary_zh": "10 月 26 日更新修复 Modal 与 Popconfirm 自定义按钮影响确认回调的问题，官方更新日志还记录焦点提示与 Progress ARIA 等组件修复。",
           "section": "quick_update",
           "original_publication_date": "2026-10-26",
           "related_profile": "/projects/ant-design",
@@ -441,13 +563,13 @@
               "url": "https://github.com/ant-design/ant-design/releases/tag/6.6.8",
               "label": "Original first-party source"
             }
-          ],
-          "title_zh": "Ant Design 6.6.8 修复确认回调问题",
-          "summary_zh": "10 月 26 日更新修复 Modal 与 Popconfirm 自定义按钮影响确认回调的问题，官方更新日志还记录焦点提示与 Progress ARIA 等组件修复。"
+          ]
         },
         {
           "title": "Research Desk: PingCAP TiDB Cloud security guidance",
           "summary": "Originally published October 20: PingCAP advised TiDB Cloud customers to rotate management API keys, verify dependent automation and revoke old keys following a security disclosure. This is earlier-week practical guidance, not a new W44 advisory.",
+          "title_zh": "研究桌：PingCAP TiDB Cloud 安全指南",
+          "summary_zh": "原文发布于 10 月 20 日：PingCAP 建议 TiDB Cloud 用户轮换管理 API Key、验证相关自动化任务并撤销旧密钥。此为上周指南，并非本周新公告。",
           "section": "research_desk",
           "original_publication_date": "2026-10-20",
           "related_profile": "/companies/pingcap",
@@ -456,13 +578,13 @@
               "url": "https://www.pingcap.com/trust-hub/security/customer-actions-october-2026/",
               "label": "Original first-party source"
             }
-          ],
-          "title_zh": "研究桌：PingCAP TiDB Cloud 安全指南",
-          "summary_zh": "原文发布于 10 月 20 日：PingCAP 建议 TiDB Cloud 用户轮换管理 API Key、验证相关自动化任务并撤销旧密钥。此为上周指南，并非本周新公告。"
+          ]
         },
         {
           "title": "Worth exploring: Umi 4.7.27 improves worker cleanup",
           "summary": "Earlier-week October 24 release: Umi updates its Utoopack integration and improves development-server cleanup when the parent CLI exits, reducing orphaned worker problems.",
+          "title_zh": "值得探索：Umi 4.7.27 改善 Worker 清理",
+          "summary_zh": "上周 10 月 24 日发布的 Umi 4.7.27 更新 Utoopack 集成，并改进父 CLI 退出时开发服务器的 Worker 清理。",
           "section": "research_desk",
           "original_publication_date": "2026-10-24",
           "related_profile": "/projects/umi",
@@ -471,13 +593,13 @@
               "url": "https://github.com/umijs/umi/releases/tag/v4.7.27",
               "label": "Original first-party source"
             }
-          ],
-          "title_zh": "值得探索：Umi 4.7.27 改善 Worker 清理",
-          "summary_zh": "上周 10 月 24 日发布的 Umi 4.7.27 更新 Utoopack 集成，并改进父 CLI 退出时开发服务器的 Worker 清理。"
+          ]
         },
         {
           "title": "Worth exploring: 1Panel 2.4 adds vLLM monitoring",
           "summary": "An earlier-week October 20 project discovery: 1Panel 2.4 adds vLLM metrics and request analysis alongside infrastructure monitoring features. This is not a new W44 release.",
+          "title_zh": "值得探索：1Panel 2.4 新增 vLLM 监控",
+          "summary_zh": "上周 10 月 20 日发布的 1Panel 2.4 增加 vLLM 指标、请求分析及基础设施监控能力。这是上周的开源项目发现。",
           "section": "research_desk",
           "original_publication_date": "2026-10-20",
           "related_profile": "/projects/1panel",
@@ -486,13 +608,9 @@
               "url": "https://github.com/1Panel-dev/1Panel/releases/tag/v2.4.0",
               "label": "Original first-party source"
             }
-          ],
-          "title_zh": "值得探索：1Panel 2.4 新增 vLLM 监控",
-          "summary_zh": "上周 10 月 20 日发布的 1Panel 2.4 增加 vLLM 指标、请求分析及基础设施监控能力。这是上周的开源项目发现。"
+          ]
         }
-      ],
-      "title_zh": "中国开发者技术雷达 #002 — 端侧 AI、可验证 AI Coding 与开发工具",
-      "introduction_zh": "本周关注端侧 AI 推理、以证据验证的 AI Coding、前端工具正式版及 Linux 内核社区预览，并收录注明原始日期的技术资料。"
+      ]
     },
     {
       "number": 1,
@@ -500,11 +618,15 @@
       "slug": "china-dev-radar-001-2026-w43",
       "title": "China Dev Radar #001: Rspack, OceanBase and Rsbuild",
       "introduction": "This week: Rspack's 2.3 beta changes JavaScript parsing and build diagnostics, OceanBase improves database operations, and Rsbuild adds new development workflows. Plus an earlier engineering deep dive from Meituan, explicitly marked as a research highlight.",
+      "title_zh": "中国开发者技术雷达第 001 期：Rspack、OceanBase 与 Rsbuild",
+      "introduction_zh": "本期关注 Rspack 2.3 Beta 的解析与构建诊断升级、OceanBase 的数据库运维改进及 Rsbuild 的开发工具更新，另精选一篇此前发布的美团推理工程实践文章，并明确标注其原始发布时间。",
       "publication_date": "2026-10-24",
       "items": [
         {
           "title": "Rspack 2.3 Beta Introduces SWC Next Parsing and Memory Diagnostics",
           "summary": "Rspack 2.3 beta adopts SWC Next for JavaScript parsing, introduces content-aware loader filtering, improves code splitting and adds tools to inspect memory retained during builds and hot updates. The beta.1 follow-up renames the new loader option from filter.code to codeFilter; this is a prerelease, and performance benefits require workload-specific verification.",
+          "title_zh": "Rspack 2.3 Beta：引入 SWC Next 解析与内存诊断能力",
+          "summary_zh": "Rspack 2.3 Beta 引入基于 SWC Next 的 JavaScript 解析、按代码内容过滤 Loader、代码分割优化及构建与热更新内存诊断工具。后续 Beta.1 将新配置项从 filter.code 更名为 codeFilter。该系列仍处测试阶段，性能表现须结合实际项目验证。",
           "section": "featured",
           "original_publication_date": "2026-10-21",
           "related_profile": "/projects/rspack",
@@ -517,13 +639,13 @@
               "url": "https://github.com/web-infra-dev/rspack/releases/tag/v2.3.0-beta.1",
               "label": "Original source / 原始来源"
             }
-          ],
-          "title_zh": "Rspack 2.3 Beta：引入 SWC Next 解析与内存诊断能力",
-          "summary_zh": "Rspack 2.3 Beta 引入基于 SWC Next 的 JavaScript 解析、按代码内容过滤 Loader、代码分割优化及构建与热更新内存诊断工具。后续 Beta.1 将新配置项从 filter.code 更名为 codeFilter。该系列仍处测试阶段，性能表现须结合实际项目验证。"
+          ]
         },
         {
           "title": "OceanBase 4.2.5 CE BP8 Improves Backup Security and Hot-Row Processing",
           "summary": "OceanBase 4.2.5 CE BP8 supports rotating backup/archive access credentials without changing the destination, adds optional GROUP_COMMIT hot-row update aggregation, improves MySQL-mode asynchronous stored procedures and increases CDC commit timestamp precision. Operators should check compatibility and documented upgrade restrictions.",
+          "title_zh": "OceanBase 4.2.5 CE BP8：增强备份安全与热点行处理",
+          "summary_zh": "OceanBase 4.2.5 CE BP8 支持动态更新备份与归档访问凭据，增加可选的 GROUP_COMMIT 热点行更新聚合优化，增强 MySQL 模式异步存储过程能力，并提高 CDC 提交时间戳精度。部署前应核对兼容性及升级路径限制。",
           "section": "featured",
           "original_publication_date": "2026-10-21",
           "related_profile": "/projects/oceanbase",
@@ -532,13 +654,13 @@
               "url": "https://github.com/oceanbase/oceanbase/releases/tag/v4.2.5_CE_BP8",
               "label": "Original source / 原始来源"
             }
-          ],
-          "title_zh": "OceanBase 4.2.5 CE BP8：增强备份安全与热点行处理",
-          "summary_zh": "OceanBase 4.2.5 CE BP8 支持动态更新备份与归档访问凭据，增加可选的 GROUP_COMMIT 热点行更新聚合优化，增强 MySQL 模式异步存储过程能力，并提高 CDC 提交时间戳精度。部署前应核对兼容性及升级路径限制。"
+          ]
         },
         {
           "title": "Rsbuild 2.2.14 Adds TanStack Start Scaffolding",
           "summary": "The stable Rsbuild 2.2.14 release adds TanStack Start scaffolding for React and Solid and fixes environment-variable behavior, PostCSS discovery, development-server issues and public asset handling.",
+          "title_zh": "Rsbuild 2.2.14：新增 TanStack Start 项目脚手架",
+          "summary_zh": "Rsbuild 2.2.14 稳定版本为 React 和 Solid 新增 TanStack Start 项目脚手架，并修复环境变量、PostCSS 配置发现、开发服务器和公共静态资源处理问题。",
           "section": "quick_update",
           "original_publication_date": "2026-10-19",
           "related_profile": "/projects/rsbuild",
@@ -547,13 +669,13 @@
               "url": "https://github.com/web-infra-dev/rsbuild/releases/tag/v2.2.14",
               "label": "Original source / 原始来源"
             }
-          ],
-          "title_zh": "Rsbuild 2.2.14：新增 TanStack Start 项目脚手架",
-          "summary_zh": "Rsbuild 2.2.14 稳定版本为 React 和 Solid 新增 TanStack Start 项目脚手架，并修复环境变量、PostCSS 配置发现、开发服务器和公共静态资源处理问题。"
+          ]
         },
         {
           "title": "Rsbuild 2.3 Beta Adds Lynx Templates and Preview Lifecycle Support",
           "summary": "Rsbuild 2.3 beta adds Lynx scaffolding, updated TypeScript 7 templates, configurable size reporting and an onClosePreviewServer hook. It also upgrades to the Rspack 2.3 beta, so developers should treat this as a prerelease requiring compatibility testing.",
+          "title_zh": "Rsbuild 2.3 Beta：新增 Lynx 模板与预览服务器生命周期接口",
+          "summary_zh": "Rsbuild 2.3 Beta 新增 Lynx 脚手架、TypeScript 7 模板更新、可配置的大小报告和 onClosePreviewServer 钩子，同时升级至 Rspack 2.3 Beta。该版本仍需兼容性验证。",
           "section": "quick_update",
           "original_publication_date": "2026-10-22",
           "related_profile": "/projects/rsbuild",
@@ -562,13 +684,13 @@
               "url": "https://github.com/web-infra-dev/rsbuild/releases/tag/v2.3.0-beta.0",
               "label": "Original source / 原始来源"
             }
-          ],
-          "title_zh": "Rsbuild 2.3 Beta：新增 Lynx 模板与预览服务器生命周期接口",
-          "summary_zh": "Rsbuild 2.3 Beta 新增 Lynx 脚手架、TypeScript 7 模板更新、可配置的大小报告和 onClosePreviewServer 钩子，同时升级至 Rspack 2.3 Beta。该版本仍需兼容性验证。"
+          ]
         },
         {
           "title": "Research Desk: Meituan's Small-Language-Model Inference Architecture",
           "summary": "Originally published October 15 (before this week's window), Meituan's technical article describes bounded-generation SLM inference using static execution DAGs, AOTInductor compilation, packed prefill, request-local KV sharing and selective FP8. The article's performance claims are publisher-reported, not independently reproduced.",
+          "title_zh": "工程实践精选：美团的小语言模型推理架构",
+          "summary_zh": "原文发表于 10 月 15 日（早于本期统计周期）。美团技术文章介绍了面向有界生成的小语言模型推理方案，包括静态 DAG、AOTInductor 提前编译、Packed Prefill、请求内 KV 共享和选择性 FP8。性能数据由原作者报告，尚未经独立复现。",
           "section": "research_desk",
           "original_publication_date": "2026-10-15",
           "related_profile": "/companies/meituan",
@@ -577,13 +699,9 @@
               "url": "https://tech.meituan.com/2026/10/15/Small-Language-Model-in-meituan.html",
               "label": "Original source / 原始来源"
             }
-          ],
-          "title_zh": "工程实践精选：美团的小语言模型推理架构",
-          "summary_zh": "原文发表于 10 月 15 日（早于本期统计周期）。美团技术文章介绍了面向有界生成的小语言模型推理方案，包括静态 DAG、AOTInductor 提前编译、Packed Prefill、请求内 KV 共享和选择性 FP8。性能数据由原作者报告，尚未经独立复现。"
+          ]
         }
-      ],
-      "title_zh": "中国开发者技术雷达第 001 期：Rspack、OceanBase 与 Rsbuild",
-      "introduction_zh": "本期关注 Rspack 2.3 Beta 的解析与构建诊断升级、OceanBase 的数据库运维改进及 Rsbuild 的开发工具更新，另精选一篇此前发布的美团推理工程实践文章，并明确标注其原始发布时间。"
+      ]
     }
   ]
 }

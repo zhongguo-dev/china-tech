@@ -43,9 +43,9 @@ Weekly briefings on noteworthy developments across China's developer ecosystem, 
 
 <!-- BEGIN GENERATED RADAR -->
 
-**Latest edition:** [China Dev Radar #005: Models, Data Pipelines and Code Review](radar/2026-W47.md)
+**Latest edition:** [China Dev Radar #006: AI Inference, Coding Agents and Reliable Developer Infrastructure](radar/2026-W48.md)
 
-2026-W47 · Published 2026-11-20
+2026-W48 · Published 2026-11-28
 
 [Browse the Radar archive](RADAR.md) · [Read on Zhongguo.dev](https://www.zhongguo.dev/radar) · [Join the discussion](https://github.com/zhongguo-dev/china-tech/discussions)
 
