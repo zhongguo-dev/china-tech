@@ -4,12 +4,13 @@
 
 A chronological archive of published China Dev Radar editions. Each page summarizes the developments covered, preserves their original dates, and links to the official sources and the full bilingual article on Zhongguo.dev.
 
-**5 editions · 30 developments · 48 source references**
+**6 editions · 36 developments · 58 source references**
 
-**Latest:** [China Dev Radar #005 | 2026-W47](radar/2026-W47.md)
+**Latest:** [China Dev Radar #006 | 2026-W48](radar/2026-W48.md)
 
 | Week | Edition | Published | Developments | Full article |
 | --- | --- | --- | ---: | --- |
+| [2026-W48](radar/2026-W48.md) | [#006](radar/2026-W48.md) | 2026-11-28 | 6 | [Read on Zhongguo.dev](https://www.zhongguo.dev/radar/china-dev-radar-006-2026-w48) |
 | [2026-W47](radar/2026-W47.md) | [#005](radar/2026-W47.md) | 2026-11-20 | 4 | [Read on Zhongguo.dev](https://www.zhongguo.dev/radar/china-dev-radar-005-2026-w47) |
 | [2026-W46](radar/2026-W46.md) | [#004](radar/2026-W46.md) | 2026-11-13 | 7 | [Read on Zhongguo.dev](https://www.zhongguo.dev/radar/china-dev-radar-004-2026-w46) |
 | [2026-W45](radar/2026-W45.md) | [#003](radar/2026-W45.md) | 2026-11-06 | 6 | [Read on Zhongguo.dev](https://www.zhongguo.dev/radar/china-dev-radar-003-2026-w45) |
@@ -17,6 +18,10 @@ A chronological archive of published China Dev Radar editions. Each page summari
 | [2026-W43](radar/2026-W43.md) | [#001](radar/2026-W43.md) | 2026-10-24 | 5 | [Read on Zhongguo.dev](https://www.zhongguo.dev/radar/china-dev-radar-001-2026-w43) |
 
 ## Edition summaries
+
+### [China Dev Radar #006: AI Inference, Coding Agents and Reliable Developer Infrastructure](radar/2026-W48.md)
+
+Six developments from November 22–25 cover multi-GPU diffusion inference, a new Coding Plan model, lakehouse correctness, frontend tooling and an earlier agent-harness release in Research Desk. Original dates and first-party evidence are preserved; performance claims are not independently reproduced.
 
 ### [China Dev Radar #005: Models, Data Pipelines and Code Review](radar/2026-W47.md)
 

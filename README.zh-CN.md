@@ -43,9 +43,9 @@
 
 <!-- BEGIN GENERATED RADAR -->
 
-**最新一期：**[中国开发者雷达 #005：模型、数据管道与代码审查](radar/2026-W47.zh-CN.md)
+**最新一期：**[中国开发者雷达 #006：AI 推理、编程 Agent 与可靠开发基础设施](radar/2026-W48.zh-CN.md)
 
-2026-W47 · 发布于 2026-11-20
+2026-W48 · 发布于 2026-11-28
 
 [浏览技术雷达归档](RADAR.zh-CN.md) · [在 Zhongguo.dev 阅读](https://www.zhongguo.dev/zh/radar) · [参与讨论](https://github.com/zhongguo-dev/china-tech/discussions)
 

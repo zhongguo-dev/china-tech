@@ -4,12 +4,13 @@
 
 本归档按时间列出已发布的 China Dev Radar 期刊，保留各技术进展的原始发布日期，并提供官方资料和 Zhongguo.dev 完整双语文章链接。
 
-**5 期 · 30 条技术进展 · 48 条原始资料引用**
+**6 期 · 36 条技术进展 · 58 条原始资料引用**
 
-**最新一期：**[China Dev Radar #005 | 2026-W47](radar/2026-W47.zh-CN.md)
+**最新一期：**[China Dev Radar #006 | 2026-W48](radar/2026-W48.zh-CN.md)
 
 | 周次 | 期数 | 发布日期 | 进展数量 | 完整文章 |
 | --- | --- | --- | ---: | --- |
+| [2026-W48](radar/2026-W48.zh-CN.md) | [#006](radar/2026-W48.zh-CN.md) | 2026-11-28 | 6 | [Zhongguo.dev 中文版](https://www.zhongguo.dev/zh/radar/china-dev-radar-006-2026-w48) |
 | [2026-W47](radar/2026-W47.zh-CN.md) | [#005](radar/2026-W47.zh-CN.md) | 2026-11-20 | 4 | [Zhongguo.dev 中文版](https://www.zhongguo.dev/zh/radar/china-dev-radar-005-2026-w47) |
 | [2026-W46](radar/2026-W46.zh-CN.md) | [#004](radar/2026-W46.zh-CN.md) | 2026-11-13 | 7 | [Zhongguo.dev 中文版](https://www.zhongguo.dev/zh/radar/china-dev-radar-004-2026-w46) |
 | [2026-W45](radar/2026-W45.zh-CN.md) | [#003](radar/2026-W45.zh-CN.md) | 2026-11-06 | 6 | [Zhongguo.dev 中文版](https://www.zhongguo.dev/zh/radar/china-dev-radar-003-2026-w45) |
@@ -17,6 +18,10 @@
 | [2026-W43](radar/2026-W43.zh-CN.md) | [#001](radar/2026-W43.zh-CN.md) | 2026-10-24 | 5 | [Zhongguo.dev 中文版](https://www.zhongguo.dev/zh/radar/china-dev-radar-001-2026-w43) |
 
 ## 各期摘要
+
+### [中国开发者雷达 #006：AI 推理、编程 Agent 与可靠开发基础设施](radar/2026-W48.zh-CN.md)
+
+本期收录 11 月 22 至 25 日的六项技术进展，涉及扩散模型多 GPU 推理、Coding Plan 新模型、湖仓数据正确性、前端工具，并在研究资料栏目介绍较早发布的 Agent 执行框架。各条目保留原始日期及一手资料，性能结论未经独立复现。
 
 ### [中国开发者雷达 #005：模型、数据管道与代码审查](radar/2026-W47.zh-CN.md)
 
